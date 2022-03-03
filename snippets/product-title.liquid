@@ -1,0 +1,31 @@
+{% comment %}
+This snippet is used in async rendering of the collection page
+DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
+{% endcomment %}
+
+{% if product-title and product-title != blank %}
+  {% assign title = product-title %}
+{% elsif product.title and product.title != blank %}
+  {% assign title = product.title %}
+{% else %}
+  {% assign title = '' %}
+{% endif %}
+
+{% assign parts = '' %}
+
+{% if title contains '—' %}
+  {% assign title_parts = title | split: '—' %}
+  {% for title_part in title_parts %}
+    {% if forloop.first %}
+      {% assign model = title_part %}
+    {% else %}
+      {% capture parts %}{{ parts }}<span>{{ title_part }}</span>{% endcapture %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {{ title }}
+{% endif %}
+
+{% if model %}<span>{{ model }}</span>{% endif %}
+{{ product.variants.first.options.first }}
+{{ parts }}
