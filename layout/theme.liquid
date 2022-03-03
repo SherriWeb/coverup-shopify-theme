@@ -26,7 +26,7 @@
   {%- render 'social-meta-tags' -%}
 
   {%- render 'font-face' -%}
-  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
   {%- render 'css-variables' -%}
 
   <script>
@@ -68,7 +68,7 @@
       predictiveSearchType: {{ settings.search_type | json }},
       quickView: {{ settings.quick_shop_enable }},
       themeName: 'Impulse',
-      themeVersion: "5.4.0"
+      themeVersion: "5.5.0"
     };
   </script>
 
@@ -111,6 +111,7 @@
   {%- liquid
     render 'video-modal'
     render 'photoswipe-template'
+    render 'tool-tip'
   -%}
 </body>
 </html>

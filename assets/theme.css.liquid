@@ -779,6 +779,106 @@
    right:28px;
  }
 
+tool-tip{
+  display:none;
+}
+
+tool-tip[data-tool-tip-open=true]{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:10001;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%
+}
+
+tool-tip[data-tool-tip-open=true]:before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#e0e0e0;
+    background-color:{{ settings.color_modal_overlays | default: "#000" }};
+    background-color:var(--colorModalBg);
+    animation:overlay-on 0.3s forwards;
+    cursor:pointer;
+  }
+
+.tool-tip__inner{
+  animation:modal-close 0.3s forwards;
+  opacity:0
+}
+
+tool-tip[data-tool-tip-open=true] .tool-tip__inner{
+    animation:modal-open 0.3s forwards;
+    display:block;
+    position:fixed;
+    background-color:#fff;
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.0902);
+    padding:30px;
+    max-width:720px
+}
+
+@media only screen and (max-width:768px){
+
+tool-tip[data-tool-tip-open=true] .tool-tip__inner{
+      width:100%;
+      max-width:93%
+}
+    }
+
+.tool-tip__content{
+  overflow:auto;
+  max-height:80vh
+}
+
+@media only screen and (max-width:768px){
+
+.tool-tip__content{
+    font-size:0.85em
+}
+  }
+
+.tool-tip__close{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.tool-tip__close .icon{
+  width:28px;
+  height:28px;
+}
+
+.tool-tip-trigger{
+  cursor:pointer;
+  background:none;
+  border:0;
+}
+
+.tool-tip-trigger .icon{
+  width:28px;
+  height:28px;
+}
+
+.tool-tip-trigger__title{
+  display:inline-block;
+}
+
+.tool-tip-trigger__title:focus,.tool-tip-trigger__title:hover{
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+.tool-tip-trigger__content{
+  display:none !important;
+}
+
 *,:after,:before,input{
   box-sizing:border-box;
 }
@@ -2681,7 +2781,7 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
       stroke:inherit;
     }
 
-.icon-bag-minimal circle,.icon-bag-minimal ellipse,.icon-bag-minimal g,.icon-bag-minimal line,.icon-bag-minimal path,.icon-bag-minimal polygon,.icon-bag-minimal polyline,.icon-bag-minimal rect,.icon-bag circle,.icon-bag ellipse,.icon-bag g,.icon-bag line,.icon-bag path,.icon-bag polygon,.icon-bag polyline,.icon-bag rect,.icon-cart circle,.icon-cart ellipse,.icon-cart g,.icon-cart line,.icon-cart path,.icon-cart polygon,.icon-cart polyline,.icon-cart rect,.icon-chevron-down circle,.icon-chevron-down ellipse,.icon-chevron-down g,.icon-chevron-down line,.icon-chevron-down path,.icon-chevron-down polygon,.icon-chevron-down polyline,.icon-chevron-down rect,.icon-circle-checkmark circle,.icon-circle-checkmark ellipse,.icon-circle-checkmark g,.icon-circle-checkmark line,.icon-circle-checkmark path,.icon-circle-checkmark polygon,.icon-circle-checkmark polyline,.icon-circle-checkmark rect,.icon-close circle,.icon-close ellipse,.icon-close g,.icon-close line,.icon-close path,.icon-close polygon,.icon-close polyline,.icon-close rect,.icon-email circle,.icon-email ellipse,.icon-email g,.icon-email line,.icon-email path,.icon-email polygon,.icon-email polyline,.icon-email rect,.icon-filter circle,.icon-filter ellipse,.icon-filter g,.icon-filter line,.icon-filter path,.icon-filter polygon,.icon-filter polyline,.icon-filter rect,.icon-globe circle,.icon-globe ellipse,.icon-globe g,.icon-globe line,.icon-globe path,.icon-globe polygon,.icon-globe polyline,.icon-globe rect,.icon-hamburger circle,.icon-hamburger ellipse,.icon-hamburger g,.icon-hamburger line,.icon-hamburger path,.icon-hamburger polygon,.icon-hamburger polyline,.icon-hamburger rect,.icon-leaf circle,.icon-leaf ellipse,.icon-leaf g,.icon-leaf line,.icon-leaf path,.icon-leaf polygon,.icon-leaf polyline,.icon-leaf rect,.icon-lock circle,.icon-lock ellipse,.icon-lock g,.icon-lock line,.icon-lock path,.icon-lock polygon,.icon-lock polyline,.icon-lock rect,.icon-package circle,.icon-package ellipse,.icon-package g,.icon-package line,.icon-package path,.icon-package polygon,.icon-package polyline,.icon-package rect,.icon-search circle,.icon-search ellipse,.icon-search g,.icon-search line,.icon-search path,.icon-search polygon,.icon-search polyline,.icon-search rect,.icon-truck circle,.icon-truck ellipse,.icon-truck g,.icon-truck line,.icon-truck path,.icon-truck polygon,.icon-truck polyline,.icon-truck rect,.icon-user circle,.icon-user ellipse,.icon-user g,.icon-user line,.icon-user path,.icon-user polygon,.icon-user polyline,.icon-user rect{
+.icon-bag-minimal circle,.icon-bag-minimal ellipse,.icon-bag-minimal g,.icon-bag-minimal line,.icon-bag-minimal path,.icon-bag-minimal polygon,.icon-bag-minimal polyline,.icon-bag-minimal rect,.icon-bag circle,.icon-bag ellipse,.icon-bag g,.icon-bag line,.icon-bag path,.icon-bag polygon,.icon-bag polyline,.icon-bag rect,.icon-cart circle,.icon-cart ellipse,.icon-cart g,.icon-cart line,.icon-cart path,.icon-cart polygon,.icon-cart polyline,.icon-cart rect,.icon-chevron-down circle,.icon-chevron-down ellipse,.icon-chevron-down g,.icon-chevron-down line,.icon-chevron-down path,.icon-chevron-down polygon,.icon-chevron-down polyline,.icon-chevron-down rect,.icon-circle-checkmark circle,.icon-circle-checkmark ellipse,.icon-circle-checkmark g,.icon-circle-checkmark line,.icon-circle-checkmark path,.icon-circle-checkmark polygon,.icon-circle-checkmark polyline,.icon-circle-checkmark rect,.icon-close circle,.icon-close ellipse,.icon-close g,.icon-close line,.icon-close path,.icon-close polygon,.icon-close polyline,.icon-close rect,.icon-email circle,.icon-email ellipse,.icon-email g,.icon-email line,.icon-email path,.icon-email polygon,.icon-email polyline,.icon-email rect,.icon-filter circle,.icon-filter ellipse,.icon-filter g,.icon-filter line,.icon-filter path,.icon-filter polygon,.icon-filter polyline,.icon-filter rect,.icon-gift circle,.icon-gift ellipse,.icon-gift g,.icon-gift line,.icon-gift path,.icon-gift polygon,.icon-gift polyline,.icon-gift rect,.icon-globe circle,.icon-globe ellipse,.icon-globe g,.icon-globe line,.icon-globe path,.icon-globe polygon,.icon-globe polyline,.icon-globe rect,.icon-hamburger circle,.icon-hamburger ellipse,.icon-hamburger g,.icon-hamburger line,.icon-hamburger path,.icon-hamburger polygon,.icon-hamburger polyline,.icon-hamburger rect,.icon-heart circle,.icon-heart ellipse,.icon-heart g,.icon-heart line,.icon-heart path,.icon-heart polygon,.icon-heart polyline,.icon-heart rect,.icon-leaf circle,.icon-leaf ellipse,.icon-leaf g,.icon-leaf line,.icon-leaf path,.icon-leaf polygon,.icon-leaf polyline,.icon-leaf rect,.icon-lock circle,.icon-lock ellipse,.icon-lock g,.icon-lock line,.icon-lock path,.icon-lock polygon,.icon-lock polyline,.icon-lock rect,.icon-package circle,.icon-package ellipse,.icon-package g,.icon-package line,.icon-package path,.icon-package polygon,.icon-package polyline,.icon-package rect,.icon-phone circle,.icon-phone ellipse,.icon-phone g,.icon-phone line,.icon-phone path,.icon-phone polygon,.icon-phone polyline,.icon-phone rect,.icon-ribbon circle,.icon-ribbon ellipse,.icon-ribbon g,.icon-ribbon line,.icon-ribbon path,.icon-ribbon polygon,.icon-ribbon polyline,.icon-ribbon rect,.icon-search circle,.icon-search ellipse,.icon-search g,.icon-search line,.icon-search path,.icon-search polygon,.icon-search polyline,.icon-search rect,.icon-shield circle,.icon-shield ellipse,.icon-shield g,.icon-shield line,.icon-shield path,.icon-shield polygon,.icon-shield polyline,.icon-shield rect,.icon-size-chart circle,.icon-size-chart ellipse,.icon-size-chart g,.icon-size-chart line,.icon-size-chart path,.icon-size-chart polygon,.icon-size-chart polyline,.icon-size-chart rect,.icon-tag circle,.icon-tag ellipse,.icon-tag g,.icon-tag line,.icon-tag path,.icon-tag polygon,.icon-tag polyline,.icon-tag rect,.icon-truck circle,.icon-truck ellipse,.icon-truck g,.icon-truck line,.icon-truck path,.icon-truck polygon,.icon-truck polyline,.icon-truck rect,.icon-user circle,.icon-user ellipse,.icon-user g,.icon-user line,.icon-user path,.icon-user polygon,.icon-user polyline,.icon-user rect{
     fill:none !important;
     stroke-width:var(--iconWeight);
     stroke:currentColor !important;
@@ -3445,6 +3545,21 @@ svg.icon:not(.icon--full-color) circle,svg.icon:not(.icon--full-color) ellipse,s
 
 .spr-summary-starrating{
   font-size:0.8em;
+}
+
+tool-tip[data-tool-tip-open=true] .tool-tip__inner{
+  padding:45px
+}
+
+@media only screen and (max-width:768px){
+
+tool-tip[data-tool-tip-open=true] .tool-tip__inner{
+    padding:45px 20px 20px
+}
+  }
+
+.tool-tip__close{
+  padding:10px;
 }
 
 [data-center-text=true] .footer-promotions{

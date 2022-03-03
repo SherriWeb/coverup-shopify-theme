@@ -824,7 +824,8 @@ lazySizesConfig.expFactor = 4;
       this.singleOptionSelector = options.singleOptionSelector;
       this.originalSelectorId = options.originalSelectorId;
       this.enableHistoryState = options.enableHistoryState;
-      this.currentVariant = this._getVariantFromOptions();
+      this.currentlySelectedValues = this._getCurrentOptions();
+      this.currentVariant = this._getVariantFromOptions(this.currentlySelectedValues);
   
       this.container.querySelectorAll(this.singleOptionSelector).forEach(el => {
         el.addEventListener('change', this._onSelectChange.bind(this));
@@ -860,10 +861,11 @@ lazySizesConfig.expFactor = 4;
         return result;
       },
   
-      _getVariantFromOptions: function() {
-        var selectedValues = this._getCurrentOptions();
+      _getVariantFromOptions: function(selectedValues) {
         var variants = this.variants;
         var found = false;
+  
+        if (selectedValues.length !== variants[0].options.length) return null;
   
         variants.forEach(function(variant) {
           var match = true;
@@ -883,18 +885,38 @@ lazySizesConfig.expFactor = 4;
         return found || null;
       },
   
-      _onSelectChange: function() {
-        var variant = this._getVariantFromOptions();
+      _onSelectChange: function(evt) {
+        var el = evt.srcElement
+        var type = el.getAttribute('type');
+  
+        if (el.classList.contains('disabled')) {
+          this.container.querySelectorAll(this.singleOptionSelector).forEach(input => {
+            if (type === 'radio' || type === 'checkbox') {
+              if (input !== el) {
+                input.checked = false
+              }
+            }
+          })
+        }
+  
+        this.currentlySelectedValues = this._getCurrentOptions();
+        var variant = this._getVariantFromOptions(this.currentlySelectedValues);
   
         this.container.dispatchEvent(new CustomEvent('variantChange', {
           detail: {
-            variant: variant
+            variant: variant,
+            currentlySelectedValues: this.currentlySelectedValues,
+            value: evt.srcElement.value,
+            index: evt.srcElement.parentElement.dataset.index
           }
         }));
   
         document.dispatchEvent(new CustomEvent('variant:change', {
           detail: {
-            variant: variant
+            variant: variant,
+            currentlySelectedValues: this.currentlySelectedValues,
+            value: evt.srcElement.value,
+            index: evt.srcElement.parentElement.dataset.index
           }
         }));
   
@@ -916,7 +938,7 @@ lazySizesConfig.expFactor = 4;
   
       _updateImages: function(variant) {
         var variantImage = variant.featured_image || {};
-        var currentVariantImage = this.currentVariant.featured_image || {};
+        var currentVariantImage = this.currentVariant && this.currentVariant.featured_image || {};
   
         if (!variant.featured_image || variantImage.src === currentVariantImage.src) {
           return;
@@ -930,7 +952,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       _updatePrice: function(variant) {
-        if (variant.price === this.currentVariant.price && variant.compare_at_price === this.currentVariant.compare_at_price) {
+        if (this.currentVariant && variant.price === this.currentVariant.price && variant.compare_at_price === this.currentVariant.compare_at_price) {
           return;
         }
   
@@ -942,7 +964,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       _updateUnitPrice: function(variant) {
-        if (variant.unit_price === this.currentVariant.unit_price) {
+        if (this.currentVariant && variant.unit_price === this.currentVariant.unit_price) {
           return;
         }
   
@@ -954,7 +976,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       _updateSKU: function(variant) {
-        if (variant.sku === this.currentVariant.sku) {
+        if (this.currentVariant && variant.sku === this.currentVariant.sku) {
           return;
         }
   
@@ -3338,47 +3360,105 @@ lazySizesConfig.expFactor = 4;
         this.container.on('variantChange' + this.namespace, this.setAvailability.bind(this));
   
         // Set default state based on current selected variant
-        this.setAvailability(null, this.currentVariantObject);
+        this.setInitialAvailability();
       },
   
-      setAvailability: function(evt, variant) {
-        if (evt) {
-          var variant = evt.detail.variant;
+      // Create a list of all options. If any variant exists and is in stock with that option, it's considered available
+      createAvailableOptionsTree(variants, lastSelectedIndex, lastSelectedValue, currentlySelectedValues = []) {
+        // Reduce variant array into option availability tree
+        return variants.reduce((options, variant) => {
+  
+          const numberOfOptionTypes = variant.options.length;
+  
+          // Check each option group (e.g. option1, option2, option3) of the variant
+          Object.keys(options).forEach(index => {
+  
+            if (variant[index] === null) return;
+  
+            let entry = options[index].find(option => option.value === variant[index]);
+  
+            if (typeof entry === 'undefined') {
+              // If option has yet to be added to the options tree, add it
+              entry = {value: variant[index], soldOut: true}
+              options[index].push(entry);
+            }
+  
+            if (currentlySelectedValues.length > 0) {
+              // If the user has selected a value
+                  if (numberOfOptionTypes === 1) {
+                    // If we're dealing with a single variant selector, enable options that are available
+                    entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                  } else if (numberOfOptionTypes === 2) {
+                    // If we're dealing with a double variant selector
+                    if (currentlySelectedValues.some(({value, index}) => variant[index] === value)) {
+                      // Only enable options that have at least one match (.some()) with an available variant
+                      entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                    }
+                  } else if (numberOfOptionTypes === 3) {
+                    // If we're dealing with a triple variant selector
+                    if (currentlySelectedValues.length === 1) {
+                      // If only one value has been selected
+                      if (index !== lastSelectedIndex) {
+                        // If we're checking an option that is not part of the group that was just selected
+                        if (currentlySelectedValues.every(({value, index}) => variant[index] === value)) {
+                          // Only enable options from variants that match the currently selected value
+                          entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                        }
+                      } else {
+                        // Other options in the same group of the one that was selected should remain unchanged
+                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                      }
+  
+                    } else if (currentlySelectedValues.length === 2) {
+                      // If only two values have been selected
+                      if (currentlySelectedValues.every(({value, index}) => variant[index] === value)) {
+                        // Only enable options from variants that match the 2 currently selected values
+                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                      }
+                    } else if (currentlySelectedValues.length === 3) {
+                      // If all three values have been selected
+                      // Check how many selected option values match a variant
+                      const variantOptionsThatMatchCurrent = currentlySelectedValues.reduce((count, {value, index}) => {
+                        return variant[index] === value ? count + 1 : count;
+                      },0)
+  
+                      // Only enable an option if an available variant matches any 2 currently selected values
+                      if (variantOptionsThatMatchCurrent >= 2) {
+                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+                      }
+                    }
+                  }
+            } else {
+              // If the user has not selected a value yet, show all options that are available.
+              // An option will only initially appear disabled if it is out of stock/unavailable across all variants
+              entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+            }
+          })
+  
+          return options;
+        }, { option1: [], option2: [], option3: []})
+      },
+  
+      setInitialAvailability: function() {
+        this.container.querySelectorAll('.variant-input-wrap').forEach(group => {
+          this.disableVariantGroup(group);
+        });
+  
+        const initialOptions = this.createAvailableOptionsTree(this.variantsObject);
+  
+        for (var [option, values] of Object.entries(initialOptions)) {
+          this.manageOptionState(option, values);
         }
+      },
+  
+      setAvailability: function(evt) {
+  
+        const {value: lastSelectedValue, index: lastSelectedIndex, currentlySelectedValues} = evt.detail;
   
         // Object to hold all options by value.
         // This will be what sets a button/dropdown as
         // sold out or unavailable (not a combo set as purchasable)
-        var valuesToManage = {
-          option1: [],
-          option2: [],
-          option3: []
-        };
-  
-        var ignoreIndex = null;
-        var availableVariants = this.variantsObject.filter(function(el) {
-          if (!variant || variant.id === el.id) {
-            return false;
-          }
-  
-          if (variant.option2 === el.option2 && variant.option3 === el.option3) {
-            return true;
-          }
-  
-          if (variant.option1 === el.option1 && variant.option3 === el.option3) {
-            return true;
-          }
-  
-          if (variant.option1 === el.option1 && variant.option2 === el.option2) {
-            return true;
-          }
-        });
-  
-        var variantObject = {
-          variant: variant
-        };
-  
-        var variants = Object.assign({}, {variant}, availableVariants);
+        const valuesToManage = this.createAvailableOptionsTree(this.variantsObject, lastSelectedIndex, lastSelectedValue, currentlySelectedValues)
   
         // Disable all options to start.
         // If coming from a variant change event, do not disable
@@ -3387,65 +3467,23 @@ lazySizesConfig.expFactor = 4;
           this.disableVariantGroup(group);
         });
   
-        // Loop through each available variant to gather variant values
-        for (var property in variants) {
-          if (variants.hasOwnProperty(property)) {
-            var item = variants[property];
-            if (!item) {
-              return;
-            }
-  
-            var value1 = item.option1;
-            var value2 = item.option2;
-            var value3 = item.option3;
-            var soldOut = item.available === false;
-  
-            if (value1 && ignoreIndex !== 'option1') {
-              valuesToManage.option1.push({
-                value: value1,
-                soldOut: soldOut
-              });
-            }
-            if (value2 && ignoreIndex !== 'option2') {
-              valuesToManage.option2.push({
-                value: value2,
-                soldOut: soldOut
-              });
-            }
-            if (value3 && ignoreIndex !== 'option3') {
-              valuesToManage.option3.push({
-                value: value3,
-                soldOut: soldOut
-              });
-            }
-          }
-        }
-  
         // Loop through all option levels and send each
         // value w/ args to function that determines to show/hide/enable/disable
         for (var [option, values] of Object.entries(valuesToManage)) {
-          this.manageOptionState(option, values);
+          this.manageOptionState(option, values, lastSelectedValue);
         }
       },
   
-      manageOptionState: function(option, values) {
+      manageOptionState: function(option, values, selectedValue) {
         var group = this.container.querySelector('.variant-input-wrap[data-index="'+ option +'"]');
   
         // Loop through each option value
         values.forEach(obj => {
-          this.enableVariantOption(group, obj);
+          this.enableVariantOption(group, obj, selectedValue);
         });
       },
   
-      enableVariantOptionByValue: function(array, index) {
-        var group = this.container.querySelector('.variant-input-wrap[data-index="'+ index +'"]');
-  
-        for (var i = 0; i < array.length; i++) {
-          this.enableVariantOption(group, array[i]);
-        }
-      },
-  
-      enableVariantOption: function(group, obj) {
+      enableVariantOption: function(group, obj, selectedValue) {
         // Selecting by value so escape it
         var value = obj.value.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g,'\\$1');
   
@@ -3464,6 +3502,10 @@ lazySizesConfig.expFactor = 4;
           if (obj.soldOut) {
             input.classList.add(classes.disabled);
             label.classList.add(classes.disabled);
+  
+            if (value !== selectedValue) {
+              input.checked = false
+            }
           }
         }
       },
@@ -3597,6 +3639,101 @@ lazySizesConfig.expFactor = 4;
     }
   };
   
+  
+  /*============================================================================
+    ToolTip
+  ==============================================================================*/
+  
+  class ToolTip extends HTMLElement {
+    constructor() {
+      super();
+      this.el = this;
+      this.inner = this.querySelector('[data-tool-tip-inner]');
+      this.closeButton = this.querySelector('[data-tool-tip-close]');
+      this.toolTipContent = this.querySelector('[data-tool-tip-content]');
+  
+      this.triggers = document.querySelectorAll('[data-tool-tip-trigger]');
+  
+      document.addEventListener('tooltip:open', e => {
+        this._open(e.detail.context, e.detail.content);
+      });
+    }
+  
+    _open(context, insertedHtml) {
+      this.toolTipContent.innerHTML = insertedHtml;
+  
+      theme.a11y.trapFocus({
+        container: this.el,
+        namespace: 'tooltip_focus'
+      });
+  
+      if (this.closeButton) {
+        this.closeButton.on('click' + '.tooltip-close', () => {
+          this._close();
+        });
+      }
+  
+      document.documentElement.on('click' + '.tooltip-outerclick', event => {
+        if (this.el.dataset.toolTipOpen === 'true' && !this.inner.contains(event.target)) this._close();
+      });
+  
+      document.documentElement.on('keydown' + '.tooltip-esc', event => {
+        if (event.code === 'Escape') this._close();
+      });
+  
+      this.el.dataset.toolTipOpen = true;
+      this.el.dataset.toolTip = context;
+    }
+  
+    _close() {
+      this.toolTipContent.innerHTML = '';
+      this.el.dataset.toolTipOpen = 'false';
+      this.el.dataset.toolTip = '';
+  
+      theme.a11y.removeTrapFocus({
+        container: this.el,
+        namespace: 'tooltip_focus'
+      });
+  
+      this.closeButton.off('click' + '.tooltip-close');
+      document.documentElement.off('click' + '.tooltip-outerclick');
+      document.documentElement.off('keydown' + '.tooltip-esc');
+    }
+  }
+  
+  customElements.define('tool-tip', ToolTip);
+  
+  /*============================================================================
+    ToolTipTrigger
+  ==============================================================================*/
+  
+  class ToolTipTrigger extends HTMLElement {
+    constructor() {
+      super();
+      this.el = this;
+      this.toolTipContent = this.querySelector('[data-tool-tip-content]');
+  
+      this.init();
+    }
+  
+    init() {
+      //Create and dispatch customEvent
+      const toolTipOpen = new CustomEvent('tooltip:open', {
+        detail: {
+          context: this.dataset.toolTip,
+          content: this.toolTipContent.innerHTML
+        },
+        bubbles: true
+      });
+  
+      this.el.addEventListener('click', e => {
+        e.stopPropagation();
+        this.dispatchEvent(toolTipOpen);
+      });
+    }
+  }
+  
+  customElements.define('tool-tip-trigger', ToolTipTrigger);
   
 
   theme.announcementBar = (function() {
@@ -5060,10 +5197,6 @@ lazySizesConfig.expFactor = 4;
         return;
       }
   
-      if (container.dataset.hasSlideshow === 'true') {
-        this.inSlideshow = true;
-      }
-  
       this.init();
     }
   
@@ -5075,6 +5208,15 @@ lazySizesConfig.expFactor = 4;
       },
   
       triggerClick: function(evt) {
+        // Streamline changes between a slideshow and
+        // stacked images, so recheck if we are still
+        // working with a slideshow when initializing zoom
+        if (this.container.dataset && this.container.dataset.hasSlideshow === 'true') {
+          this.inSlideshow = true;
+        } else {
+          this.inSlideshow = false;
+        }
+  
         this.items = this.getImageData();
   
         var image = this.inSlideshow ? this.container.querySelector(selectors.activeImage) : evt.currentTarget;
@@ -5997,6 +6139,8 @@ lazySizesConfig.expFactor = 4;
             this.updateScroll(false);
             this.initPriceRange();
             theme.reinitProductGridItem();
+  
+            document.dispatchEvent(new CustomEvent('collection:reloaded'));
   
             isAnimating = false;
           });

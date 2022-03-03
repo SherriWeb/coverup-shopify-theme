@@ -295,6 +295,8 @@
   "products": {
     "general": {
       "color_swatch_trigger": "Couleur",
+      "size_trigger": "Taille",
+      "size_chart": "Tableau des tailles",
       "save_html": "Épargnez {{ saved_amount }}",
       "collection_return": "Retour à {{ collection }}",
       "next_product": "Suivant: {{ title }}",

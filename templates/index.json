@@ -7,15 +7,16 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Two line\ntitle slide.",
+            "title": "Woodback",
             "title_size": 80,
-            "subheading": "And optional subtext",
+            "subheading": "Designed by Nature, Made by Cover-Up",
             "link": "shopify:\/\/collections\/all",
-            "link_text": "Shop this",
+            "link_text": "Shop Wood",
             "link_2": "shopify:\/\/collections\/all",
-            "link_text_2": "Shop all",
+            "link_text_2": "Shop Laptop cases",
             "color_accent": "#000000",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/DSCF5155.jpg",
             "overlay_opacity": 0,
             "focal_point": "top center"
           }
@@ -24,23 +25,42 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Two line\ntitle slide.",
+            "title": "Shell",
             "title_size": 80,
-            "subheading": "And optional subtext",
+            "subheading": "Real Shell Phone Case",
             "link": "shopify:\/\/collections\/all",
             "link_text": "Shop all",
             "link_2": "shopify:\/\/collections\/all",
             "link_text_2": "Shop all",
             "color_accent": "#000000",
             "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify:\/\/shop_images\/slideshow-4.jpg",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "20% 0"
+          }
+        },
+        "34fa2213-3979-4094-9a56-fd690e68384e": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Made made in Brigend, Wales",
+            "title_size": 64,
+            "subheading": "Never mass-produced",
+            "link": "",
+            "link_text": "Learn more about us",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
         "slideshow-0",
-        "slideshow-1"
+        "slideshow-1",
+        "34fa2213-3979-4094-9a56-fd690e68384e"
       ],
       "settings": {
         "section_height": "750px",
@@ -51,122 +71,30 @@
         "autoplay_speed": 7
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
-    "promo-grid": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo-0": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 800,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": true
-          }
-        },
-        "promo-1": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-bottom horizontal-center",
-            "focal_point": "80% 50%",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": true,
-            "framed": false
-          }
-        }
-      },
-      "block_order": [
-        "promo-0",
-        "promo-1"
-      ],
-      "settings": {
-        "full_width": true,
-        "gutter_size": 20,
-        "space_above": false,
-        "space_below": false
-      }
-    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
         "featured-collections-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "",
+            "collection": "woodback",
+            "title": "Wood",
             "focal_point": "center center"
           }
         },
         "featured-collections-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "",
+            "collection": "shell",
+            "title": "Shell",
             "focal_point": "center center"
           }
         },
         "featured-collections-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
+            "collection": "stone",
+            "title": "Stone",
             "focal_point": "center center"
           }
         }
@@ -174,87 +102,33 @@
       "block_order": [
         "featured-collections-0",
         "featured-collections-1",
-        "featured-collections-2",
-        "featured-collections-3"
+        "featured-collections-2"
       ],
       "settings": {
-        "title": "Shop by category",
+        "title": "Real Natural Materials",
         "divider": false,
-        "per_row": 4,
-        "enable_gutter": true
+        "per_row": 3,
+        "enable_gutter": false
       }
     },
-    "promo-grid2": {
-      "type": "promo-grid",
-      "blocks": {
-        "promo2-0": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "100",
-            "height": 720,
-            "text_size": 120,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "80% 50%",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "promo2-1": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "",
-            "top_text": "Up to",
-            "middle_text": "50% off",
-            "bottom_text": "Select products",
-            "width": "50",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": true
-          }
-        },
-        "promo2-2": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "",
-            "top_text": "Up to",
-            "middle_text": "50% off",
-            "bottom_text": "Select products",
-            "width": "50",
-            "color_tint": "#000000",
-            "color_tint_opacity": 0,
-            "boxed": false,
-            "framed": true
-          }
-        }
-      },
-      "block_order": [
-        "promo2-0",
-        "promo2-1",
-        "promo2-2"
-      ],
+    "1646063488f4c47468": {
+      "type": "featured-collection",
       "settings": {
-        "full_width": false,
-        "gutter_size": 20,
-        "space_above": false,
-        "space_below": false
+        "title": "Macbook Skins",
+        "home_featured_products": "macbook",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "",
-        "per_row": 4,
+        "title": "Phone Cases",
+        "home_featured_products": "iphone-12",
+        "per_row": 5,
         "rows": 1,
         "mobile_scrollable": true,
         "view_all": true,
@@ -276,6 +150,46 @@
         "parallax": true
       }
     },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Handmade in Wales"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>We use natural materials like wood, stone, and shell and make everything by hand in Bridgend,  Wales.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
@@ -290,28 +204,16 @@
         "blog_image_size": "wide",
         "divider": false
       }
-    },
-    "map": {
-      "type": "map",
-      "settings": {
-        "map_title": "Our retail store",
-        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
-        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
-        "api_key": "",
-        "show_button": true,
-        "background_image_position": "center center"
-      }
     }
   },
   "order": [
     "slideshow",
-    "rich-text",
-    "promo-grid",
     "featured-collections",
-    "promo-grid2",
+    "1646063488f4c47468",
     "featured-collection",
     "background-image-text",
-    "blog-posts",
-    "map"
+    "map",
+    "rich-text",
+    "blog-posts"
   ]
 }
