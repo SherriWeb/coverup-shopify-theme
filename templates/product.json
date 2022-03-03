@@ -149,12 +149,13 @@
       "type": "product-recommendations",
       "settings": {
         "show_product_recommendations": true,
-        "product_recommendations_heading": "You may also like",
+        "product_recommendations_heading": "WE ALSO RECOMMEND",
         "related_count": 5
       }
     },
     "recently-viewed": {
       "type": "recently-viewed",
+      "disabled": true,
       "settings": {
         "recent_count": 5
       }
