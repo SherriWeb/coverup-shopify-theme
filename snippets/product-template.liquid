@@ -361,6 +361,8 @@
                         -%}
                       {%- endfor -%}
                     </div>
+                  {%- when 'alternative-products' -%}
+                    {% render 'alternative-products' %}
                 {%- endcase -%}
               {%- else -%}
                 <div data-blocks-holder
