@@ -7800,4 +7800,60 @@ lazySizesConfig.expFactor = 4;
     document.dispatchEvent(new CustomEvent('page:loaded'));
   });
 
+  // Magsafe Variant selector
+  let magsafeSelect = function(){
+    let noMagsafe = document.querySelector('.magsafe-buttons .variant-input[data-value="No Magsafe"] .variant__button-label');
+    let withMagsafe = document.querySelector('.magsafe-buttons .variant-input[data-value="Magsafe"] .variant__button-label');
+
+    if (this.checked) {
+      withMagsafe.click();
+    } else {
+      noMagsafe.click();
+    }
+  }
+
+  // Check box if magsafe is already selected on load
+  if (document.querySelector('.magsafe-buttons .variant-input[data-value="Magsafe"] input').checked === true) {
+    document.getElementById('magsafe-checkbox').checked = true;
+  } else if (document.querySelector('.magsafe-buttons .variant-input[data-value="No Magsafe"] input').checked === true) {
+    document.getElementById('magsafe-checkbox').checked = false;
+  }
+
+  let magsafeCheckbox = document.getElementById('magsafe-checkbox');
+  magsafeCheckbox.addEventListener('click', magsafeSelect);
+
+  // Magsafe popup
+  var magsafeInfoContainer = document.querySelector('.magsafe-popup');
+  var magsafeInfoToggle = document.getElementById('magsafe-popup__button');
+
+  magsafeInfoToggle.addEventListener('click', () => {
+    if(!magsafeInfoContainer.classList.contains('active')) {
+    /** Slide down. */
+      magsafeInfoContainer.classList.add('active')
+      magsafeInfoContainer.style.height = "auto"
+
+      /* Get height of container*/
+      let height = magsafeInfoContainer.clientHeight + "px"
+
+      /* Set the height of the content as 0px, */
+      /* so we can trigger the slide down animation. */
+      magsafeInfoContainer.style.height = "0px"
+
+      /** Do this after the 0px has applied. */
+      setTimeout(() => {
+          magsafeInfoContainer.style.height = height
+      }, 0)
+
+    } else {
+      /** Slide up. */
+      /** Set the height as 0px to trigger the slide up animation. */
+      magsafeInfoContainer.style.height = "0px"
+
+      /** Remove the `active` class when the animation ends. */
+      magsafeInfoContainer.addEventListener('transitionend', () => {
+        magsafeInfoContainer.classList.remove('active')
+      }, {once: true})
+    }
+  })
+
 })();

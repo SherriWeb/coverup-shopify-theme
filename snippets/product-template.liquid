@@ -345,6 +345,22 @@
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {{ block.settings.code }}
                     </div>
+                  {%- when 'custom_variants' -%}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      {%- for option in product.options_with_values -%}
+                        {%- render 'custom-variant',
+                          block: block,
+                          product: product,
+                          form_id: form_id,
+                          section_id: section_id,
+                          option: option,
+                          forloop: forloop,
+                          variant_labels: block.settings.variant_labels,
+                          is_color: is_color,
+                          color_option_index: color_option_index
+                        -%}
+                      {%- endfor -%}
+                    </div>
                 {%- endcase -%}
               {%- else -%}
                 <div data-blocks-holder

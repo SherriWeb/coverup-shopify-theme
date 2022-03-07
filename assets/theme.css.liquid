@@ -11378,3 +11378,72 @@ html[dir=rtl] .product-single__meta .rte{
   float: right;
   margin-top: 3px;
 }
+
+/* Magsafe option styles */
+.magsafe-buttons {
+  /* display: none; */
+}
+
+.magsafe-input {
+  display: flex;
+  flex-direction: row;
+}
+
+.label-text {
+  letter-spacing: .1rem;
+  text-transform: none;
+  width: 100%;
+  display: contents;
+}
+
+#magsafe-checkbox {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+#magsafe-label {
+  text-align: left;
+}
+
+#magsafe-popup__button {
+  margin-left: 10px;
+  position: relative;
+}
+
+#magsafe-popup__button::before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  top: 0px;
+  right: -1px;
+  border: 1px solid #525252;
+  border-radius: 50%;
+}
+
+#magsafe-popup__button:hover:before {
+  cursor: pointer;
+}
+
+.magsafe-popup {
+  background-color: #eeeeee;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  transition: height .5s ease;
+  overflow: hidden;
+}
+
+.magsafe-popup:not(.active) {
+  display: none;
+}
+
+.magsafe-popup p {
+  margin: 0;
+  padding: 10px;
+}
+
+.magsafe-popup > b {
+  font-size: 14px;
+}
