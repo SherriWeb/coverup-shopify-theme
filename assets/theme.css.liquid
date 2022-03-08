@@ -11396,7 +11396,7 @@ html[dir=rtl] .product-single__meta .rte{
   display: contents;
 }
 
-#magsafe-checkbox {
+#magsafe-input {
   margin-right: 10px;
   margin-top: 3px;
 }
@@ -11413,10 +11413,10 @@ html[dir=rtl] .product-single__meta .rte{
 #magsafe-popup__button::before {
   position: absolute;
   content: "";
-  height: 17px;
-  width: 17px;
-  top: 0px;
-  right: -1px;
+  height: 18px;
+  width: 18px;
+  top: 1px;
+  right: -2px;
   border: 1px solid #525252;
   border-radius: 50%;
 }
@@ -11448,6 +11448,60 @@ html[dir=rtl] .product-single__meta .rte{
   font-size: 14px;
 }
 
+/* Logo Cutout */
+.logo-cutout-buttons {
+  display: none;
+}
+
+.logo-cutout-input {
+  font-size: 2rem;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 0.5em;
+}
+
+/* Custom checkbox */
+.logo-cutout-input input[type="checkbox"],
+.magsafe-input input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: transparent;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 2px solid var(--colorTextBody);
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.logo-cutout-input input[type="checkbox"]::before,
+.magsafe-input input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--colorTextBody);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.logo-cutout-input input[type="checkbox"]:checked::before,
+.magsafe-input input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+
 /* Alternative products */
 #similar-styles {
   border-top: 1px solid #f0f0f0;
@@ -11460,8 +11514,9 @@ html[dir=rtl] .product-single__meta .rte{
   margin: 5px 0px 5px 0px;
 }
 .similar-products-image {
-  padding: 15px 0px 15px 0px;}
-   
+  padding: 15px 0px 15px 0px;
+}
+
 .similar-products {
   display: inline;
 }
@@ -11471,8 +11526,8 @@ li.similar-products {
 }
 
 .similar-products img {
-width: 13.2%;
-max-width: 75px;
+  width: 13.2%;
+  max-width: 75px;
   display: inline-block;
   vertical-align: middle;
   margin: 4px 0px 4px 0px;

@@ -7801,59 +7801,72 @@ lazySizesConfig.expFactor = 4;
   });
 
   // Magsafe Variant selector
-  let magsafeSelect = function(){
-    let noMagsafe = document.querySelector('.magsafe-buttons .variant-input[data-value="No Magsafe"] .variant__button-label');
-    let withMagsafe = document.querySelector('.magsafe-buttons .variant-input[data-value="Magsafe"] .variant__button-label');
+  let variantSelect = function(variantName, varOptionOne, varOptionTwo){
+    let variantCheckbox = document.getElementById(`${variantName}-input`);
+    let buttonOne = document.querySelector(`.${variantName}-buttons .variant-input[data-value="${varOptionOne}"] .variant__button-label`);
+    let buttonTwo = document.querySelector(`.${variantName}-buttons .variant-input[data-value="${varOptionTwo}"] .variant__button-label`);
 
-    if (this.checked) {
-      withMagsafe.click();
-    } else {
-      noMagsafe.click();
+    if (variantName === 'logo-cutout') {
+      variantCheckbox.checked ? buttonOne.click() : buttonTwo.click();
     }
-  }
-
-  // Check box if magsafe is already selected on load
-  if (document.querySelector('.magsafe-buttons .variant-input[data-value="Magsafe"] input').checked === true) {
-    document.getElementById('magsafe-checkbox').checked = true;
-  } else if (document.querySelector('.magsafe-buttons .variant-input[data-value="No Magsafe"] input').checked === true) {
-    document.getElementById('magsafe-checkbox').checked = false;
+    if (variantName === 'magsafe') {
+      variantCheckbox.checked ? buttonTwo.click() : buttonOne.click();
+    }
   }
 
   let magsafeCheckbox = document.getElementById('magsafe-checkbox');
-  magsafeCheckbox.addEventListener('click', magsafeSelect);
+  let logoCutoutCheckbox = document.getElementById('logo-cutout-checkbox');
 
-  // Magsafe popup
-  var magsafeInfoContainer = document.querySelector('.magsafe-popup');
-  var magsafeInfoToggle = document.getElementById('magsafe-popup__button');
+  if (magsafeCheckbox) {
+    magsafeCheckbox.addEventListener('click', () => variantSelect("magsafe", "No Magsafe", "Magsafe"));
 
-  magsafeInfoToggle.addEventListener('click', () => {
-    if(!magsafeInfoContainer.classList.contains('active')) {
-    /** Slide down. */
-      magsafeInfoContainer.classList.add('active')
-      magsafeInfoContainer.style.height = "auto"
-
-      /* Get height of container*/
-      let height = magsafeInfoContainer.clientHeight + "px"
-
-      /* Set the height of the content as 0px, */
-      /* so we can trigger the slide down animation. */
-      magsafeInfoContainer.style.height = "0px"
-
-      /** Do this after the 0px has applied. */
-      setTimeout(() => {
-          magsafeInfoContainer.style.height = height
-      }, 0)
-
-    } else {
-      /** Slide up. */
-      /** Set the height as 0px to trigger the slide up animation. */
-      magsafeInfoContainer.style.height = "0px"
-
-      /** Remove the `active` class when the animation ends. */
-      magsafeInfoContainer.addEventListener('transitionend', () => {
-        magsafeInfoContainer.classList.remove('active')
-      }, {once: true})
+    // Check box if magsafe is already selected on load
+    if (document.querySelector('.variant-input[data-value="Magsafe"] input').checked === true) {
+      console.log('click magsafe', document.querySelector('input#magsafe-input'));
+      document.querySelector('input#magsafe-input').checked = true;
+    } else if (document.querySelector('.variant-input[data-value="Magsafe"] input').checked === false) {
+      document.querySelector('input#magsafe-input').checked = false;
     }
-  })
+
+    // Magsafe popup
+    var magsafeInfoContainer = document.querySelector('.magsafe-popup');
+    var magsafeInfoToggle = document.getElementById('magsafe-popup__button');
+
+    magsafeInfoToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+
+      if(!magsafeInfoContainer.classList.contains('active')) {
+      /** Slide down. */
+        magsafeInfoContainer.classList.add('active')
+        magsafeInfoContainer.style.height = "auto"
+
+        /* Get height of container*/
+        let height = magsafeInfoContainer.clientHeight + "px"
+
+        /* Set the height of the content as 0px, */
+        /* so we can trigger the slide down animation. */
+        magsafeInfoContainer.style.height = "0px"
+
+        /** Do this after the 0px has applied. */
+        setTimeout(() => {
+            magsafeInfoContainer.style.height = height
+        }, 0)
+
+      } else {
+        /** Slide up. */
+        /** Set the height as 0px to trigger the slide up animation. */
+        magsafeInfoContainer.style.height = "0px"
+
+        /** Remove the `active` class when the animation ends. */
+        magsafeInfoContainer.addEventListener('transitionend', () => {
+          magsafeInfoContainer.classList.remove('active')
+        }, {once: true})
+      }
+    })
+  }
+  if (logoCutoutCheckbox) {
+    logoCutoutCheckbox.addEventListener('click', () => variantSelect("logo-cutout", "Cutout", "No Cutout"))
+  }
 
 })();
