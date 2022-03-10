@@ -1,0 +1,68 @@
+{% assign model = product.title | split: ' — ' | first %}
+{% assign device = model | split: " " | first | downcase %}
+{% assign color = product.variants[0].option1 | replace: " ", "-" | downcase%}
+
+<div>
+  <span>CHOOSE SIZE:</span>
+</div>
+
+{% comment %}
+  Uses mega menu to find corresponding collection and
+  matches the current product type and color to find
+  models with the same case
+{% endcomment %}
+
+<select onChange="linkToModel(this)" id="alternative-model-select">
+  {% for link in linklists.mega-menu.links %}
+    {% if link.title == "Shop by Device" %}
+      {% if link.links != blank %}
+        {% for child_link in link.links %}
+          {% assign link_title_downcase = child_link.title | downcase %}
+          {% if link_title_downcase contains device %}
+            {% if child_link.links != blank %}
+              {% for grandchild_link in child_link.links %}
+                {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
+                {% for p in collections[collection_name2].products %}
+                  {% for tag in p.tags %}
+                    {% if tag contains "colour" %}
+                      {% assign color = tag | remove: "colour_" %}
+                        {% if color == product.variants[0].option1 %}
+                          {% if device contains 'macbook' %}
+                            {% if p.title contains product.type %}
+                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                                {{ p.title | split: ' — ' | first }}
+                              </option>
+                            {% endif %}
+                          {% else %}
+                            <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                              {{ p.title | split: ' — ' | first }}
+                            </option>
+                          {% endif %}
+                        {% endif %}
+                        {% comment %}Lightning bolt tag and variant are different{% endcomment%}
+                        {% if product.variants[0].option1 == 'Gold Lightning Bolt' %}
+                        {% if color == 'Lightning Bolt' %}
+                          <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                            {{ p.title | split: ' — ' | first }}
+                          </option>
+                        {% endif %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</select>
+
+<script>
+  function linkToModel(selectObject) {
+    let value = selectObject.value;
+    window.location.href = value;
+    console.log(value);
+  }
+</script>

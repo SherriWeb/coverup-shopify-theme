@@ -7822,7 +7822,6 @@ lazySizesConfig.expFactor = 4;
 
     // Check box if magsafe is already selected on load
     if (document.querySelector('.variant-input[data-value="Magsafe"] input').checked === true) {
-      console.log('click magsafe', document.querySelector('input#magsafe-input'));
       document.querySelector('input#magsafe-input').checked = true;
     } else if (document.querySelector('.variant-input[data-value="Magsafe"] input').checked === false) {
       document.querySelector('input#magsafe-input').checked = false;

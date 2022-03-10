@@ -362,7 +362,15 @@
                       {%- endfor -%}
                     </div>
                   {%- when 'alternative-products' -%}
-                    {% render 'alternative-products' %}
+                    <div class="product-block" {{ block.shopify_attributes }}>
+                      {% render 'alternative-products' %}
+                    </div>
+                  {%- when 'alternative-models' -%}
+                    {% unless product.type contains 'Wireless Charger' %}
+                      <div class="product-block" {{ block.shopify_attributes }}>
+                        {% render 'alternative-models' %}
+                      </div>
+                    {% endunless %}
                 {%- endcase -%}
               {%- else -%}
                 <div data-blocks-holder
