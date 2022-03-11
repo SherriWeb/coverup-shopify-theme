@@ -3,11 +3,6 @@
 {% assign device = model | split: " " | first | downcase %}
 {% assign color = product.variants[0].option1 | replace: " ", "-" | downcase%}
 
-{{ device }}<br>
-{{ model }}<br>
-{{ product.type }}<br>
-{{ product.variants[0].option1 }}<br>
-
 {% comment %}Get product part from title{% endcomment %}
 {% for part in title_split %}
   {% unless forloop.first %}
@@ -17,6 +12,8 @@
 
 <div>
   <span>CHOOSE SIZE:</span>
+  <!-- <span>MacBook Size Guide</span>
+  {% render 'macbook-size-guide' %} -->
 </div>
 
 {% comment %}

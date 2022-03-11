@@ -406,5 +406,14 @@
 
     // Get rates
     getRates();
+
+    console.log($('button[data-toggle="dropdown"]').parent())
+    $('button[data-toggle="dropdown"]').click(function() {
+      $('button[data-toggle="dropdown"]').parent().toggleClass('open')
+    })
+
+    $('.dropdown-menu').click(function() {
+      $('button[data-toggle="dropdown"]').parent().toggleClass('open')
+    })
   });
 </script>

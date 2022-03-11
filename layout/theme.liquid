@@ -74,6 +74,8 @@
 
   {{ content_for_header }}
 
+  {{ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js' | script_tag }}
+
   <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 
   {%- if shop.enabled_currencies.size > 1 -%}
@@ -85,6 +87,8 @@
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
   {%- endif -%}
+
+  {{ 'bundle.min.js' | asset_url | script_tag }}
 
   {% include 'judgeme_core' %}
 </head>
