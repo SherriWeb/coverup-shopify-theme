@@ -16,6 +16,14 @@
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020": {
           "type": "custom_variants",
           "settings": {
+            "variant_labels": true
+          }
+        },
+        "84435453-fcfa-4d09-b89a-6e7feaf61865": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
           }
         },
         "buy_buttons": {
@@ -51,6 +59,7 @@
         "price",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
+        "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "buy_buttons",
         "description",
         "tab",
