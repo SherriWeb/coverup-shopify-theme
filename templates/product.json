@@ -13,6 +13,11 @@
           "settings": {
           }
         },
+        "417f144b-8c9e-4928-b951-ad141f6fbb3f": {
+          "type": "alternative-models",
+          "settings": {
+          }
+        },
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020": {
           "type": "custom_variants",
           "settings": {
@@ -58,6 +63,7 @@
       "block_order": [
         "price",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
+        "417f144b-8c9e-4928-b951-ad141f6fbb3f",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "buy_buttons",
