@@ -1,0 +1,84 @@
+{% assign productVideo = false %}
+{% if product.type == 'Stone Skin' or product.type == '#WoodBack Bottom Skin' or product.type == '#WoodBack Skin' or product.type == 'MacBook Bottom Skin'%}
+  {% assign productVideo = 'MpyDjLb6kZY' %}
+{% endif %}
+{% if product.type == '#WoodBack Keyboard Skin' %}
+  {% assign productVideo = ' ' %}
+{% endif %}
+
+{% style %}
+{% if productVideo != product.metafields.details.video %}
+.custom-video {
+  display: none;
+}
+{% endif %}
+{% endstyle %}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+  video: {{product.metafields.details.video }}
+<div class="page-width">
+  {%- if section.settings.title != blank -%}
+    <div class="section-header">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+  {%- endif -%}
+  <div class="video-wrapper">
+    {% for block in section.blocks %}
+      {% if product.metafields.details.video == block.settings.video_link %}
+        {%- if block.settings.video_url.type == "youtube" -%}
+          <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+        {%- endif -%}
+        {%- if block.settings.video_url.type == "vimeo" -%}
+          <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+        {%- endif -%}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Custom Video",
+    "class": "index-section custom-video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "video_url",
+            "id": "video_url",
+            "label": "Video link",
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "accept": ["youtube", "vimeo"]
+          },
+          {
+            "type": "text",
+            "id": "video_link",
+            "label": "Video"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Video"
+      }
+    ]
+  }
+{% endschema %}
