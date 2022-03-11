@@ -8,6 +8,12 @@
           "settings": {
           }
         },
+        "ae20fac8-88e0-48c1-8c06-7d5a4eacf020": {
+          "type": "custom_variants",
+          "settings": {
+            "variant_labels": true
+          }
+        },
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c": {
           "type": "alternative-products",
           "settings": {
@@ -16,12 +22,6 @@
         "417f144b-8c9e-4928-b951-ad141f6fbb3f": {
           "type": "alternative-models",
           "settings": {
-          }
-        },
-        "ae20fac8-88e0-48c1-8c06-7d5a4eacf020": {
-          "type": "custom_variants",
-          "settings": {
-            "variant_labels": true
           }
         },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
@@ -44,37 +44,53 @@
             "is_tab": true
           }
         },
-        "tab": {
+        "70383448-357a-46d5-8284-1f7916363275": {
+          "type": "shipping",
+          "settings": {
+          }
+        },
+        "92ff90b1-1820-45f9-a4c7-afc30b09812c": {
           "type": "tab",
           "settings": {
-            "title": "Shipping information",
+            "title": "Materials",
             "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
             "page": ""
           }
         },
-        "contact": {
-          "type": "contact",
+        "a3b18c10-306a-42d3-aeb5-d1f16f1ca732": {
+          "type": "tab",
           "settings": {
-            "title": "Ask a question",
-            "phone": false
+            "title": "FAQ",
+            "content": "",
+            "page": "faqs"
+          }
+        },
+        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b": {
+          "type": "tab",
+          "settings": {
+            "title": "Sustainability",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
           }
         }
       },
       "block_order": [
         "price",
+        "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "417f144b-8c9e-4928-b951-ad141f6fbb3f",
-        "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "buy_buttons",
         "description",
-        "tab",
-        "contact"
+        "70383448-357a-46d5-8284-1f7916363275",
+        "92ff90b1-1820-45f9-a4c7-afc30b09812c",
+        "a3b18c10-306a-42d3-aeb5-d1f16f1ca732",
+        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b"
       ],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
-        "image_size": "medium",
+        "image_size": "large",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_arrows": false,
@@ -107,7 +123,34 @@
         "25388ced-8ab2-4b82-88b2-8bf3bd5a2540"
       ],
       "settings": {
-        "max_width": true
+        "max_width": false
+      }
+    },
+    "1647023327820f2ff0": {
+      "type": "custom-featured-video",
+      "blocks": {
+        "ad046452-4084-4ae3-9e14-bf75c32ff976": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=MpyDjLb6kZY",
+            "video_link": "MacBook Skin"
+          }
+        },
+        "502795f6-99ba-425b-8c4d-7be2c8a47d64": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=eRdzVJmYJdQ",
+            "video_link": "Keyboard Skin"
+          }
+        }
+      },
+      "block_order": [
+        "ad046452-4084-4ae3-9e14-bf75c32ff976",
+        "502795f6-99ba-425b-8c4d-7be2c8a47d64"
+      ],
+      "settings": {
+        "title": "How To Install",
+        "divider": false
       }
     },
     "text-and-image": {
@@ -181,6 +224,7 @@
   "order": [
     "main",
     "sub",
+    "1647023327820f2ff0",
     "text-and-image",
     "text-and-image2",
     "product-recommendations",
