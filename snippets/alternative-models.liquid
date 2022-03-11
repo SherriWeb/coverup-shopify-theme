@@ -3,6 +3,11 @@
 {% assign device = model | split: " " | first | downcase %}
 {% assign color = product.variants[0].option1 | replace: " ", "-" | downcase%}
 
+{{ device }}<br>
+{{ model }}<br>
+{{ product.type }}<br>
+{{ product.variants[0].option1 }}<br>
+
 {% comment %}Get product part from title{% endcomment %}
 {% for part in title_split %}
   {% unless forloop.first %}
@@ -20,7 +25,7 @@
   models with the same case
 {% endcomment %}
 
-{% unless product.type == 'Sleeves' %}
+{% unless product.type == 'Sleeves' or model == "Leather Desk Pad" or model == "Leather Mouse Pad" %}
 <select onChange="linkToModel(this)" id="alternative-model-select">
   {% for link in linklists.mega-menu.links %}
     {% if link.title == "Shop by Device" %}
@@ -92,6 +97,26 @@
           {% endif %}
         {% endfor %}
       {% endif %}
+    {% endif %}
+  {% endfor %}
+</select>
+{% endif %}
+
+{% if model == "Leather Desk Pad" or model == "Leather Mouse Pad" %}
+{% assign pad_collection = model | remove: "Leather " | replace: " ", "-" | append: 's' | downcase %}
+
+<select onChange="linkToModel(this)" id="alternative-model-select">
+  {{pad_collection}}
+  {% for p in collections[pad_collection].products %}
+    {% for tag in p.tags %}
+      {% if tag contains "colour" %}
+        {% assign color = tag | remove: "colour_" %}
+      {% endif %}
+    {% endfor %}
+    {% if color == product.variants[0].option1 %}
+      <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+        {{ p.title | split: ' — ' | last }}
+      </option>
     {% endif %}
   {% endfor %}
 </select>
