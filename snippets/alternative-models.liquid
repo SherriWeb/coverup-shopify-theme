@@ -1,6 +1,14 @@
 {% assign model = product.title | split: ' — ' | first %}
+{% assign title_split = product.title | split: ' — ' %}
 {% assign device = model | split: " " | first | downcase %}
 {% assign color = product.variants[0].option1 | replace: " ", "-" | downcase%}
+
+{% comment %}Get product part from title{% endcomment %}
+{% for part in title_split %}
+  {% unless forloop.first %}
+    {% assign title_part =  part | replace: " ", "-" | downcase %}
+  {% endunless %}
+{% endfor %}
 
 <div>
   <span>CHOOSE SIZE:</span>
@@ -12,6 +20,7 @@
   models with the same case
 {% endcomment %}
 
+{% unless product.type == 'Sleeves' %}
 <select onChange="linkToModel(this)" id="alternative-model-select">
   {% for link in linklists.mega-menu.links %}
     {% if link.title == "Shop by Device" %}
@@ -58,6 +67,35 @@
     {% endif %}
   {% endfor %}
 </select>
+{% endunless %}
+
+{% if product.type == 'Sleeves' %}
+<select onChange="linkToModel(this)" id="alternative-model-select">
+  {% for link in linklists.mega-menu.links %}
+    {% if link.title == "Shop by Device" %}
+      {% if link.links != blank %}
+        {% for child_link in link.links %}
+          {% assign link_title_downcase = child_link.title | downcase %}
+          {% if link_title_downcase contains device %}
+            {% if child_link.links != blank %}
+              {% for grandchild_link in child_link.links %}
+                {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
+                {% for p in collections[collection_name2].products %}
+                  {% if p.url contains title_part %}
+                    <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                      {{ p.title | split: ' — ' | first }}
+                    </option>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</select>
+{% endif %}
 
 <script>
   function linkToModel(selectObject) {
