@@ -1,13 +1,5 @@
-{% assign productVideo = false %}
-{% if product.type == 'Stone Skin' or product.type == '#WoodBack Bottom Skin' or product.type == '#WoodBack Skin' or product.type == 'MacBook Bottom Skin'%}
-  {% assign productVideo = 'MpyDjLb6kZY' %}
-{% endif %}
-{% if product.type == '#WoodBack Keyboard Skin' %}
-  {% assign productVideo = ' ' %}
-{% endif %}
-
 {% style %}
-{% if productVideo != product.metafields.details.video %}
+{% if product.metafields.details.video == blank %}
 .custom-video {
   display: none;
 }
@@ -15,7 +7,6 @@
 {% endstyle %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
-  video: {{product.metafields.details.video }}
 <div class="page-width">
   {%- if section.settings.title != blank -%}
     <div class="section-header">
