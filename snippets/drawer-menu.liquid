@@ -113,11 +113,26 @@
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
                                 {%- for grandchildlink in childlink.links -%}
-                                  <li class="mobile-nav__item">
-                                    <a href="{{ grandchildlink.url }}" class="mobile-nav__link"{% if grandchildlink.active %} data-active="true"{% endif %}>
-                                      {{ grandchildlink.title }}
-                                    </a>
-                                  </li>
+                                  {% if forloop.index <= 5 %}
+                                    <li class="mobile-nav__item">
+                                      <a href="{{ grandchildlink.url }}" class="mobile-nav__link"{% if grandchildlink.active %} data-active="true"{% endif %}>
+                                        {{ grandchildlink.title }}
+                                      </a>
+                                    </li>
+                                    {% if forloop.index == 5 %}
+                                      <li class="mobile-nav__item">
+                                        <button class="mobile-nav__link mobile-nav__link--trunicate"{% if grandchildlink.active %} data-active="true"{% endif %} data-grandchild-title="{{ grand_child_list_handle }}" data-linklist-childhandle="Linklist-{{ child_list_handle }}">
+                                          + View More
+                                        </button>
+                                      </li>
+                                    {% endif %}
+                                  {% else %}
+                                    <li class="mobile-nav__item mobile-nav__truncated-items-{{ grand_child_list_handle }} " style="display: none;">
+                                      <a href="{{ grandchildlink.url }}" class="mobile-nav__link"{% if grandchildlink.active %} data-active="true"{% endif %}>
+                                        {{ grandchildlink.title }}
+                                      </a>
+                                    </li>
+                                  {% endif %}
                                 {%- endfor -%}
                               </ul>
                             </div>

@@ -88,11 +88,26 @@
                   -%}
 
                   {%- for grandchildlink in childlink.links -%}
-                    <div>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{grandchildlink.title}}
-                      </a>
-                    </div>
+                    {% if forloop.index <= 5 %}
+                      <div>
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                          {{grandchildlink.title}}
+                        </a>
+                      </div>
+                      {% if forloop.index == 5 %}
+                      <div>
+                        <button class="site-nav__dropdown-link site-nav__dropdown-link--btn" data-parent-title="{{ childlink.title }}" >
+                          + View More
+                        </button>
+                      </div>
+                      {% endif %}
+                    {% else %}
+                      <div style="display: none;" class="site-nav__dropdown-link-{{ childlink.title }}">
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                          {{grandchildlink.title}}
+                        </a>
+                      </div>
+                    {% endif %}
                   {%- endfor -%}
                 {%- endfor -%}
               </div>

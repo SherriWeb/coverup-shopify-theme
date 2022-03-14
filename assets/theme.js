@@ -1827,7 +1827,8 @@ lazySizesConfig.expFactor = 4;
       trigger: '.collapsible-trigger',
       module: '.collapsible-content',
       moduleInner: '.collapsible-content__inner',
-      tabs: '.collapsible-trigger--tab'
+      tabs: '.collapsible-trigger--tab',
+      expand: '.mobile-nav__link--trunicate'
     };
   
     var classes = {
@@ -1851,7 +1852,33 @@ lazySizesConfig.expFactor = 4;
         trigger.on('click' + namespace, toggle);
       });
     }
-  
+
+    // Trunicate Longer Menus
+    function TrunicateToggle() {
+      document.querySelectorAll(selectors.expand).forEach(el => {
+        el.addEventListener('click', function(e){
+          let collectionTitle = e.target.getAttribute('data-grandchild-title');
+          let container = document.getElementById(`Sublinklist-1-${collectionTitle}`);
+
+          e.target.style.display = 'none';
+          $(`.mobile-nav__truncated-items-${collectionTitle}`).css('display' , 'block');
+
+          let height =  container.querySelector('.collapsible-content__inner').offsetHeight;
+          container.setAttribute('style', `height: ${height}px`);
+
+          let listChildHandle = e.target.getAttribute('data-linklist-childhandle');
+          let parentLinkList = document.getElementById(listChildHandle);
+
+          setTimeout(() => {
+            let parentLinkListHeight = parentLinkList.querySelector('.collapsible-content__inner').offsetHeight;
+            parentLinkList.setAttribute('style', `height: ${parentLinkListHeight}px`);
+          }, 350);
+        })
+      })
+    }
+
+    TrunicateToggle();
+
     function toggle(evt) {
       if (isTransitioning) {
         return;
@@ -7867,5 +7894,16 @@ lazySizesConfig.expFactor = 4;
   if (logoCutoutCheckbox) {
     logoCutoutCheckbox.addEventListener('click', () => variantSelect("logo-cutout", "Cutout", "No Cutout"))
   }
+
+  // Truncated Nav Desktop
+  $('button[data-parent-title]').each(function() {
+    $(this).click(function() {
+      let collectionTitle = $(this).attr('data-parent-title');
+      $(`.site-nav__dropdown-link-${collectionTitle}`).css('display' , 'block');
+      $(this).css('display', 'none');
+
+      console.log(collectionTitle)
+    })
+  })
 
 })();
