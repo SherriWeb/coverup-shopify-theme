@@ -22,7 +22,7 @@
   if template_name == 'index' and section.settings.sticky_index
     assign overlay_header = true
   endif
-  if template_name == 'collection' and collection.image and section.settings.sticky_collection
+  if template_name contains 'collection' and collection.image and section.settings.sticky_collection
     assign overlay_header = true
   endif
 -%}

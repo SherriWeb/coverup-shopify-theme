@@ -16,41 +16,43 @@
   endif
 -%}
 
-<ul class="sales-points">
-  <li class="sales-point">
-    <span class="icon-and-text{% if inventory_visible == true %} inventory--low{% endif %}{% unless current_variant.available %} hide{% endunless %}">
-      <span class="icon icon--inventory"></span>
-      <span data-product-inventory data-threshold="{{ block.settings.inventory_threshold }}">
-        {%- if inventory_visible -%}
-          {{ 'products.product.stock_label' | t: count: current_variant.inventory_quantity }}
-        {%- else -%}
-          {{ 'products.product.in_stock_label' | t }}
-        {%- endif -%}
-      </span>
-    </span>
-  </li>
-  {%- if block.settings.inventory_transfers_enable -%}
-    <li
-      data-incoming-inventory
-      class="sales-point{% unless show_incoming %} hide{% endunless %}">
-      <span class="icon-and-text">
+<div class="product-block product-block--sales-point{% unless current_variant.available or show_incoming %} hide{% endunless %}" {{ block.shopify_attributes }}>
+  <ul class="sales-points">
+    <li class="sales-point">
+      <span class="icon-and-text{% if inventory_visible == true %} inventory--low{% endif %}{% unless current_variant.available %} hide{% endunless %}">
         <span class="icon icon--inventory"></span>
-        <span class="js-incoming-text">
-          {%- if current_variant.next_incoming_date -%}
-            {%- assign date = current_variant.next_incoming_date | date: format: 'date' -%}
-            {%- if current_variant.available -%}
-              {{ 'products.product.will_not_ship_until' | t: date: date }}
-            {%- else -%}
-              {{ 'products.product.will_be_in_stock_after' | t: date: date }}
-            {%- endif -%}
+        <span data-product-inventory data-threshold="{{ block.settings.inventory_threshold }}">
+          {%- if inventory_visible -%}
+            {{ 'products.product.stock_label' | t: count: current_variant.inventory_quantity }}
           {%- else -%}
-            {{ 'products.product.waiting_for_stock' | t }}
+            {{ 'products.product.in_stock_label' | t }}
           {%- endif -%}
         </span>
       </span>
     </li>
-  {%- endif -%}
-</ul>
+    {%- if block.settings.inventory_transfers_enable -%}
+      <li
+        data-incoming-inventory
+        class="sales-point{% unless show_incoming %} hide{% endunless %}">
+        <span class="icon-and-text">
+          <span class="icon icon--inventory"></span>
+          <span class="js-incoming-text">
+            {%- if current_variant.next_incoming_date -%}
+              {%- assign date = current_variant.next_incoming_date | date: format: 'date' -%}
+              {%- if current_variant.available -%}
+                {{ 'products.product.will_not_ship_until' | t: date: date }}
+              {%- else -%}
+                {{ 'products.product.will_be_in_stock_after' | t: date: date }}
+              {%- endif -%}
+            {%- else -%}
+              {{ 'products.product.waiting_for_stock' | t }}
+            {%- endif -%}
+          </span>
+        </span>
+      </li>
+    {%- endif -%}
+  </ul>
+</div>
 
 {%- assign variants_with_inventory_tracking = product.variants | where: 'inventory_management', 'shopify' -%}
 

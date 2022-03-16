@@ -5,7 +5,7 @@
   assign size_trigger = 'products.general.size_trigger' | t | downcase
   assign downcased_option = option.name | downcase
 
-  if downcased_option contains size_trigger and block.settings.size_chart
+  if downcased_option contains size_trigger and block.settings.size_chart != blank
     assign is_size = true
   endif
 -%}
@@ -21,14 +21,12 @@
     {%- if is_size -%}
       <span class="variant__label-info">
         &mdash;
-        {%- if block.settings.size_chart -%}
-          {%- render
-            'tool-tip-trigger',
-            title: size_chart_title,
-            content: block.settings.size_chart.content,
-            context: 'size-chart'
-          -%}
-        {%- endif -%}
+        {%- render
+          'tool-tip-trigger',
+          title: size_chart_title,
+          content: block.settings.size_chart.content,
+          context: 'size-chart'
+        -%}
       </span>
     {%- endif -%}
     {%- if is_color -%}

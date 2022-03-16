@@ -861,64 +861,78 @@ lazySizesConfig.expFactor = 4;
         return result;
       },
   
-      _getVariantFromOptions: function(selectedValues) {
-        var variants = this.variants;
-        var found = false;
-  
-        if (selectedValues.length !== variants[0].options.length) return null;
-  
-        variants.forEach(function(variant) {
-          var match = true;
-          var options = variant.options;
-  
-          selectedValues.forEach(function(option) {
-            if (match) {
-              match = (variant[option.index] === option.value);
-            }
-          });
-  
-          if (match) {
-            found = variant;
-          }
+      _getVariantFromOptions: function(lastSelectedOption) {
+        const currentlySelectedOptions = this._getCurrentOptions();
+        const variants = this.variants;
+        // 1. Find the variant that matches all current selected options + is available
+        const availableAndMatchAllSelected = variants.find(variant => {
+          return currentlySelectedOptions.every(({value, index}) => {
+            return variant[index] === value;
+          }) && variant.available;
         });
   
-        return found || null;
+        // 2. Find a variant that is available and matches last selected option
+        const availableAndMatchesLastSelected = lastSelectedOption && variants.find(variant => {
+          return variant[lastSelectedOption.index] === lastSelectedOption.value && variant.available
+        });
+  
+        // 3. Find a variant that matches the current selection but is not available (aka Sold Out)
+        const matchesAllSelected = variants.find(variant => {
+          return currentlySelectedOptions.every(({value, index}) => {
+            return variant[index] === value;
+          });
+        });
+  
+        // 4. Find a variant that matches the last selected option but is not available (aka Sold Out)
+        const anyMatchesLastSelected = lastSelectedOption && variants.find((variant) => {
+          return variant[lastSelectedOption.index] === lastSelectedOption.value
+        });
+  
+        return availableAndMatchAllSelected || availableAndMatchesLastSelected || matchesAllSelected || anyMatchesLastSelected || null;
       },
   
-      _onSelectChange: function(evt) {
-        var el = evt.srcElement
-        var type = el.getAttribute('type');
+      _updateInputState: function (variant) {
+        return (input) => {
+          const index = input.dataset.index;
+          const value = input.value;
+          const type = input.getAttribute('type');
   
-        if (el.classList.contains('disabled')) {
-          this.container.querySelectorAll(this.singleOptionSelector).forEach(input => {
-            if (type === 'radio' || type === 'checkbox') {
-              if (input !== el) {
-                input.checked = false
+          if (type === 'radio' || type === 'checkbox') {
+            if (variant === null) {
+              if (el !== input) {
+                input.checked = false;
               }
+            } else {
+              input.checked = variant[index] === value
             }
-          })
+          }
+        }
+      },
+  
+      _onSelectChange: function({srcElement}) {
+        const optionSelectElements = this.container.querySelectorAll(this.singleOptionSelector);
+  
+        // Get the best variant based on the current selection + last selected element
+        const variant = this._getVariantFromOptions({
+          index: srcElement.dataset.index,
+          value: srcElement.value
+        });
+  
+        // Update DOM option input states based on the variant that was found
+        optionSelectElements.forEach(this._updateInputState(variant))
+  
+        // Make sure our currently selected values are up to date after updating state of DOM
+        const currentlySelectedValues = this.currentlySelectedValues = this._getCurrentOptions();
+  
+        const detail = {
+          variant,
+          currentlySelectedValues,
+          value: srcElement.value,
+          index: srcElement.parentElement.dataset.index
         }
   
-        this.currentlySelectedValues = this._getCurrentOptions();
-        var variant = this._getVariantFromOptions(this.currentlySelectedValues);
-  
-        this.container.dispatchEvent(new CustomEvent('variantChange', {
-          detail: {
-            variant: variant,
-            currentlySelectedValues: this.currentlySelectedValues,
-            value: evt.srcElement.value,
-            index: evt.srcElement.parentElement.dataset.index
-          }
-        }));
-  
-        document.dispatchEvent(new CustomEvent('variant:change', {
-          detail: {
-            variant: variant,
-            currentlySelectedValues: this.currentlySelectedValues,
-            value: evt.srcElement.value,
-            index: evt.srcElement.parentElement.dataset.index
-          }
-        }));
+        this.container.dispatchEvent(new CustomEvent('variantChange', {detail}));
+        document.dispatchEvent(new CustomEvent('variant:change', {detail}));
   
         if (!variant) {
           return;
@@ -1960,9 +1974,15 @@ lazySizesConfig.expFactor = 4;
       // If we are in a nested collapsible element like the mobile nav,
       // also set the parent element's height
       if (parentCollapsibleEl) {
+        var parentHeight = parentCollapsibleEl.style.height;
+  
+        if (isOpen && parentHeight === 'auto') {
+          childHeight = 0; // Set childHeight to 0 if parent is initially opened
+        }
+  
         var totalHeight = isOpen
-                          ? parentCollapsibleEl.offsetHeight - childHeight
-                          : height + parentCollapsibleEl.offsetHeight;
+                        ? parentCollapsibleEl.offsetHeight - childHeight
+                        : height + parentCollapsibleEl.offsetHeight;
   
         setTransitionHeight(parentCollapsibleEl, totalHeight, false, false);
       }
@@ -1984,6 +2004,7 @@ lazySizesConfig.expFactor = 4;
     function setTransitionHeight(container, height, isOpen, isAutoHeight) {
       container.classList.remove(classes.hide);
       theme.utils.prepareTransition(container, function() {
+  
         container.style.height = height+'px';
         if (isOpen) {
           container.classList.remove(classes.open);
@@ -3391,7 +3412,7 @@ lazySizesConfig.expFactor = 4;
       },
   
       // Create a list of all options. If any variant exists and is in stock with that option, it's considered available
-      createAvailableOptionsTree(variants, lastSelectedIndex, lastSelectedValue, currentlySelectedValues = []) {
+      createAvailableOptionsTree(variants, currentlySelectedValues, selectedVariant, lastSelectedIndex, lastSelectedValue) {
         // Reduce variant array into option availability tree
         return variants.reduce((options, variant) => {
   
@@ -3410,54 +3431,26 @@ lazySizesConfig.expFactor = 4;
               options[index].push(entry);
             }
   
-            if (currentlySelectedValues.length > 0) {
-              // If the user has selected a value
-                  if (numberOfOptionTypes === 1) {
-                    // If we're dealing with a single variant selector, enable options that are available
-                    entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                  } else if (numberOfOptionTypes === 2) {
-                    // If we're dealing with a double variant selector
-                    if (currentlySelectedValues.some(({value, index}) => variant[index] === value)) {
-                      // Only enable options that have at least one match (.some()) with an available variant
-                      entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                    }
-                  } else if (numberOfOptionTypes === 3) {
-                    // If we're dealing with a triple variant selector
-                    if (currentlySelectedValues.length === 1) {
-                      // If only one value has been selected
-                      if (index !== lastSelectedIndex) {
-                        // If we're checking an option that is not part of the group that was just selected
-                        if (currentlySelectedValues.every(({value, index}) => variant[index] === value)) {
-                          // Only enable options from variants that match the currently selected value
-                          entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                        }
-                      } else {
-                        // Other options in the same group of the one that was selected should remain unchanged
-                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                      }
+            // Check how many selected option values match a variant
+            const countVariantOptionsThatMatchCurrent = currentlySelectedValues.reduce((count, {value, index}) => {
+              return variant[index] === value ? count + 1 : count;
+            },0)
   
-                    } else if (currentlySelectedValues.length === 2) {
-                      // If only two values have been selected
-                      if (currentlySelectedValues.every(({value, index}) => variant[index] === value)) {
-                        // Only enable options from variants that match the 2 currently selected values
-                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                      }
-                    } else if (currentlySelectedValues.length === 3) {
-                      // If all three values have been selected
-                      // Check how many selected option values match a variant
-                      const variantOptionsThatMatchCurrent = currentlySelectedValues.reduce((count, {value, index}) => {
-                        return variant[index] === value ? count + 1 : count;
-                      },0)
+            // Only enable an option if an available variant matches all but one current selected value
+            if (countVariantOptionsThatMatchCurrent >= currentlySelectedValues.length - 1) {
+              entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
+            }
   
-                      // Only enable an option if an available variant matches any 2 currently selected values
-                      if (variantOptionsThatMatchCurrent >= 2) {
-                        entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
-                      }
-                    }
-                  }
-            } else {
-              // If the user has not selected a value yet, show all options that are available.
-              // An option will only initially appear disabled if it is out of stock/unavailable across all variants
+            // Make sure if a variant is non-existant or sold out, disable currently selected option
+            if (
+              (!selectedVariant || !selectedVariant.available)
+              && currentlySelectedValues.find((option) => option.value === entry.value && index === option.index)
+            ) {
+                entry.soldOut = true;
+            }
+  
+            // Option1 inputs should always remain enabled based on all available variants
+            if (index === 'option1') {
               entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
             }
           })
@@ -3471,7 +3464,8 @@ lazySizesConfig.expFactor = 4;
           this.disableVariantGroup(group);
         });
   
-        const initialOptions = this.createAvailableOptionsTree(this.variantsObject);
+        const currentlySelectedValues = this.currentVariantObject.options.map((value,index) => {return {value, index: `option${index+1}`}})
+        const initialOptions = this.createAvailableOptionsTree(this.variantsObject, currentlySelectedValues, this.currentVariantObject);
   
         for (var [option, values] of Object.entries(initialOptions)) {
           this.manageOptionState(option, values);
@@ -3480,12 +3474,12 @@ lazySizesConfig.expFactor = 4;
   
       setAvailability: function(evt) {
   
-        const {value: lastSelectedValue, index: lastSelectedIndex, currentlySelectedValues} = evt.detail;
+        const {value: lastSelectedValue, index: lastSelectedIndex, currentlySelectedValues, variant} = evt.detail;
   
         // Object to hold all options by value.
         // This will be what sets a button/dropdown as
         // sold out or unavailable (not a combo set as purchasable)
-        const valuesToManage = this.createAvailableOptionsTree(this.variantsObject, lastSelectedIndex, lastSelectedValue, currentlySelectedValues)
+        const valuesToManage = this.createAvailableOptionsTree(this.variantsObject, currentlySelectedValues, variant, lastSelectedIndex, lastSelectedValue)
   
         // Disable all options to start.
         // If coming from a variant change event, do not disable
@@ -3529,10 +3523,6 @@ lazySizesConfig.expFactor = 4;
           if (obj.soldOut) {
             input.classList.add(classes.disabled);
             label.classList.add(classes.disabled);
-  
-            if (value !== selectedValue) {
-              input.checked = false
-            }
           }
         }
       },

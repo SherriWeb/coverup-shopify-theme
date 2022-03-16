@@ -317,9 +317,7 @@
                       </div>
                     {%- endunless -%}
                   {%- when 'inventory_status' -%}
-                    <div class="product-block product-block--sales-point" {{ block.shopify_attributes }}>
-                      {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
-                    </div>
+                    {%- render 'product-inventory', product: product, current_variant: current_variant, block: block -%}
                   {%- when 'share' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
                       {%- render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product -%}
