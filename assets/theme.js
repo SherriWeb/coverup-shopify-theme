@@ -7896,4 +7896,22 @@ lazySizesConfig.expFactor = 4;
     })
   })
 
+  // Product type difference popup
+  $('#phone-case-popup-btn').click(function(e) {
+    e.stopPropagation();
+    $('#phone-case-popup').addClass('active');
+  });
+
+
+  $(window).click(function() {
+    if($('#phone-case-popup').hasClass('active')) {
+      console.log('click')
+      $('#phone-case-popup').removeClass('active');
+    }
+  });
+
+  $('#phone-case-popup .phone-case-popup__close').click(function() {
+    $('#phone-case-popup').removeClass('active');
+  });
+
 })();

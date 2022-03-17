@@ -105,3 +105,49 @@
   {% endunless %}
 
 {% endif %}
+
+{% comment %}
+  Snap vs Explorer for Cases
+  Soon to have Skin vs Case for macbooks
+{% endcomment %}
+
+{% for tag in product.tags %}
+{% if tag contains 'colour' %}
+  {% assign t = tag %}<br>
+{% endif %}
+{% endfor %}
+
+{% assign product_collection = product.title | split: '—' | first | handleize %}
+{% paginate collection.products by 1000 %}
+  {% for p in collections[product_collection].products %}
+
+    {% if p.tags contains t and p.tags contains 'casetype_Snap Case' %}
+      {% capture snap_case %}
+        <a class="product-type__btn {% if p.id == product.id %}active{% endif %}" href="{{p.url}}">Snap</a>
+      {% endcapture %}
+    {% endif %}
+
+    {% if p.tags contains t and p.tags contains 'casetype_Explorer Case'%}
+      {% capture explorer_case %}
+        <a class="product-type__btn {% if p.id == product.id %}active{% endif %}" href="{{p.url}}">Explorer</a>
+      {% endcapture %}
+    {% endif %}
+
+    {% endfor %}
+{% endpaginate %}
+
+{% if snap_case != blank and explorer_case != blank %}
+  <div class="product-type__label-ctn">
+    <span class="product-type__label">TYPE:</span><span class="product-type__popup-btn" id="phone-case-popup-btn">What's the difference?</span>
+    <div id="phone-case-popup">
+      <span class="phone-case-popup__close"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg></span>
+      <span class="phone-case-popup__label">Snap</span>
+      <p class="phone-case-popup__description">Snap on phone case. Easy to install and remove.</p>
+      <span class="phone-case-popup__label">Explorer</span>
+      <p class="phone-case-popup__description">Full phone bumber case. Easy to install and remove.</p>
+    </div>
+  </div>
+  <div class="product-type">
+    {{snap_case}} {{explorer_case}}
+  </div>
+{% endif %}
