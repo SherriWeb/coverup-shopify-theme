@@ -87,8 +87,8 @@
           "1524770292306": {
             "type": "announcement",
             "settings": {
-              "text": "Free shipping",
-              "link_text": "On all orders over $100",
+              "text": "",
+              "link_text": "Free shipping On all orders over $100",
               "link": ""
             }
           },
