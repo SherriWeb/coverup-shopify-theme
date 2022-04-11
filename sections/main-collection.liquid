@@ -217,8 +217,51 @@
           }
         ],
         "limit": 1
+      },
+      {
+        "type": "cta_block",
+        "name": "CTA block",
+        "settings": [
+          {
+            "type": "number",
+            "id": "placement",
+            "label": "Block placement",
+            "default": 1,
+            "info": "Placement occurs before the nth block. E.g. 6th will appear as the 5th block"
+          },
+          {
+            "type": "select",
+            "id": "type",
+            "label": "Type",
+            "options": [
+              {
+                "value": "gift_card",
+                "label": "Gift Card"
+              },
+              {
+                "value": "textarea",
+                "label": "Text"
+              }
+            ],
+            "default": "gift_card"
+          },
+          {
+            "type": "header",
+            "content": "Used for Type: 'Text' only",
+            "info": "leave blank if not using Text"
+          },
+          {
+            "type": "text",
+            "id": "header",
+            "label": "Text header"
+          },
+          {
+            "type": "richtext",
+            "id": "richtext",
+            "label": "Text content"
+          }
+        ]
       }
     ]
-
   }
 {% endschema %}

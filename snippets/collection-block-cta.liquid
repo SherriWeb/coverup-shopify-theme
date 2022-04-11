@@ -1,0 +1,44 @@
+{%- liquid
+  unless per_row
+    assign per_row = 4
+  endunless
+
+  case per_row
+    when 1
+      assign grid_item_width = ''
+    when 2
+      assign grid_item_width = 'medium-up--one-half'
+    when 3
+      assign grid_item_width = 'small--one-half medium-up--one-third'
+    when 4
+      assign grid_item_width = 'small--one-half medium-up--one-quarter'
+    when 5
+      assign grid_item_width = 'small--one-half medium-up--one-fifth'
+    when 6
+      assign grid_item_width = 'small--one-half medium-up--one-sixth'
+  endcase
+
+  assign preview_image = 'https://cdn.shopify.com/s/files/1/0783/1989/files/card-fd4b15ddcc3d3505fee3c54f36da76696244c344ddb6d22558b08bb8cf0cf9f9_1x1.jpg?v=1649688615'
+  assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+-%}
+
+<div class="grid__item grid-product {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
+  <div class="grid-product__content">
+    {% if type == 'gift_card' %}
+      <a class="grid-product__gift-card" href="/products/gift-card">
+        <div class="grid-product__image-mask">
+          <img class="lazyload" src="{{ 'gift-card/card.jpg' | shopify_asset_url }}" alt="Gift card illustration">
+        </div>
+        <span class="grid-product__title--body">GIFT CARD</span>
+      </a>
+    {% endif %}
+
+    {% if type == 'textarea' %}
+      <div class="grid-product__text">
+        {% if header != blank %}<p>{{ header }}</p>{% endif %}
+        {% if richtext != blank %}{{ richtext }}{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
