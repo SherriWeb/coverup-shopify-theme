@@ -19,7 +19,7 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
     {% if forloop.first %}
       {% assign model = title_part %}
     {% else %}
-      {% capture parts %}{{ parts }}<span>{{ title_part }}</span>{% endcapture %}
+      {% capture parts %}<span>{{ title_part }}</span>{% endcapture %}
     {% endif %}
   {% endfor %}
 {% else %}

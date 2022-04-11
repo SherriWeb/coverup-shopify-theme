@@ -163,11 +163,27 @@ Arguments
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">
+          {% if product.title contains '—' %}
+            {% assign title_parts = product.title | split: '—' %}
+            {% for title_part in title_parts %}
+              {% if forloop.first %}
+                {% assign model = title_part %}
+              {% else %}
+                {% assign part = title_part %}
+              {% endif %}
+            {% endfor %}
+            {{ part }}<br>
+            {{ model }}
+          {% else %}
+            {{ title }}
+          {% endif %}
+        </div>
         {%- if settings.vendor_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
         {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+        <div>{{ product.variants.first.options.first }}</div>
         <div class="grid-product__price">
           {%- if on_sale -%}
             <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
