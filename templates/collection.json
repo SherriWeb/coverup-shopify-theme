@@ -24,11 +24,31 @@
             "rows_per_page": 7,
             "mobile_flush_grid": false
           }
+        },
+        "0174d4bf-7282-4a96-b389-7bdc524544f2": {
+          "type": "cta_block",
+          "settings": {
+            "placement": 8,
+            "type": "gift_card",
+            "header": "",
+            "richtext": ""
+          }
+        },
+        "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
+          "type": "cta_block",
+          "settings": {
+            "placement": 11,
+            "type": "textarea",
+            "header": "",
+            "richtext": "<p>Free Express Shipping<\/p>"
+          }
         }
       },
       "block_order": [
         "fce316bc-f0a7-4282-a829-450be5dee234",
-        "product_grid"
+        "product_grid",
+        "0174d4bf-7282-4a96-b389-7bdc524544f2",
+        "10ab31a1-d712-4924-afb6-ccc97fced9e0"
       ],
       "settings": {
         "enable_sidebar": true,
