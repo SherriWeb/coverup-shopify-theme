@@ -38,6 +38,11 @@
             "surface_pickup_enable": true
           }
         },
+        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4": {
+          "type": "icon_tab",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -81,6 +86,7 @@
         "417f144b-8c9e-4928-b951-ad141f6fbb3f",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "buy_buttons",
+        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
         "description",
         "70383448-357a-46d5-8284-1f7916363275",
         "92ff90b1-1820-45f9-a4c7-afc30b09812c",
