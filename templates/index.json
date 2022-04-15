@@ -157,20 +157,21 @@
         "1650019496e4bd5e9f-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "",
+            "subheading": "BESTSELLERS",
             "heading": "iPhone 13 Cases",
             "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
+            "cta_text1": "SHOP IPHONE 13 CASES →",
             "cta_link1": "",
             "cta_text2": "",
             "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/iphone-12-lifestyle.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
+            "color_accent": "#f8f7f5",
             "boxed": false,
             "framed": false
           }
@@ -181,7 +182,7 @@
             "subheading": "NEW ARRIVAL",
             "heading": "Leather DeskPads",
             "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "SHOP DESKPADS",
+            "cta_text1": "SHOP DESKPADS →",
             "cta_link1": "",
             "cta_text2": "",
             "cta_link2": "",
@@ -213,7 +214,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Explore Our Bestsellers",
-        "home_featured_products": "macbook",
+        "home_featured_products": "workspace",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
