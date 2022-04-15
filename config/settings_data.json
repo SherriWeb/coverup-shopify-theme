@@ -141,15 +141,6 @@
               "container_width": 25
             }
           },
-          "1494292487693": {
-            "type": "newsletter",
-            "settings": {
-              "show_footer_title": true,
-              "title": "Sign up and save",
-              "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "container_width": 33
-            }
-          },
           "21c5ef60-96b3-4ece-8912-1e4f275811b4": {
             "type": "menu",
             "settings": {
@@ -157,13 +148,31 @@
               "menu": "footer",
               "container_width": 25
             }
+          },
+          "a6fc2193-a383-453c-8a39-ea69b2c10dc6": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "footer",
+              "container_width": 25
+            }
+          },
+          "471b88db-8add-43a2-8ccb-a06386976c6f": {
+            "type": "newsletter",
+            "settings": {
+              "show_footer_title": true,
+              "title": "Sign up and save",
+              "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+              "container_width": 25
+            }
           }
         },
         "block_order": [
           "1494301487048",
           "1494301487049",
-          "1494292487693",
-          "21c5ef60-96b3-4ece-8912-1e4f275811b4"
+          "21c5ef60-96b3-4ece-8912-1e4f275811b4",
+          "a6fc2193-a383-453c-8a39-ea69b2c10dc6",
+          "471b88db-8add-43a2-8ccb-a06386976c6f"
         ],
         "settings": {
           "show_locale_selector": true,
