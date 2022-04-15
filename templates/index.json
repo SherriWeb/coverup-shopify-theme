@@ -244,7 +244,7 @@
             "image_width": 650,
             "title": "Wood",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Discover Wood",
+            "button_label": "Discover Wood →",
             "button_link": ""
           }
         },
@@ -255,7 +255,7 @@
             "image_width": 650,
             "title": "Stone",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "button_label": "Optional button →",
             "button_link": ""
           }
         },
