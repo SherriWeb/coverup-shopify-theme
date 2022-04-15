@@ -208,52 +208,12 @@
         "space_below": false
       }
     },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "featured-collections-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "woodback",
-            "title": "Wood",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "shell",
-            "title": "Shell",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "stone",
-            "title": "Stone",
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collections-0",
-        "featured-collections-1",
-        "featured-collections-2"
-      ],
-      "settings": {
-        "title": "Real Natural Materials",
-        "divider": false,
-        "per_row": 3,
-        "enable_gutter": false
-      }
-    },
     "1646063488f4c47468": {
       "type": "featured-collection",
       "settings": {
-        "title": "Macbook Skins",
+        "title": "Explore Our Bestsellers",
         "home_featured_products": "macbook",
-        "per_row": 5,
+        "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
         "view_all": true,
@@ -492,7 +452,6 @@
     "slideshow",
     "165002041338dc7212",
     "165001949644c5bce4",
-    "featured-collections",
     "1646063488f4c47468",
     "featured-collection",
     "16500191686c0fa327",
