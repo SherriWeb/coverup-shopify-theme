@@ -129,6 +129,7 @@
           "1494301487048": {
             "type": "logo_social",
             "settings": {
+              "logo": "shopify:\/\/shop_images\/footer-logo.png",
               "desktop_logo_height": 50,
               "container_width": 95
             }
@@ -138,7 +139,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "footer",
-              "container_width": 25
+              "container_width": 20
             }
           },
           "21c5ef60-96b3-4ece-8912-1e4f275811b4": {
@@ -146,7 +147,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "footer",
-              "container_width": 25
+              "container_width": 20
             }
           },
           "a6fc2193-a383-453c-8a39-ea69b2c10dc6": {
@@ -154,7 +155,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "footer",
-              "container_width": 25
+              "container_width": 20
             }
           },
           "471b88db-8add-43a2-8ccb-a06386976c6f": {
@@ -163,7 +164,7 @@
               "show_footer_title": true,
               "title": "We only give discounts to people on our mailing list.",
               "text": "",
-              "container_width": 25
+              "container_width": 20
             }
           }
         },
