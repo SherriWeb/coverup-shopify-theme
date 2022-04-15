@@ -137,7 +137,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from planet-friendly natural materials. Whether it be wood, stone or wool felt, every one of our products encompasses the individuality and uniqueness that can only be found in nature.<\/p><p>Get Started →<\/p>"
+            "text": "<p>We craft one-of-a-kind tech accessories from planet-friendly natural materials. Whether it be wood, stone or wool felt, every one of our products encompasses the individuality and uniqueness that can only be found in nature.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
           }
         }
       },
@@ -351,7 +351,7 @@
       "settings": {
         "image_width": 700,
         "subtitle": "",
-        "title": "Image with text",
+        "title": "Made in Wales",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
         "button_label": "",
         "button_link": "",
