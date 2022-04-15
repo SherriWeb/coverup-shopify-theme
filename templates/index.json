@@ -157,12 +157,12 @@
         "1650019496e4bd5e9f-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
+            "subheading": "",
+            "heading": "iPhone 13 Cases",
             "textarea": "Include the smaller details of your promotion in text below the title.",
             "cta_text1": "Shop This",
             "cta_link1": "",
-            "cta_text2": "Shop All",
+            "cta_text2": "",
             "cta_link2": "",
             "video_url": "",
             "width": "50",
@@ -178,12 +178,12 @@
         "1650019496e4bd5e9f-1": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
+            "subheading": "NEW ARRIVAL",
+            "heading": "Leather DeskPads",
             "textarea": "Include the smaller details of your promotion in text below the title.",
             "cta_text1": "Shop This",
             "cta_link1": "",
-            "cta_text2": "Shop All",
+            "cta_text2": "",
             "cta_link2": "",
             "video_url": "",
             "width": "50",
@@ -223,7 +223,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Phone Cases",
+        "title": "What's New",
         "home_featured_products": "iphone-12",
         "per_row": 5,
         "rows": 1,
