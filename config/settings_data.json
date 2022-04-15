@@ -161,8 +161,8 @@
             "type": "newsletter",
             "settings": {
               "show_footer_title": true,
-              "title": "Sign up and save",
-              "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
+              "title": "We only give discounts to people on our mailing list.",
+              "text": "",
               "container_width": 25
             }
           }

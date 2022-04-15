@@ -215,6 +215,37 @@
         "blog_image_size": "wide",
         "divider": false
       }
+    },
+    "1650016262d5ad7cd2": {
+      "type": "newsletter",
+      "blocks": {
+        "1650016262de59e4ae-0": {
+          "type": "title",
+          "settings": {
+            "title": "Hello, Nature Lover"
+          }
+        },
+        "1650016262de59e4ae-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know about all things Cover-Up — think special releases, first access to limited editions and sale events. Yup, all the good stuff. Put your name on the list here.<\/p>"
+          }
+        },
+        "1650016262de59e4ae-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1650016262de59e4ae-0",
+        "1650016262de59e4ae-1",
+        "1650016262de59e4ae-2"
+      ],
+      "settings": {
+        "color_background": "#f8f7f5",
+        "color_text": "#2a3a44"
+      }
     }
   },
   "order": [
@@ -224,6 +255,7 @@
     "1646063488f4c47468",
     "featured-collection",
     "background-image-text",
-    "blog-posts"
+    "blog-posts",
+    "1650016262d5ad7cd2"
   ]
 }
