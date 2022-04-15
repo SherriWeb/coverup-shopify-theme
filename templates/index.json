@@ -124,6 +124,33 @@
         "autoplay_speed": 7
       }
     },
+    "165002041338dc7212": {
+      "type": "rich-text",
+      "blocks": {
+        "16500204132bb4ba4d-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Made From Nature, For Nature"
+          }
+        },
+        "16500204132bb4ba4d-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they're our best chance for a sustainable future.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16500204132bb4ba4d-0",
+        "16500204132bb4ba4d-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "165001949644c5bce4": {
       "type": "promo-grid",
       "blocks": {
@@ -177,8 +204,8 @@
       "settings": {
         "full_width": false,
         "gutter_size": 20,
-        "space_above": true,
-        "space_below": true
+        "space_above": false,
+        "space_below": false
       }
     },
     "featured-collections": {
@@ -463,6 +490,7 @@
   "order": [
     "164995542281f6ff3c",
     "slideshow",
+    "165002041338dc7212",
     "165001949644c5bce4",
     "featured-collections",
     "1646063488f4c47468",
