@@ -28,12 +28,16 @@
               <div class="grid__item grid-product {{ grid_item_width }} grid__item--no-padding" data-aos="row-of-5">
                 <div class="grid-product__content collection-shortcuts__item">
                   <a href="{{ collections[block.settings.collection].url }}" class="grid-product__link">
-                    {% paginate collections[block.settings.collection].products by 1 %}
-                      {% for product in collections[block.settings.collection].products %}
-                        {% assign first_product = product.images[0] %}
-                      {% endfor %}
-                    {% endpaginate %}
-                    <div class="collection-shortcuts__circle" style="background-image: url({{ first_product | img_url: '100x100' }})">
+                    {% if block.settings.image == blank %}
+                      {% paginate collections[block.settings.collection].products by 1 %}
+                        {% for product in collections[block.settings.collection].products %}
+                          {% assign product_image = product.images[0] %}
+                        {% endfor %}
+                      {% endpaginate %}
+                    {% else %}
+                      {% assign product_image = block.settings.image %}
+                    {% endif %}
+                    <div class="collection-shortcuts__circle {{product_image}}" style="background-image: url({{ product_image | img_url: '100x100' }})">
                     </div>
                     <p class="collection-shortcuts__title">{{ collections[block.settings.collection].title }}</p>
                   </a>
@@ -62,6 +66,11 @@
             "type": "collection",
             "id": "collection",
             "label": "Collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
           }
         ]
       }
