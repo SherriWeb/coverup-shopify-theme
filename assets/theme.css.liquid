@@ -1479,7 +1479,7 @@ pre{
 
 .label,label:not(.variant__button-label):not(.text-label){
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
 }
 
@@ -1549,13 +1549,13 @@ label{
 
 .h4,h4{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
 }
 
 .h5,.h6,h5,h6{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
   margin-bottom:10px
 }
@@ -1569,7 +1569,7 @@ label{
 
 .subheading{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
 }
 
 .text-spacing,.text-spacing.rte:last-child{
@@ -1606,7 +1606,7 @@ label{
 
 .ajaxcart__subtotal{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
 }
 
@@ -1771,7 +1771,7 @@ button[disabled],html input[disabled]{
   font-size:max(calc(var(--typeBaseSize) - 4px), 13px);
   font-weight:700;
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
 
   display:inline-block;
   padding:11px 20px;
@@ -2267,7 +2267,7 @@ button[disabled],html input[disabled]{
 
 .collapsible-trigger-btn{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
   display:block;
   width:100%;
@@ -6983,7 +6983,7 @@ input[type=image]{
 
 .hero__top-subtitle{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:1.1em;
   margin-bottom:5px;
 }
@@ -7857,7 +7857,7 @@ html[dir=rtl] .grid-product__content{
 [data-type_product_capitalize=true] .grid-product__title{
     text-transform:uppercase;
     font-size:calc(var(--typeBaseSize) - 2px);
-    letter-spacing:0.2em
+    letter-spacing:0.1em
   }
 
 @media only screen and (max-width:768px){
@@ -7973,7 +7973,7 @@ html[dir=rtl] .grid-product__content{
 
 .grid-product__vendor{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
   margin-top:5px;
   opacity:0.65;
@@ -8451,7 +8451,7 @@ html[dir=rtl] .grid-product__content{
 [data-type_product_capitalize=true] .collection-item__title span{
       text-transform:uppercase;
       font-size:0.8em;
-      letter-spacing:0.2em;
+      letter-spacing:0.1em;
     }
 
 .collection-item--below .collection-item__title{
@@ -8976,7 +8976,7 @@ html[dir=rtl] .background-media-text__text{
 .testimonial-stars{
   display:block;
   font-size:16px;
-  letter-spacing:0.2em;
+  letter-spacing:0.1em;
   margin-bottom:10px
 }
 
@@ -9146,7 +9146,7 @@ html[dir=rtl] .background-media-text__text{
   font-weight:700;
   display:block;
   text-transform:uppercase;
-  letter-spacing:0.2em;
+  letter-spacing:0.1em;
   font-size:0.9em;
 }
 
@@ -9706,7 +9706,7 @@ html[dir=rtl] .background-media-text__text{
 
 .type-advanced .rte--em,.type-product .rte--em,.type-sale_collection .rte--em{
     text-transform:uppercase;
-    letter-spacing:0.3em;
+    letter-spacing:0.1em;
     font-size:0.9375em;
     line-height:1.2;
   }
@@ -10347,7 +10347,7 @@ html[dir=rtl] .product-single__meta .rte{
 
 .product-single__vendor{
   text-transform:uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.1em;
   font-size:0.8em;
   margin-bottom:7.5px;
 }
@@ -11227,7 +11227,7 @@ html[dir=rtl] .product-single__meta .rte{
   display:block;
   padding-top:4px;
   text-transform:uppercase;
-  letter-spacing:.2em;
+  letter-spacing:.1em;
   margin-top:-10px
 }
 
@@ -11699,6 +11699,17 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
   }
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.collection-shortcuts .grid-overflow-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.collection-shortcuts .grid-overflow-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .grid__item--no-padding {
   padding-left: 0;
   width: 30vw !important;
@@ -11736,4 +11747,75 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
 
 .grid__item--height {
   height: 160px;
+}
+
+/* Featured collection slider */
+
+.slider--desktop.grid-overflow-wrapper{
+  overflow:hidden;
+  overflow-x:scroll;
+  -webkit-overflow-scrolling:touch
+}
+
+.slider--desktop.grid-overflow-wrapper .grid{
+  white-space:nowrap;
+  display:flex;
+}
+
+.slider--desktop.grid-overflow-wrapper .grid__item{
+  width:39vw;
+  flex:0 0 39vw;
+  display:inline-block;
+  float:none;
+  white-space:normal
+}
+@media screen and (min-width: 769px) {
+  .slider--desktop.grid-overflow-wrapper .grid__item{
+    width:19vw;
+    flex:0 0 19vw;
+  }
+}
+
+.slider--desktop.grid-overflow-wrapper .grid__item:first-child{
+  margin-left:17px;
+}
+
+.slider--desktop.grid-overflow-wrapper .grid__item:last-child:after{
+  content:"";
+  display:inline-block;
+  width:100%;
+  margin-right:17px;
+}
+
+.slider--desktop.grid-overflow-wrapper .grid__item--view-all{
+  align-self:center;
+}
+
+.slider--desktop.grid-overflow-wrapper .grid-product__price,.grid-overflow-wrapper .grid__item{
+  font-size:0.75rem;
+}
+
+.slider--desktop [data-aos=overflow__animation]{
+  transform:translateX(100vw);
+  transition:all 0.8s cubic-bezier(.25,.46,.45,.94)
+}
+
+.slider--desktop [data-aos=overflow__animation].aos-animate{
+  transform:translateX(0);
+}
+
+.slider--desktop [data-disable-animations=true] [data-aos=overflow__animation]{
+    transform:none;
+    transition:none
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider--desktop::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slider--desktop {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
