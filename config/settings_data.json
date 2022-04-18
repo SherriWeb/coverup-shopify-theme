@@ -34,7 +34,7 @@
     "type_base_spacing": "0",
     "type_base_size": 16,
     "type_base_line_height": 1.4,
-    "type_body_align_text": true,
+    "type_body_align_text": false,
     "type_navigation_style": "body",
     "type_navigation_size": 16,
     "type_navigation_capitalize": true,
@@ -81,7 +81,12 @@
             "settings": {
               "text": "",
               "link_text": "Free shipping On all orders over $100",
-              "link": ""
+              "link": "",
+              "alt_announcements": false,
+              "link_text_us": "30-day postage paid returns",
+              "link_text_eu": "30-day postage paid returns",
+              "link_text_can": "30-day postage paid returns",
+              "link_text_au": "30-day postage paid returns"
             }
           },
           "1524770296206": {
@@ -90,7 +95,12 @@
             "settings": {
               "text": "Hassle-free returns",
               "link_text": "30-day postage paid returns",
-              "link": ""
+              "link": "",
+              "alt_announcements": false,
+              "link_text_us": "30-day postage paid returns",
+              "link_text_eu": "30-day postage paid returns",
+              "link_text_can": "30-day postage paid returns",
+              "link_text_au": "30-day postage paid returns"
             }
           },
           "1524770014057": {
