@@ -211,32 +211,6 @@
         "space_below": false
       }
     },
-    "1646063488f4c47468": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Explore Our Bestsellers",
-        "home_featured_products": "workspace",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "What's New",
-        "home_featured_products": "iphone-12",
-        "per_row": 5,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "1650307321dadfee0e": {
       "type": "featured-collection-slider",
       "settings": {
@@ -477,8 +451,6 @@
     "slideshow",
     "165002041338dc7212",
     "165001949644c5bce4",
-    "1646063488f4c47468",
-    "featured-collection",
     "1650307321dadfee0e",
     "16503073265e5f5289",
     "16500191686c0fa327",
