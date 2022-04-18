@@ -275,7 +275,9 @@
       ],
       "settings": {
         "title": "Materials Matter",
-        "align_text": "center",
+        "sub_title": "Subheading",
+        "align_text_header": "center",
+        "align_text_columns": "left",
         "divider": false
       }
     },
