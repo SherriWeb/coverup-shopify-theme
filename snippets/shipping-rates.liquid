@@ -28,7 +28,7 @@
 
 <br/>Click on the drop-down to change country.
 
-<div id="rates" style="margin-top:20px"></div>
+<div id="rates" style="margin:20px 0 60px"></div>
 
 <script type="text/javascript">
   // Global variables
@@ -407,7 +407,6 @@
     // Get rates
     getRates();
 
-    console.log($('button[data-toggle="dropdown"]').parent())
     $('button[data-toggle="dropdown"]').click(function() {
       $('button[data-toggle="dropdown"]').parent().toggleClass('open')
     })
