@@ -372,24 +372,40 @@
         "1650019400c4aec4fd-0": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Inspired_By_Nature_notext.png",
+            "text": "Inspired by Nature",
             "link": ""
           }
         },
         "1650019400c4aec4fd-1": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext.png",
+            "text": "One-of-a-kind",
             "link": ""
           }
         },
         "1650019400c4aec4fd-2": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext.png",
+            "text": "Happiness Guarantee",
             "link": ""
           }
         },
         "1650019400c4aec4fd-3": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Fast_Shipping_notext.png",
+            "text": "Free shipping and returns*",
+            "link": ""
+          }
+        },
+        "21e4459c-a435-4a25-b6d5-8b755099cbfc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Made_in_Wales_notext.png",
+            "text": "Made in Wales",
             "link": ""
           }
         }
@@ -398,7 +414,8 @@
         "1650019400c4aec4fd-0",
         "1650019400c4aec4fd-1",
         "1650019400c4aec4fd-2",
-        "1650019400c4aec4fd-3"
+        "1650019400c4aec4fd-3",
+        "21e4459c-a435-4a25-b6d5-8b755099cbfc"
       ],
       "settings": {
         "title": "",
