@@ -4,7 +4,7 @@
   {%- if section.settings.title != blank -%}
     <div class="section-header text-{{ section.settings.align_text_header }}">
       <h2>{{ section.settings.title }}</h2>
-      <h4>{{ section.settings.sub_title }}</h4>
+      {% if section.settings.sub_title != blank %}<h4>{{ section.settings.sub_title }}</h4>{% endif %}
     </div>
   {%- endif -%}
 

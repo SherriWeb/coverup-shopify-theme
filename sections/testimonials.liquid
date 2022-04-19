@@ -15,6 +15,7 @@
     <div class="page-width">
       <div class="section-header">
         <h2>{{ section.settings.title | escape }}</h2>
+        {% if section.settings.sub_title != blank %}<h4>{{ section.settings.sub_title }}</h4>{% endif%}
       </div>
     </div>
   {%- endif -%}
@@ -33,6 +34,21 @@
             data-aos="row-of-{{ section.blocks.size }}"
             {{ block.shopify_attributes }}>
             <blockquote class="testimonials-slider__text">
+              {% assign product_image = block.settings.product.images[0] %}
+              <a href="{{ block.settings.product.url }}" class="testimonail-image" style="display: block;">
+                <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: product_image.aspect_ratio }}%;">
+                  {%- assign img_url = product_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <img class="lazyload"
+                      data-src="{{ img_url }}"
+                      data-widths="[180, 360, 540, 720]"
+                      data-aspectratio="{{ product_image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ product_image.alt }}">
+                  <noscript>
+                    <img class="lazyloaded" src="{{ product_image | img_url: '400x' }}" alt="{{ product_image.alt }}">
+                  </noscript>
+                </div>
+              </a>
               {%- if block.settings.icon == 'quote' -%}
                 <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z" fill="#000" fill-rule="evenodd"/></svg></span>
               {%- elsif block.settings.icon == '5-stars' -%}
@@ -48,7 +64,11 @@
               {%- endif -%}
 
               {%- if block.settings.testimonial != blank -%}
-                <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
+                <div class="rte-setting text-spacing rte--link">
+                  <a href="{{ block.settings.product.url }}" >
+                    {{ block.settings.testimonial }}
+                  </a>
+                </div>
               {%- endif -%}
 
               {%- if block.settings.image != blank -%}
@@ -69,10 +89,14 @@
               {%- endif -%}
 
               {%- if block.settings.author != blank -%}
-                <cite>{{ block.settings.author | escape }}</cite>
+                <a href="{{ block.settings.product.url }}" >
+                  <cite>{{ block.settings.author | escape }}</cite>
+                </a>
               {%- endif -%}
               {%- if block.settings.author_info != blank -%}
-                <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
+                <a href="{{ block.settings.product.url }}" >
+                  <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
+                </a>
               {%- endif -%}
             </blockquote>
           </div>
@@ -93,6 +117,11 @@
         "id": "title",
         "label": "Heading",
         "default": "Testimonials"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Heading"
       },
       {
         "type": "select",
@@ -139,6 +168,11 @@
         "type": "testimonial",
         "name": "Testimonial",
         "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
           {
             "type": "select",
             "id": "icon",
