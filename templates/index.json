@@ -266,12 +266,24 @@
             "button_label": "Optional button →",
             "button_link": ""
           }
+        },
+        "9d675772-c11e-4c11-aba6-dbd030f7215f": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button →",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "165001916815e068f7-0",
         "165001916815e068f7-1",
-        "165001916815e068f7-2"
+        "165001916815e068f7-2",
+        "9d675772-c11e-4c11-aba6-dbd030f7215f"
       ],
       "settings": {
         "title": "Materials Matter",
