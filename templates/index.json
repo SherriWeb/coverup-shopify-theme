@@ -211,6 +211,54 @@
         "space_below": false
       }
     },
+    "165039125633992a2c": {
+      "type": "logo-slider",
+      "blocks": {
+        "1650391256f173c8b3-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+          }
+        },
+        "1650391256f173c8b3-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+          }
+        },
+        "1650391256f173c8b3-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+          }
+        },
+        "1650391256f173c8b3-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+          }
+        },
+        "1650391256f173c8b3-4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+          }
+        }
+      },
+      "block_order": [
+        "1650391256f173c8b3-0",
+        "1650391256f173c8b3-1",
+        "1650391256f173c8b3-2",
+        "1650391256f173c8b3-3",
+        "1650391256f173c8b3-4"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "sub_title": "",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    },
     "1650307321dadfee0e": {
       "type": "featured-collection-slider",
       "settings": {
@@ -489,6 +537,7 @@
     "slideshow",
     "165002041338dc7212",
     "165001949644c5bce4",
+    "165039125633992a2c",
     "1650307321dadfee0e",
     "16503073265e5f5289",
     "16500191686c0fa327",
