@@ -287,6 +287,7 @@
         "1650018831c6ff4675-0": {
           "type": "testimonial",
           "settings": {
+            "product": "iphone-13-mini-woodback-black-explorer-case-walnut",
             "icon": "quote",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
@@ -296,6 +297,7 @@
         "1650018831c6ff4675-1": {
           "type": "testimonial",
           "settings": {
+            "product": "iphone-12-mini-stone-black-explorer-case-moonlight",
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
@@ -305,6 +307,7 @@
         "1650018831c6ff4675-2": {
           "type": "testimonial",
           "settings": {
+            "product": "macbook-12-stone-skin-rose",
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
@@ -314,6 +317,7 @@
         "1650018831c6ff4675-3": {
           "type": "testimonial",
           "settings": {
+            "product": "large-leather-desk-pad-black",
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
@@ -323,6 +327,7 @@
         "1650018831c6ff4675-4": {
           "type": "testimonial",
           "settings": {
+            "product": "samsung-galaxy-s20-ultra-woodback-explorer-case-walnut",
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
@@ -339,6 +344,7 @@
       ],
       "settings": {
         "title": "Hear It From Them",
+        "sub_title": "",
         "align_text": "center",
         "round_images": true,
         "color_background": "#f8f7f5",
