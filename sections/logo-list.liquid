@@ -27,7 +27,8 @@
                 data-widths="[180, 360, 540, 720]"
                 data-aspectratio="{{ block.settings.image.aspect_ratio }}"
                 data-sizes="auto"
-                alt="{{ block.settings.image.alt }}">
+                alt="{{ block.settings.image.alt }}"
+                style="height: {{ section.settings.height }}px; width: auto;">
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
@@ -69,6 +70,11 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "number",
+        "id": "height",
+        "label": "Image height"
       }
     ],
     "blocks": [
