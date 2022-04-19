@@ -1,0 +1,111 @@
+{%- style -%}
+  .testimonials-{{ section.id }} {
+    background-color: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
+  }
+{%- endstyle -%}
+
+<div
+  class="testimonials-section testimonials-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} testimonials-section--with-divider{% endif %} text-{{ section.settings.align_text }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="testimonials"
+  data-aos>
+  {%- if section.settings.title != blank -%}
+    <div class="page-width">
+      <div class="section-header" style="text-align: center;">
+        <h2>{{ section.settings.title | escape }}</h2>
+        {% if section.settings.sub_title != blank %}<h4>{{ section.settings.sub_title }}</h4>{% endif%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="slideshow-wrapper logo-slider">
+      <div
+        class="testimonials-slider"
+        id="Testimonials-{{ section.id }}"
+        data-dots="true"
+        data-count="{{ section.blocks.size }}">
+        {%- for block in section.blocks -%}
+          <div
+            class="testimonials-slide testimonials-slide--{{ block.id }}"
+            data-index="{{ forloop.index0 }}"
+            data-aos="row-of-{{ section.blocks.size }}"
+            {{ block.shopify_attributes }}>
+            <div class="logo-slider--img-ctn">
+              <img src="{{ block.settings.image | img_url: '300x300' }}"/>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Logo slider",
+    "class": "index-section",
+    "max_blocks": 9,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Testimonials"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Heading"
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#1c1d1d"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo slider",
+        "blocks": [
+          {
+            "type": "logo"
+          },
+          {
+            "type": "logo"
+          },
+          {
+            "type": "logo"
+          },
+          {
+            "type": "logo"
+          },
+          {
+            "type": "logo"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
