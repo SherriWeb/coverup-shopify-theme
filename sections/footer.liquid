@@ -65,6 +65,8 @@
                 render 'footer-newsletter', block: block
               when 'menu'
                 render 'footer-menu', block: block
+              when 'reviews'
+                render 'footer-reviews', block: block
             endcase
           -%}
         </div>
@@ -89,6 +91,15 @@
       </div>
     {%- endif -%}
 
+    {%- if section.settings.show_copyright -%}
+      <p class="footer__small-text">
+        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+        {%- if section.settings.copyright_text != blank -%}
+          {{ section.settings.copyright_text }}
+        {%- endif -%}
+      </p>
+    {%- endif -%}
+
     {%- if section.settings.show_payment_icons -%}
       {%- unless shop.enabled_payment_types == empty -%}
         <ul class="inline-list payment-icons footer__section">
@@ -101,15 +112,8 @@
       {%- endunless -%}
     {%- endif -%}
 
-    {%- if section.settings.show_copyright -%}
-      <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
-        {%- if section.settings.copyright_text != blank -%}
-          {{ section.settings.copyright_text }}
-        {%- endif -%}
-      </p>
-    {%- endif -%}
-    <p class="footer__small-text">{{ powered_by_link }}</p>
+
+    {% comment %}<p class="footer__small-text">{{ powered_by_link }}</p>{% endcomment %}
 
   </div>
 </footer>
@@ -192,9 +196,9 @@
             "type": "range",
             "id": "container_width",
             "label": "Column width",
-            "default": 25,
+            "default": 100,
             "min": 15,
-            "max": 95,
+            "max": 100,
             "unit": "%"
           }
         ]
@@ -292,6 +296,21 @@
             "label": "Text",
             "default": "<p>Add your own custom text here.</p>"
           },
+          {
+            "type": "range",
+            "id": "container_width",
+            "label": "Column width",
+            "default": 25,
+            "min": 15,
+            "max": 95,
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "type": "reviews",
+        "name": "Reviews",
+        "settings": [
           {
             "type": "range",
             "id": "container_width",

@@ -2,6 +2,8 @@
   {%- style -%}
     .footer__logo a {
       height: {{ block.settings.desktop_logo_height }}px;
+      width: max-content;
+      margin: 0 auto;
     }
   {%- endstyle -%}
   {%- assign footer_logo_size = block.settings.desktop_logo_height | prepend: 'x' -%}

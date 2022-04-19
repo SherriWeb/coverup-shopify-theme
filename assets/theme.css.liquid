@@ -3889,14 +3889,11 @@ form+.footer__social{
     background-image:url({{ "ico-select-footer.svg" | asset_url | split: '?' | first }});
   }
 
-[data-center-text=true] .payment-icons{
-    text-align:center
-}
-
 .payment-icons{
   -webkit-user-select:none;
           user-select:none;
-  cursor:default
+  cursor:default;
+  text-align: center;
 }
 
 .payment-icons li{
@@ -11890,3 +11887,12 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
   border-bottom: 2px solid currentColor;
   transition: width .5s ease;
 } */
+
+.footer__stars {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.footer__small-text a {
+  margin-left: 20px;
+}
