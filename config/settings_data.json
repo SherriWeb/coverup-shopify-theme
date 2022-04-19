@@ -136,14 +136,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1494301487048": {
-            "type": "logo_social",
-            "settings": {
-              "logo": "shopify:\/\/shop_images\/footer-logo.png",
-              "desktop_logo_height": 50,
-              "container_width": 95
-            }
-          },
           "1494301487049": {
             "type": "menu",
             "settings": {
@@ -168,6 +160,12 @@
               "container_width": 20
             }
           },
+          "2cb056f7-6e9a-4a5e-9cfe-b0e9289d5e00": {
+            "type": "reviews",
+            "settings": {
+              "container_width": 20
+            }
+          },
           "471b88db-8add-43a2-8ccb-a06386976c6f": {
             "type": "newsletter",
             "settings": {
@@ -176,14 +174,23 @@
               "text": "",
               "container_width": 20
             }
+          },
+          "1494301487048": {
+            "type": "logo_social",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/footer-logo.png",
+              "desktop_logo_height": 50,
+              "container_width": 95
+            }
           }
         },
         "block_order": [
-          "1494301487048",
           "1494301487049",
           "21c5ef60-96b3-4ece-8912-1e4f275811b4",
           "a6fc2193-a383-453c-8a39-ea69b2c10dc6",
-          "471b88db-8add-43a2-8ccb-a06386976c6f"
+          "2cb056f7-6e9a-4a5e-9cfe-b0e9289d5e00",
+          "471b88db-8add-43a2-8ccb-a06386976c6f",
+          "1494301487048"
         ],
         "settings": {
           "show_locale_selector": true,
@@ -191,7 +198,7 @@
           "show_currency_flags": false,
           "show_payment_icons": true,
           "show_copyright": true,
-          "copyright_text": ""
+          "copyright_text": "<a href=\"\/pages\/privacy-policy\">Privacy<\/a><a href=\"\/pages\/terms-of-use\">T & C <\/a><a href=\"\/pages\/cookie-policy\">Cookies<\/a>"
         }
       },
       "newsletter-popup": {
