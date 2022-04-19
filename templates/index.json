@@ -373,7 +373,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Inspired_By_Nature_notext.png",
-            "text": "Inspired by Nature",
+            "text": "Inspired by<br> Nature",
             "link": ""
           }
         },
@@ -389,7 +389,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext.png",
-            "text": "Happiness Guarantee",
+            "text": "Happiness<br> Guarantee",
             "link": ""
           }
         },
@@ -420,7 +420,8 @@
       "settings": {
         "title": "",
         "logo_opacity": 76,
-        "divider": false
+        "divider": false,
+        "height": 75
       }
     },
     "blog-posts": {
