@@ -31,7 +31,7 @@
           {%- else -%}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
-          {% if block.settings.text != blank %}<p>test</p>{% endif %}
+          {% if block.settings.text != blank %}<p>{{ block.settings.text }}</p>{% endif %}
           {%- if block.settings.link != blank -%}
             </a>
           {%- endif -%}
