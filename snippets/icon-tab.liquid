@@ -1,30 +1,21 @@
-{%- liquid
-  assign output_tab = false
-  if product.metafields.tab_icon.icon.value != blank
-    assign output_tab = true
-  endif
--%}
-
-{%- if output_tab -%}
-  <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
-    <button type="button"
-      class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height is-open" aria-controls="Product-content-{{ id }}"
-      aria-expanded="true">
-      Details
-      {%- render 'collapsible-icons' -%}
-    </button>
-    <div id="Product-content-{{ id }}"
-      class="collapsible-content collapsible-content--all is-open"
-      style="height: auto;">
-      <div class="collapsible-content__inner collapsible-content__icon-tabs-ctn rte">
-        {% for icon in product.metafields.tab_icon.icon.value %}
-          {% assign icon_url = icon | replace: " ", "_" | append: '_notext.png' %}
-          <div class="collapsible-content__icon-tabs">
-            <div class="collapsible-content__icon-img" style="background-image: url({{ icon_url | file_img_url: '300x300' }}"></div>
-            <span class="collapsible-content__icon-text">{{ icon }}</span>
-          </div>
-        {% endfor %}
-      </div>
+<div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
+  <button type="button"
+    class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height is-open" aria-controls="Product-content-{{ id }}"
+    aria-expanded="true">
+    Details
+    {%- render 'collapsible-icons' -%}
+  </button>
+  <div id="Product-content-{{ id }}"
+    class="collapsible-content collapsible-content--all is-open"
+    style="height: auto;">
+    <div class="collapsible-content__inner collapsible-content__icon-tabs-ctn rte">
+      {% for icon in product.metafields.tab_icon.icon.value %}
+        {% assign icon_url = icon | replace: " ", "_" | append: '_notext.png' %}
+        <div class="collapsible-content__icon-tabs">
+          <div class="collapsible-content__icon-img" style="background-image: url({{ icon_url | file_img_url: '300x300' }}"></div>
+          <span class="collapsible-content__icon-text">{{ icon }}</span>
+        </div>
+      {% endfor %}
     </div>
   </div>
-{%- endif -%}
+</div>
