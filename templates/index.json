@@ -181,10 +181,10 @@
           "type": "advanced",
           "settings": {
             "subheading": "NEW ARRIVAL",
-            "heading": "Leather DeskPads",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "SHOP DESKPADS →",
-            "cta_link1": "",
+            "heading": "Leather Desk Pads",
+            "textarea": "Give your workspace the ultimate upgrade",
+            "cta_text1": "SHOP DESK PADS →",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/desk-pads",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/medium-leather-tan-desk-mat-angle-two.jpg",
@@ -207,6 +207,85 @@
       "settings": {
         "full_width": false,
         "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    },
+    "16508937574f89e237": {
+      "type": "promo-grid",
+      "blocks": {
+        "165089375616e47a8e-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "165089375616e47a8e-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "ff59a1bd-d206-4f5d-b48a-2a9520973a80": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "165089375616e47a8e-0",
+        "165089375616e47a8e-1",
+        "ff59a1bd-d206-4f5d-b48a-2a9520973a80"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 10,
         "space_above": false,
         "space_below": false
       }
@@ -537,6 +616,7 @@
     "slideshow",
     "165002041338dc7212",
     "165001949644c5bce4",
+    "16508937574f89e237",
     "165039125633992a2c",
     "1650307321dadfee0e",
     "16503073265e5f5289",
