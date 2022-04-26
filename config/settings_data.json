@@ -140,7 +140,7 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "footer",
+              "menu": "footer-one",
               "container_width": 20
             }
           },
