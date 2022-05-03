@@ -391,7 +391,7 @@
             "image_width": 650,
             "title": "Leather",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button →",
+            "button_label": "Discover Leather →",
             "button_link": ""
           }
         },
@@ -499,7 +499,7 @@
         "image_width": 700,
         "subtitle": "",
         "title": "Made in Wales",
-        "text": "<p>We never wanted to join the corporate world (suits are just not us). So, each day from our little corner of the world that is Wales, our small but brilliant team design, make and ship the best products we know how. <\/p>",
+        "text": "<p>We never wanted to join the corporate world (suits are just not us). So, each day from our little corner of the world that is Wales our small but brilliant team design, make and ship the best products we know how. <\/p>",
         "button_label": "MORE ABOUT US →",
         "button_link": "https:\/\/www.cover-up.com\/pages\/about-us",
         "button_style": "primary",
