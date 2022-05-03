@@ -75,7 +75,7 @@ Snippet Arguments
         {%- for block in section.blocks -%}
           {% if block.type == 'cta_block' %}
             {%- if block.settings.placement == current_index -%}
-              {%- render 'collection-block-cta', type: block.settings.type, header: block.settings.header, richtext: block.settings.richtext  -%}
+              {%- render 'collection-block-cta', type: block.settings.type, header: block.settings.header, richtext: block.settings.richtext, image: block.settings.image  -%}
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}

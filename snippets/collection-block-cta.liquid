@@ -38,6 +38,7 @@
       <div class="grid-product__text">
         {% if header != blank %}<p>{{ header }}</p>{% endif %}
         {% if richtext != blank %}{{ richtext }}{% endif %}
+        {% if image != blank %}<img src="{{ image | img_url: "300x300" }}">{% endif %}
       </div>
     {% endif %}
   </div>
