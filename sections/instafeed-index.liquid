@@ -1,0 +1,27 @@
+<style>
+  #insta-feed > p {
+    margin-bottom: 40px;;
+  }
+</style>
+
+<div id="insta-feed" style="margin-bottom: 40px;"></div>
+
+<script>
+
+  setTimeout(() => {
+    let instaFeed = document.getElementById('insta-feed').children[0];
+    let instaFeedSubtitle = document.createElement('p');
+    instaFeedSubtitle.innerHTML = "Mention <b>@cover_up</b> in your caption with #naturallydifferent for a chance to be featured.";
+    instaFeed.parentNode.insertBefore(instaFeedSubtitle, instaFeed.nextSibling);
+    console.log('test')
+  }, 2500);
+</script>
+
+{% schema %}
+  {
+    "name": "Instafeed index",
+    "presets": [{
+      "name": "Instafeed index"
+    }]
+  }
+{% endschema %}
