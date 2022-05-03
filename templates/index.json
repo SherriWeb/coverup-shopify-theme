@@ -583,13 +583,9 @@
         "divider": false
       }
     },
-    "16515833591211fc1e": {
-      "type": "instafeed",
+    "16516079625b17dbc0": {
+      "type": "instafeed-index",
       "settings": {
-        "heading_font": "vollkorn_n4",
-        "heading_size": 27,
-        "feed_width": 100,
-        "html_area": "<p>Mention <b>@cover_up<\/b> in your caption with #naturallydifferent for a chance to be featured.<\/p>"
       }
     },
     "1650016262d5ad7cd2": {
@@ -638,7 +634,7 @@
     "16500195940989f8c7",
     "1650019400adc95739",
     "blog-posts",
-    "16515833591211fc1e",
+    "16516079625b17dbc0",
     "1650016262d5ad7cd2"
   ]
 }
