@@ -217,12 +217,12 @@
         "165089375616e47a8e-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
+            "subheading": "",
             "heading": "Real Stone Collection",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
+            "textarea": "Hand crafted from genuine slate with a unique natural style and an enticing texure.",
+            "cta_text1": "SHOP STONE COLLECTION →",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/stone",
+            "cta_text2": "",
             "cta_link2": "",
             "video_url": "",
             "width": "33",
