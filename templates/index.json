@@ -131,14 +131,14 @@
         "16500204132bb4ba4d-0": {
           "type": "heading",
           "settings": {
-            "title": "Made From Nature, For Nature"
+            "title": "Designed by Nature, Made by Cover-Up"
           }
         },
         "16500204132bb4ba4d-1": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from planet-friendly natural materials. Whether it be wood, stone or wool felt, every one of our products encompasses the individuality and uniqueness that can only be found in nature.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
+            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. Whether it be wood, stone or wool felt, each one of our products features a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
           }
         }
       },
@@ -217,12 +217,12 @@
         "165089375616e47a8e-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
+            "subheading": "",
+            "heading": "Real Stone Collection",
+            "textarea": "Hand crafted from genuine slate with a unique natural style and an enticing texure.",
+            "cta_text1": "SHOP STONE COLLECTION →",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/stone",
+            "cta_text2": "",
             "cta_link2": "",
             "video_url": "",
             "width": "33",
@@ -230,7 +230,7 @@
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
+            "color_accent": "#f4f2ee",
             "boxed": false,
             "framed": false
           }
@@ -259,20 +259,21 @@
         "ff59a1bd-d206-4f5d-b48a-2a9520973a80": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
+            "subheading": "",
+            "heading": "Wireless Chargers",
+            "textarea": "Our take on the perfect wireless charger - fast thin and one-of-a-kind.",
+            "cta_text1": "SHOP WIRELESS CHARGERS →",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/wireless-chargers",
+            "cta_text2": "",
             "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/Wireless-Charger-LS4-GreenAbalone.jpg",
             "video_url": "",
             "width": "33",
             "height": 500,
-            "text_size": 120,
+            "text_size": 100,
             "text_align": "vertical-center horizontal-center",
             "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
+            "color_accent": "#f8f7f5",
             "boxed": false,
             "framed": false
           }
@@ -387,10 +388,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
+            "image": "shopify:\/\/shop_images\/materials-matter-leather_66d9c4aa-60cd-405b-bac8-3e82674a1556.jpg",
+            "image_width": 430,
             "title": "Leather",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button →",
+            "text": "<p>We use premium Italian leather from <\/p>",
+            "button_label": "Discover Leather →",
             "button_link": ""
           }
         },
@@ -414,7 +416,7 @@
       ],
       "settings": {
         "title": "Materials Matter",
-        "sub_title": "Subheading",
+        "sub_title": "We use only the good stuff. Inspired by our surroundings, we naturally (sorry for the pun) choose to use materials like wood, stone and felt to make our products.",
         "align_text_header": "center",
         "align_text_columns": "left",
         "divider": false
@@ -493,12 +495,14 @@
     "16500195940989f8c7": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/made-in-wales-1.jpg",
+        "image2": "shopify:\/\/shop_images\/made-in-wales-2.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Made in Wales",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
+        "text": "<p>We never wanted to join the corporate world (suits are just not us). So, each day from our little corner of the world that is Wales our small but brilliant team design, make and ship the best products we know how. <\/p>",
+        "button_label": "MORE ABOUT US →",
+        "button_link": "https:\/\/www.cover-up.com\/pages\/about-us",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
@@ -579,6 +583,15 @@
         "divider": false
       }
     },
+    "16515833591211fc1e": {
+      "type": "instafeed",
+      "settings": {
+        "heading_font": "vollkorn_n4",
+        "heading_size": 27,
+        "feed_width": 100,
+        "html_area": "<p>Mention <b>@cover_up<\/b> in your caption with #naturallydifferent for a chance to be featured.<\/p>"
+      }
+    },
     "1650016262d5ad7cd2": {
       "type": "newsletter",
       "blocks": {
@@ -609,15 +622,6 @@
         "color_background": "#f8f7f5",
         "color_text": "#212a2f"
       }
-    },
-    "16515833591211fc1e": {
-      "type": "instafeed",
-      "settings": {
-        "heading_font": "vollkorn_n4",
-        "heading_size": 27,
-        "feed_width": 100,
-        "html_area": "<p>Mention <b>@cover_up<\/b> in your caption with #naturallydifferent for a chance to be featured.<\/p>"
-      }
     }
   },
   "order": [
@@ -634,7 +638,7 @@
     "16500195940989f8c7",
     "1650019400adc95739",
     "blog-posts",
-    "1650016262d5ad7cd2",
-    "16515833591211fc1e"
+    "16515833591211fc1e",
+    "1650016262d5ad7cd2"
   ]
 }
