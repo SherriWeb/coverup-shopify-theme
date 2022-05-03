@@ -1,0 +1,101 @@
+{% capture macbook_models %}{% for link in linklists.macbook-model-numbers.links %}{{ link.title }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
+{% capture macbook_models_title %}{% for link in linklists.macbook-model-numbers.links %}{{ link.object.title }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
+{% capture macbook_models_url %}{% for link in linklists.macbook-model-numbers.links %}{{ link.object.url }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
+{% capture macbook_models_image %}{% for link in linklists.macbook-model-numbers.links %}{% paginate collection 1 %}{% for product in collections[link.object.handle].products %}{{ product.images[0] | img_url: '300x300' }}{% unless forloop.last == true %}endimg{% endunless %}{% endfor %}{% endpaginate %}{% endfor %}{% endcapture %}
+
+{% assign product_title_handle = product.title | handle %}
+{% if product_title_handle contains 'macbook' %}
+  <a class="MacbookLookupTrigger-link" href="#js-macbook-lookup">
+    MacBook Size Guide
+  </a>
+{% endif %}
+
+{% if product_title_handle contains 'macbook' %}
+<div class="macbook-size-guide">
+  <div class="macbook-size-guide__popup">
+    <button type="button" class="macbook-size-guide__close">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+      <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t | json }}</span>
+    </button>
+    <h3>MacBook Size Guide</h3>
+    <p>Model number</p>
+    <input class="macbook-size-guide__input" type="text" placeholder="A1534">
+    <p style="margin: 20px 0;">Your model number is located on the bottom surface of your MacBook.</p>
+    <ul id="model-number-results"></ul>
+    <img src="https://cdn.shopify.com/s/files/1/0783/1989/t/41/assets/how-to-find-model-number_736x.jpg?v=11650413126597765470" class="macbook-size-guide__img"></img>
+  </div>
+</div>
+{% endif %}
+
+<script>
+  let macbookSizeTrigger = document.querySelector('.MacbookLookupTrigger-link');
+  let macbookSizePopup = document.querySelector('.macbook-size-guide');
+  let macbookSizeInput = document.querySelector('.macbook-size-guide__input');
+  let modelNumberResults = document.getElementById('model-number-results');
+  let popupCloseBtn = document.querySelector('.macbook-size-guide__close');
+
+  macbookSizeTrigger.addEventListener('click', function(){
+    macbookSizePopup.classList.add('active');
+  })
+
+  macbookSizePopup.addEventListener('click', function(e){
+    e.target.classList.remove('active');
+  })
+
+  popupCloseBtn.addEventListener('click', function(e){
+    macbookSizePopup.classList.remove('active');
+  })
+
+  let modelNumber = '{{ macbook_models }}'.split('=');
+  let modelGroup = modelNumber.map(m => m.replace(/,/g, ''));
+  let modelTitleArr = '{{ macbook_models_title }}'.split('=');
+  let modelUrlArr = '{{ macbook_models_url }}'.split('=');
+  let modelImageArr = '{{ macbook_models_image }}'.split('endimg');
+
+  let modelArr = modelGroup.map((e, i) => ({
+    model: modelGroup[i],
+    title: modelTitleArr[i],
+    url: modelUrlArr[i],
+    image: modelImageArr[i]
+  }));
+
+  console.log(modelArr);
+  console.log('{{macbook_models_handle}}');
+
+  macbookSizeInput.addEventListener("input", function (e) {
+    modelNumberResults.innerHTML = "";
+
+    if (e.target.value.length >= 3) {
+      let findModel = modelArr.filter(i => i.model.toLowerCase().includes(e.target.value.toLowerCase()));
+      console.log(findModel);
+
+      findModel.forEach(i => {
+        let itemCtn = document.createElement('li');
+        modelNumberResults.appendChild(itemCtn);
+        itemCtn.classList.add('model-number-results__item');
+
+        let product = document.createElement('a');
+        itemCtn.appendChild(product);
+        product.href = i.url;
+
+        let textCtn = document.createElement('div');
+        product.appendChild(textCtn);
+        textCtn.classList.add('model-number-results__item-text')
+
+        let title = document.createElement('p');
+        textCtn.appendChild(title);
+        title.innerHTML = i.title;
+
+        let model = document.createElement('p');
+        textCtn.appendChild(model);
+        model.innerHTML = i.model;
+
+        let image = document.createElement('div');
+        product.appendChild(image);
+        image.style.backgroundImage = `url('${i.image}')`;
+        image.classList.add('model-number-results__item-img')
+      });
+    }
+  });
+
+</script>

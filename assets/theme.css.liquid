@@ -11925,3 +11925,94 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
   align-items: center;
   justify-content: center;
 }
+
+/* Macbook Size Guide */
+.macbook-size-guide {
+  display: none;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  z-index: 10000;
+}
+
+.macbook-size-guide.active {
+  display: block;
+}
+
+.macbook-size-guide__popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px 20px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.macbook-size-guide__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+}
+
+.macbook-size-guide__close > svg {
+  height: 30px;
+  width: 30px;
+}
+
+#model-number-results {
+  margin: 0;
+  list-style: none;
+}
+
+.results__item {
+  padding: 0 10px;
+}
+
+.model-number-results__item > a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.model-number-results__item-img {
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+}
+
+.model-number-results__item-text {
+  text-align: left;
+}
+
+.model-number-results__item-text > p:first-of-type {
+  margin: 25px 0 0 10px;
+  font-weight: 600;
+}
+
+.model-number-results__item-text > p:nth-of-type(2) {
+  margin: 5px 0 10px 10px;
+}
+
+.macbook-size-guide__input {
+  text-align: center;
+}
+
+.macbook-size-guide__input::-webkit-input-placeholder {
+  text-align: center;
+}
+.macbook-size-guide__input:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+.macbook-size-guide__input::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+.macbook-size-guide__input:-ms-input-placeholder {
+  text-align: center;
+}
