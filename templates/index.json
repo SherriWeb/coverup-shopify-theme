@@ -138,7 +138,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from planet-friendly natural materials. Whether it be wood, stone or wool felt, every one of our products encompasses the individuality and uniqueness that can only be found in nature.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
+            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. Whether it be wood, stone or wool felt, every one of our products features a uniqueness that can only be found in nature.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
           }
         }
       },
@@ -500,8 +500,8 @@
         "subtitle": "",
         "title": "Made in Wales",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "Hello",
-        "button_link": "",
+        "button_label": "MORE ABOUT US →",
+        "button_link": "https:\/\/www.cover-up.com\/pages\/about-us",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
