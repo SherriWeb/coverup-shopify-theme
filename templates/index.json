@@ -614,9 +614,9 @@
       "type": "instafeed",
       "settings": {
         "heading_font": "vollkorn_n4",
-        "heading_size": 20,
+        "heading_size": 27,
         "feed_width": 100,
-        "html_area": ""
+        "html_area": "<p>We craft our products with care from planet-friendly natural materials, like sustainable FCS wood and merion wool because they're our best chance for a sustainable future<\/p>"
       }
     }
   },
