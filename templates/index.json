@@ -259,11 +259,11 @@
         "ff59a1bd-d206-4f5d-b48a-2a9520973a80": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
+            "subheading": "",
+            "heading": "Wireless Chargers",
             "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
+            "cta_text1": "SHOP WIRELESS CHARGERS →",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/wireless-chargers",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/Wireless-Charger-LS4-GreenAbalone.jpg",
