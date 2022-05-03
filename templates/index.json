@@ -415,7 +415,7 @@
       ],
       "settings": {
         "title": "Materials Matter",
-        "sub_title": "We use only the good stuff",
+        "sub_title": "We use only the good stuff. Inspired by our surroundings, we naturally (sorry for the pun) choose to use materials like wood, stone and felt to make our products.",
         "align_text_header": "center",
         "align_text_columns": "left",
         "divider": false
@@ -499,7 +499,7 @@
         "image_width": 700,
         "subtitle": "",
         "title": "Made in Wales",
-        "text": "<p>We never wanted to join the corporate world (suits are just not us), <\/p>",
+        "text": "<p>We never wanted to join the corporate world (suits are just not us). So, our small team of <\/p>",
         "button_label": "MORE ABOUT US →",
         "button_link": "https:\/\/www.cover-up.com\/pages\/about-us",
         "button_style": "primary",
