@@ -388,9 +388,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image_width": 650,
+            "image": "shopify:\/\/shop_images\/materials-matter-leather_66d9c4aa-60cd-405b-bac8-3e82674a1556.jpg",
+            "image_width": 430,
             "title": "Leather",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>We use premium Italian leather from <\/p>",
             "button_label": "Discover Leather →",
             "button_link": ""
           }
