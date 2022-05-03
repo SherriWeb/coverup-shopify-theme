@@ -494,11 +494,13 @@
     "16500195940989f8c7": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/made-in-wales-1.jpg",
+        "image2": "shopify:\/\/shop_images\/made-in-wales-2.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Made in Wales",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
+        "button_label": "Hello",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
