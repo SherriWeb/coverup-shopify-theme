@@ -609,6 +609,15 @@
         "color_background": "#f8f7f5",
         "color_text": "#212a2f"
       }
+    },
+    "16515833591211fc1e": {
+      "type": "instafeed",
+      "settings": {
+        "heading_font": "vollkorn_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
     }
   },
   "order": [
@@ -625,6 +634,7 @@
     "16500195940989f8c7",
     "1650019400adc95739",
     "blog-posts",
-    "1650016262d5ad7cd2"
+    "1650016262d5ad7cd2",
+    "16515833591211fc1e"
   ]
 }
