@@ -391,7 +391,7 @@
             "image": "shopify:\/\/shop_images\/materials-matter-leather_66d9c4aa-60cd-405b-bac8-3e82674a1556.jpg",
             "image_width": 430,
             "title": "Leather",
-            "text": "<p>We use premium Italian leather from <\/p>",
+            "text": "<p>The real deal. Italian, full grain and vegetable tanned. Our leather is buttery soft, durable and has a natural look and feel. The more you use it, the better it gets.<\/p>",
             "button_label": "Discover Leather →",
             "button_link": ""
           }
@@ -418,7 +418,7 @@
         "title": "Materials Matter",
         "sub_title": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and environment too.",
         "align_text_header": "center",
-        "align_text_columns": "center",
+        "align_text_columns": "left",
         "divider": false
       }
     },
