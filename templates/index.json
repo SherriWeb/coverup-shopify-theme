@@ -379,8 +379,8 @@
             "enable_image": true,
             "image_width": 650,
             "title": "Stone",
-            "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with enticing texture you’ll never get bored of touching.<\/p>",
-            "button_label": "Optional button →",
+            "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with an enticing texture you’ll never get bored of touching.<\/p>",
+            "button_label": "Discover Stone →",
             "button_link": ""
           }
         },
