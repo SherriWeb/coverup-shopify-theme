@@ -138,7 +138,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. Whether it be wood, stone or wool felt, each one of our products features a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
+            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p><p><a href=\"\/collections\" title=\"All collections\">Get Started →<\/a><\/p>"
           }
         }
       },
@@ -366,9 +366,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-wood_b83d4905-d004-42c5-9ecc-54f070a70163.jpg",
             "image_width": 650,
             "title": "Wood",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.<\/p>",
             "button_label": "Discover Wood →",
             "button_link": ""
           }
@@ -377,10 +378,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-stone.jpg",
             "image_width": 650,
             "title": "Stone",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button →",
+            "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with an enticing texture you’ll never get bored of touching.<\/p>",
+            "button_label": "Discover Stone →",
             "button_link": ""
           }
         },
@@ -388,10 +390,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/materials-matter-leather_66d9c4aa-60cd-405b-bac8-3e82674a1556.jpg",
+            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg",
             "image_width": 430,
             "title": "Leather",
-            "text": "<p>We use premium Italian leather from <\/p>",
+            "text": "<p>The real deal. Italian, full grain and vegetable tanned. Our leather is buttery soft, durable and has a natural look and feel. The more you use it, the better it gets.<\/p>",
             "button_label": "Discover Leather →",
             "button_link": ""
           }
@@ -400,10 +402,11 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-shell.jpg",
             "image_width": 650,
             "title": "Seashell",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button →",
+            "text": "<p>A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells.<\/p>",
+            "button_label": "Discover Shell →",
             "button_link": ""
           }
         }
@@ -416,7 +419,7 @@
       ],
       "settings": {
         "title": "Materials Matter",
-        "sub_title": "We use only the good stuff. Inspired by our surroundings, we naturally (sorry for the pun) choose to use materials like wood, stone and felt to make our products.",
+        "sub_title": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "align_text_header": "center",
         "align_text_columns": "left",
         "divider": false
@@ -429,10 +432,10 @@
           "type": "testimonial",
           "settings": {
             "product": "iphone-13-mini-woodback-black-explorer-case-walnut",
-            "icon": "quote",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "icon": "5-stars",
+            "testimonial": "<p>The explorer case feels very trustworthy and I feel like it could take a bit of battering if need be. Love the walnut look too. Very pleased.<\/p>",
+            "author": "Reuben",
+            "author_info": "New York, USA"
           }
         },
         "1650018831c6ff4675-1": {
@@ -450,9 +453,9 @@
           "settings": {
             "product": "macbook-12-stone-skin-rose",
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>Adds a very distinctive yet elegant look to my Mac! Would recommend to anyone with a MacBook.<\/p>",
+            "author": "Connor",
+            "author_info": "London, UK"
           }
         },
         "1650018831c6ff4675-3": {
@@ -460,9 +463,9 @@
           "settings": {
             "product": "large-leather-desk-pad-black",
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>Makes me feel like I'm sitting in the lap of luxury. Love it!<\/p>",
+            "author": "Lisa",
+            "author_info": "Los Angeles, USA"
           }
         },
         "1650018831c6ff4675-4": {
