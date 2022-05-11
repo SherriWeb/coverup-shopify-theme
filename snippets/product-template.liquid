@@ -142,6 +142,7 @@
                     </div>
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
+                      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
                       {%- assign hide_sale_price = true -%}
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
@@ -216,7 +217,6 @@
                         </div>
                       {%- endif -%}
                       {% endcomment %}
-                      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
                     </div>
                   {%- when 'quantity_selector' -%}
                     <div class="product-block" {{ block.shopify_attributes }}>
@@ -344,7 +344,12 @@
                       {{ block.settings.code }}
                     </div>
                   {%- when 'custom_variants' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    {% unless product.type contains 'Wireless Charger' %}
+                      <div class="product-block alternative-models" {{ block.shopify_attributes }}>
+                        {% render 'alternative-models' %}
+                      </div>
+                    {% endunless %}
+                    <div class="product-block variant-flex" {{ block.shopify_attributes }}>
                       {%- for option in product.options_with_values -%}
                         {%- render 'custom-variant',
                           block: block,
@@ -360,12 +365,12 @@
                       {%- endfor -%}
                     </div>
                   {%- when 'alternative-products' -%}
-                    <div class="product-block" {{ block.shopify_attributes }}>
+                    <div class="product-block product-block--margin-bot-0" {{ block.shopify_attributes }}>
                       {% render 'alternative-products' %}
                     </div>
                   {%- when 'alternative-models' -%}
                     {% unless product.type contains 'Wireless Charger' %}
-                      <div class="product-block" {{ block.shopify_attributes }}>
+                      <div class="product-block " {{ block.shopify_attributes }}>
                         {% render 'alternative-models' %}
                       </div>
                     {% endunless %}
@@ -378,18 +383,9 @@
                       {%- render 'tab', id: tab_id, title: 'Shipping', content: tab_content -%}
                     </div>
                   {%- when 'icon_tab' -%}
-                    {%- liquid
-                      assign output_tab = false
-                      if product.metafields.tab_icon.icon.value != blank
-                        assign output_tab = true
-                      endif
-                    -%}
-                    {%- if output_tab -%}
-                      <div class="product-block product-block--tab" {{ block.shopify_attributes }}>
-                        {% assign tab_id = block.id | append: product.id %}
-                        {%- render 'icon-tab', id: tab_id -%}
-                      </div>
-                    {%- endif -%}
+                    {% if product.metafields.tab_icon.icon != blank %}
+                      {%- render 'icon-tab' -%}
+                    {% endif %}
                 {%- endcase -%}
               {%- else -%}
                 <div data-blocks-holder

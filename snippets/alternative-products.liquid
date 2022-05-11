@@ -67,9 +67,7 @@
         {% unless product.handle == current_product.handle %}
            {% unless same_vendor and current_product.vendor != product.vendor %}
              {% unless same_type and current_product.type != product.type %}
-
-     <li class="similar-products"><a href="{{ product.url | within: collection }}"><img src="{{ product.featured_image.src | product_img_url: 'small' }}" alt="{{ product.featured_image.alt | escape }}"></a></li>
-
+                <li class="similar-products"><a href="{{ product.url | within: collection }}"><img src="{{ product.featured_image.src | product_img_url: 'small' }}" alt="{{ product.featured_image.alt | escape }}"></a></li>
                {% assign counter = counter | plus: 1 %}
                {% if counter == break_at %}
                  {% break %}
@@ -87,7 +85,8 @@
 
 <div id="similar-styles">
   <div class="similar-products-image">
-    {% if product.type contains 'Wood' %}
+    FINISH: {{ product.variants.first.options.first }}
+    <!-- {% if product.type contains 'Wood' %}
     <span>ALTERNATIVE WOOD FINISH:</span>
     {% elsif product.type contains 'Stone' %}
     <span>ALTERNATIVE STONE FINISH:</span>
@@ -95,7 +94,7 @@
     <span>ALTERNATIVE SHELL FINISH:</span>
     {% else %}
     <span>ALTERNATIVE STYLES:</span>
-    {% endif %}
+    {% endif %} -->
     <ul>
       {{ related_items }}
     </ul>
@@ -113,7 +112,7 @@
 
 {% for tag in product.tags %}
 {% if tag contains 'colour' %}
-  {% assign t = tag %}<br>
+  {% assign t = tag %}
 {% endif %}
 {% endfor %}
 

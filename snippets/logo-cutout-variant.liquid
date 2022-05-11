@@ -1,0 +1,38 @@
+<p class="custom-variant-label">LOGO CUTOUT</p>
+<label class="variant__label{% if option.name == 'Default' or option.name == 'Title' %} hidden-label{% endif %}{% unless variant_labels %} hidden-label{% endunless %}"
+  for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+  {{ option.name }}
+</label>
+{%- assign option_index = forloop.index -%}
+<fieldset class="variant-input-wrap variant-input-wrap--blue-border"
+  name="{{ option.name }}"
+  data-index="option{{ option_index }}"
+  data-handle="{{ option.name | handleize }}"
+  id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ forloop.index0 }}">
+  <legend class="hide">{{ option.name }}</legend>
+  {%- for value in option.values -%}
+    {%- liquid
+      assign product_available = true
+      if product.options.size == 1
+        assign product_available = product.variants[forloop.index0].available
+      endif
+    -%}
+    <div
+      class="variant-input variant-input--logo-cutout"
+      data-index="option{{ option_index }}"
+      data-value="{{ value | escape }}">
+      <input type="radio"
+        form="{{ form_id }}"
+        {% if option.selected_value == value %} checked="checked"{% endif %}
+        value="{{ value | escape }}"
+        data-index="option{{ option_index }}"
+        name="{{ option.name }}"
+        data-variant-input
+        class="{% unless product_available %} disabled{% endunless %}"
+        id="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}">
+        <label
+          for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
+          class="variant__button-label variant__button-label--logo-cutout{% unless product_available %} disabled{% endunless %}">{% if value == "Cutout" %}Yes{% else if value == "No Cutout" %}No{% endif %}</label>
+    </div>
+  {%- endfor -%}
+</fieldset>

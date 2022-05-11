@@ -7817,6 +7817,8 @@ lazySizesConfig.expFactor = 4;
     document.dispatchEvent(new CustomEvent('page:loaded'));
   });
 
+  let bottomSkinCheckbox = document.getElementById('bottom-skin-checkbox');
+
   // Magsafe Variant selector
   let variantSelect = function(variantName, varOptionOne, varOptionTwo){
     let variantCheckbox = document.getElementById(`${variantName}-input`);
@@ -7828,6 +7830,16 @@ lazySizesConfig.expFactor = 4;
     }
     if (variantName === 'magsafe') {
       variantCheckbox.checked ? buttonTwo.click() : buttonOne.click();
+    }
+
+    if (variantName === 'bottom-skin') {
+      if (variantCheckbox.checked) {
+        buttonTwo.click()
+        bottomSkinCheckbox.classList.add('active')
+      } else {
+        buttonOne.click()
+        bottomSkinCheckbox.classList.remove('active')
+      }
     }
   }
 
@@ -7884,6 +7896,12 @@ lazySizesConfig.expFactor = 4;
   if (logoCutoutCheckbox) {
     logoCutoutCheckbox.addEventListener('click', () => variantSelect("logo-cutout", "Cutout", "No Cutout"))
   }
+
+  // Bottom Skin Variant selector
+  if (bottomSkinCheckbox) {
+    bottomSkinCheckbox.addEventListener('click', () => variantSelect("bottom-skin", "Top Skin", "Top and Bottom Skins"))
+  }
+
 
   // Truncated Nav Desktop
   $('button[data-parent-title]').each(function() {

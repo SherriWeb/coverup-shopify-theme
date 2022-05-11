@@ -19,13 +19,12 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
     {% if forloop.first %}
       {% assign model = title_part %}
     {% else %}
-      {% capture parts %}<span>{{ title_part }}</span>{% endcapture %}
+      {% capture parts %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
     {% endif %}
   {% endfor %}
 {% else %}
   {{ title }}
 {% endif %}
 
+{{ product.variants.first.options.first }} {{ parts }}
 {% if model %}<span>{{ model }}</span>{% endif %}
-{{ product.variants.first.options.first }}
-{{ parts }}
