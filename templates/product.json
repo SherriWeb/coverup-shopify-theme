@@ -53,15 +53,18 @@
             "is_tab": true
           }
         },
-        "70383448-357a-46d5-8284-1f7916363275": {
-          "type": "shipping",
-          "settings": {
-          }
-        },
         "92ff90b1-1820-45f9-a4c7-afc30b09812c": {
           "type": "tab",
           "settings": {
             "title": "Materials",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b": {
+          "type": "tab",
+          "settings": {
+            "title": "Sustainability",
             "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
             "page": ""
           }
@@ -74,12 +77,9 @@
             "page": "faqs"
           }
         },
-        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b": {
-          "type": "tab",
+        "70383448-357a-46d5-8284-1f7916363275": {
+          "type": "shipping",
           "settings": {
-            "title": "Sustainability",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
-            "page": ""
           }
         }
       },
@@ -92,10 +92,10 @@
         "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
         "24660daa-f2a7-480d-8d59-1689e00dec54",
         "description",
-        "70383448-357a-46d5-8284-1f7916363275",
         "92ff90b1-1820-45f9-a4c7-afc30b09812c",
+        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b",
         "a3b18c10-306a-42d3-aeb5-d1f16f1ca732",
-        "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b"
+        "70383448-357a-46d5-8284-1f7916363275"
       ],
       "settings": {
         "sku_enable": false,
