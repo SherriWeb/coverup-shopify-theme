@@ -402,6 +402,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-shell.jpg",
             "image_width": 650,
             "title": "Seashell",
             "text": "<p>A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells.<\/p>",
