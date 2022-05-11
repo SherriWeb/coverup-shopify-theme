@@ -366,9 +366,10 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-wood_b83d4905-d004-42c5-9ecc-54f070a70163.jpg",
             "image_width": 650,
             "title": "Wood",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.<\/p>",
             "button_label": "Discover Wood →",
             "button_link": ""
           }
@@ -377,6 +378,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/discover-stone.jpg",
             "image_width": 650,
             "title": "Stone",
             "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with an enticing texture you’ll never get bored of touching.<\/p>",
@@ -388,7 +390,7 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/materials-matter-leather_66d9c4aa-60cd-405b-bac8-3e82674a1556.jpg",
+            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg",
             "image_width": 430,
             "title": "Leather",
             "text": "<p>The real deal. Italian, full grain and vegetable tanned. Our leather is buttery soft, durable and has a natural look and feel. The more you use it, the better it gets.<\/p>",
