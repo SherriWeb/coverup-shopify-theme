@@ -386,6 +386,12 @@
                     {% if product.metafields.tab_icon.icon != blank %}
                       {%- render 'icon-tab' -%}
                     {% endif %}
+                  {%- when 'product-short-description' -%}
+                    {% if product.metafields.description.short_description != blank %}
+                      <div class="product-block">
+                        <p class="product-block__short-description">{{ product.metafields.description.short_description }}</p>
+                      </div>
+                    {% endif %}
                 {%- endcase -%}
               {%- else -%}
                 <div data-blocks-holder
