@@ -281,6 +281,42 @@
       "settings": {
       }
     },
+    "16524655488f0d8f8c": {
+      "type": "triple-column-logo",
+      "blocks": {
+        "e115116d-0d46-4be1-8591-f7e9d3074c7a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
+            "subheading": "Happiness Guarantee",
+            "textarea": ""
+          }
+        },
+        "3975ed31-ad23-40be-8866-472276db7ae9": {
+          "type": "column",
+          "settings": {
+            "subheading": "",
+            "textarea": ""
+          }
+        },
+        "867d4f5a-63fa-4758-8d1b-a67999a70665": {
+          "type": "column",
+          "settings": {
+            "subheading": "",
+            "textarea": ""
+          }
+        }
+      },
+      "block_order": [
+        "e115116d-0d46-4be1-8591-f7e9d3074c7a",
+        "3975ed31-ad23-40be-8866-472276db7ae9",
+        "867d4f5a-63fa-4758-8d1b-a67999a70665"
+      ],
+      "settings": {
+        "heading": "Why Shop With Us?",
+        "bg_color": "#fafafa"
+      }
+    },
     "1646327106f1714ba7": {
       "type": "apps",
       "blocks": {
@@ -342,6 +378,7 @@
     "product-recommendations",
     "recently-viewed",
     "collection-return",
+    "16524655488f0d8f8c",
     "1646327106f1714ba7",
     "1652455445b5d5109c"
   ]
