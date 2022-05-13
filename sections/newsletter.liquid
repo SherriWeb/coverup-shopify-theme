@@ -28,6 +28,10 @@
             {%- render 'newsletter-form', section_id: section.id, snippet_context: 'section' -%}
           {%- when 'share_buttons' -%}
             {%- render 'social-sharing' -%}
+          {%- when 'disclaimer' -%}
+            {%- if block.settings.disclaimer != blank -%}
+              <p class="newsletter-disclaimer">{{ block.settings.disclaimer }}</p>
+            {%- endif -%}
         {%- endcase -%}
       </div>
     {%- endfor -%}
@@ -75,6 +79,18 @@
         "type": "share_buttons",
         "name": "Share buttons",
         "limit": 1
+      },
+      {
+        "type": "disclaimer",
+        "name": "Disclaimer",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "disclaimer",
+            "label": "Disclaimer"
+          }
+        ]
       }
     ],
     "settings": [
