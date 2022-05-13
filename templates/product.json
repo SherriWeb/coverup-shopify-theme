@@ -265,7 +265,7 @@
       "type": "product-recommendations",
       "settings": {
         "show_product_recommendations": true,
-        "product_recommendations_heading": "WE ALSO RECOMMEND",
+        "product_recommendations_heading": "There Would Also Look Great",
         "related_count": 5
       }
     },
