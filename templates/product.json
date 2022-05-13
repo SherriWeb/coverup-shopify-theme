@@ -356,12 +356,19 @@
           "type": "form",
           "settings": {
           }
+        },
+        "2b583bd7-da13-4961-9213-23dbb230be7f": {
+          "type": "disclaimer",
+          "settings": {
+            "disclaimer": "Note: You can opt-out at any time. See our <a href=\"\/pages\/privacy-policy\">Privacy Policy<\/a> and <a href=\"\/pages\/terms-of-use\">Terms<\/a>."
+          }
         }
       },
       "block_order": [
         "1652455445a647244d-0",
         "1652455445a647244d-1",
-        "1652455445a647244d-2"
+        "1652455445a647244d-2",
+        "2b583bd7-da13-4961-9213-23dbb230be7f"
       ],
       "settings": {
         "color_background": "#f9f9f9",
