@@ -297,6 +297,37 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "1652455445b5d5109c": {
+      "type": "newsletter",
+      "blocks": {
+        "1652455445a647244d-0": {
+          "type": "title",
+          "settings": {
+            "title": "Hello, nature Lover!"
+          }
+        },
+        "1652455445a647244d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Curated blog content, the latest product news and exclusive acess to sample sales - it's all just a sign-up away. Put your name on the list here.<\/p>"
+          }
+        },
+        "1652455445a647244d-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1652455445a647244d-0",
+        "1652455445a647244d-1",
+        "1652455445a647244d-2"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
     }
   },
   "order": [
@@ -311,6 +342,7 @@
     "product-recommendations",
     "recently-viewed",
     "collection-return",
-    "1646327106f1714ba7"
+    "1646327106f1714ba7",
+    "1652455445b5d5109c"
   ]
 }
