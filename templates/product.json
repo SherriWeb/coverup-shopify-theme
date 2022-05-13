@@ -210,9 +210,10 @@
     "1652455440f13cf44e": {
       "type": "text-with-logo",
       "settings": {
-        "heading": "",
-        "textarea": "",
-        "bg_color": ""
+        "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
+        "heading": "Made From Nature, For Nature",
+        "textarea": "We craft one-of-a-kind tech accessories from planet-friendly nature materials. Whether it be wood, stone or wool felt, everyone one of our products encompasses the individuality and uniqueness that can only be found in nature.",
+        "bg_color": "#fafafa"
       }
     },
     "text-and-image": {
