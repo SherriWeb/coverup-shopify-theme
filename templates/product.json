@@ -287,23 +287,25 @@
         "e115116d-0d46-4be1-8591-f7e9d3074c7a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
+            "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext_f8ff4f26-70cf-4362-b329-865059b2cd2d.png",
             "subheading": "Happiness Guarantee",
-            "textarea": ""
+            "textarea": "If you're not feeling the positive vibes in 30 days, we'll give you a full refund, no questions asked."
           }
         },
         "3975ed31-ad23-40be-8866-472276db7ae9": {
           "type": "column",
           "settings": {
-            "subheading": "",
-            "textarea": ""
+            "image": "shopify:\/\/shop_images\/Fast_Shipping_notext_d8a0d9dc-32c8-4e70-ae0e-cd39f046fbce.png",
+            "subheading": "Worldwide shipping",
+            "textarea": "With fast delivery to anywhere in the world, we'll have you journaling in no time."
           }
         },
         "867d4f5a-63fa-4758-8d1b-a67999a70665": {
           "type": "column",
           "settings": {
-            "subheading": "",
-            "textarea": ""
+            "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext_f8ff4f26-70cf-4362-b329-865059b2cd2d.png",
+            "subheading": "five-star customer service",
+            "textarea": "Our customer care team are here for you, going above and beyond to make sure you're happy."
           }
         }
       },
