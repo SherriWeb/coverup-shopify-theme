@@ -82,27 +82,24 @@
   {% assign related_items = related_items | trim %}
 
   {% unless related_items == blank %}
-
-<div id="similar-styles">
-  <div class="similar-products-image">
-    <span>FINISH:</span> {{ product.variants.first.options.first }}
-    <!-- {% if product.type contains 'Wood' %}
-    <span>ALTERNATIVE WOOD FINISH:</span>
-    {% elsif product.type contains 'Stone' %}
-    <span>ALTERNATIVE STONE FINISH:</span>
-    {% elsif product.type contains 'Shell' %}
-    <span>ALTERNATIVE SHELL FINISH:</span>
-    {% else %}
-    <span>ALTERNATIVE STYLES:</span>
-    {% endif %} -->
-    <ul>
-      {{ related_items }}
-    </ul>
-  </div>
-</div>
-
+    <div id="similar-styles">
+      <div class="similar-products-image">
+        <span>FINISH:</span> {{ product.variants.first.options.first }}
+        <!-- {% if product.type contains 'Wood' %}
+        <span>ALTERNATIVE WOOD FINISH:</span>
+        {% elsif product.type contains 'Stone' %}
+        <span>ALTERNATIVE STONE FINISH:</span>
+        {% elsif product.type contains 'Shell' %}
+        <span>ALTERNATIVE SHELL FINISH:</span>
+        {% else %}
+        <span>ALTERNATIVE STYLES:</span>
+        {% endif %} -->
+        <ul>
+          {{ related_items }}
+        </ul>
+      </div>
+    </div>
   {% endunless %}
-
 {% endif %}
 
 {% comment %}
