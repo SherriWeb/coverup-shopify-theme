@@ -44,7 +44,9 @@
             "data_key": "credit-promotion-badge",
             "locale_option": "geolocation",
             "locale_fallback": "",
-            "theme": "light"
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0"
           }
         },
         "description": {
@@ -219,10 +221,11 @@
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/DSCF5055_2_1920x1080_f157f66d-63a1-4b3c-b5fc-ce89037c5b5d.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Handmade from Real Wood",
+        "text": "<p>Each one is completely unique. Just think of it as your very own work of art, all courtesy of Mother Nature<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -234,10 +237,11 @@
     "text-and-image2": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/DSCF5103_1920x1080_d546c6fb-f9a6-4b33-a25b-9a992f170a08.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "About your brand",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "Natural Protection for Your MacBook",
+        "text": "<p>As well as looking good, the #WoodBack is designed to protect your MacBook from scratches and nicks.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -249,10 +253,11 @@
     "165245540006a0c402": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/DSCF5237_1920x1080_afb698a4-8141-40cc-977e-95360cc783a8.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "title": "How We Make Our Skins",
+        "text": "<p>Combining modern and traditional craftmanshop, each piece of wood is laser cut, before being hand-sanded (the good old fashioned way!) to create a super smooth exterior. Coated with a specially selected finish made from a clend of vegatable oils and waxes, the raw wood is given a subtle natural shine that allows it to age beautifully over time - with added protection from water and everyday dirt.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
