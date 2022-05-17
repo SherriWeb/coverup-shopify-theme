@@ -183,7 +183,6 @@ Arguments
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
         <div class="grid-product__price-judgeme">
-          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
           <div class="grid-product__price grid-product__price--lh-13">
             {%- if on_sale -%}
               <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
@@ -225,6 +224,7 @@ Arguments
               </div>
             {%- endif -%}
           </div>
+          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
         </div>
       </div>
     </a>
