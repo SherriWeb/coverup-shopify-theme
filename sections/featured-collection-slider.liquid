@@ -21,8 +21,8 @@
   {%- endif -%}
 
   <div class="page-width page-width--flush-small">
-    <div class="grid-overflow-wrapper slider--desktop">
-      <div class="grid grid--uniform" data-aos="overflow__animation">
+    <div class="grid-overflow-wrapper">
+      <div class="grid grid--uniform grid--slick-slider" data-aos="overflow__animation">
 
         {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
 
@@ -58,7 +58,8 @@
               product: product,
               collection: collection,
               per_row: per_row,
-              quick_shop_enable: settings.quick_shop_enable
+              quick_shop_enable: settings.quick_shop_enable,
+              section_name: "featured-collection-slider"
             -%}
           {%- endfor -%}
 

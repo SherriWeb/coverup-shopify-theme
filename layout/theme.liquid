@@ -76,6 +76,10 @@
 
   {{ '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js' | script_tag }}
 
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
   <script src="{{ 'vendor-scripts-v11.js' | asset_url | split: '?' | first }}" defer="defer"></script>
 
   {%- if shop.enabled_currencies.size > 1 -%}

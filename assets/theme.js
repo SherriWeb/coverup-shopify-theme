@@ -7932,4 +7932,28 @@ lazySizesConfig.expFactor = 4;
     $('#phone-case-popup').removeClass('active');
   });
 
+  // Flickity product slider
+  $('.grid--slick-slider').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true
+  });
+
+  $('.testimonials--slick-slider').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: false
+  });
+
+  $('.related-items--slick-slider').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    pageDots: false
+  });
+
 })();
