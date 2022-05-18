@@ -344,7 +344,7 @@
       "settings": {
         "title": "Explore Our Bestsellers",
         "home_featured_products": "workspace",
-        "per_row": 10,
+        "per_row": 8,
         "view_all": true,
         "divider": false
       }
