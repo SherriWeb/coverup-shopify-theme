@@ -3688,7 +3688,7 @@ ul+.footer__small-text{
 }
 
 .footer__section{
-  margin-bottom:15px
+  padding-bottom:15px
 }
 
 @media only screen and (min-width:769px){
@@ -3707,7 +3707,8 @@ ul+.footer__small-text{
 
 .footer__title{
   color:{{ settings.color_footer_text | default: "#fff" }};
-  color:var(--colorFooterText)
+  color:var(--colorFooterText);
+  font-size: calc(var(--typeBaseSize)*.85);
 }
 
 @media only screen and (min-width:769px){
@@ -4286,7 +4287,7 @@ form+.footer__social{
 @media only screen and (min-width:769px){
 
 .site-header{
-    padding:20px 0
+    padding: 0
 }
 
 .toolbar+.header-sticky-wrapper .site-header{
@@ -9163,6 +9164,15 @@ html[dir=rtl] .background-media-text__text{
     border-radius:65px;
   }
 
+.testimonials__product-link {
+  margin-top: 10px;
+  display: block;
+}
+
+.testimonials__product-link:hover {
+  font-weight: 600;
+}
+
 .testimonials-section .flickity-page-dots{
   bottom:0;
 }
@@ -12058,6 +12068,15 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
   width: 100%;
 }
 
+.btn--large-text:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #212a2f26;
+}
+
 .rte--link a {
   border: none !important;
 }
@@ -12388,7 +12407,7 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
 
 @media screen and (min-width: 1024px){
   .grid__item--slick-slider {
-    width: 250px;
+    width: 22%;
   }
 }
 
@@ -12406,4 +12425,40 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
 .related-items--slick-slider .flickity-button:hover {
   background: #fff !important;
   transform: translateY(-50%) scale(1);
+}
+
+.grid--slick-slider {}
+
+/* burger menu */
+@media screen and (max-width: 768px) {
+  .site-nav--burger-hide {
+    display: none;
+  }
+  .header-item--hide-mobile {
+    display: none;
+  }
+  .header-item--navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .site-nav--burger-mobile {
+    display: none;
+  }
+}
+
+/* Unknown shopify app block */
+#shopify-block-13324117676663250413.shopify-block.shopify-app-block {
+  display: none;
+}
+
+.section-header__subheader {
+  max-width: 900px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-transform: none;
+  font-size: 1.2rem;
+  line-height: var(--typeBaseLineHeight);
+  letter-spacing: var(--typeBaseSpacing);
 }

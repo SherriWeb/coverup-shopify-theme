@@ -7935,9 +7935,10 @@ lazySizesConfig.expFactor = 4;
   // Flickity product slider
   $('.grid--slick-slider').flickity({
     // options
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true,
-    wrapAround: true
+    wrapAround: true,
+    pageDots: true
   });
 
   $('.testimonials--slick-slider').flickity({

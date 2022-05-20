@@ -117,6 +117,16 @@
             class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
             data-logo-align="{{ logo_alignment }}">
 
+            <div class="site-nav--burger-mobile header-item header-item--logo">
+              <button
+                type="button"
+                class="site-nav__link site-nav__link--icon js-drawer-open-nav{% if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' %} medium-up--hide{% endif %}"
+                aria-controls="NavDrawer">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+                <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+              </button>
+            </div>
+
             {%- if logo_alignment == 'left' -%}
               <div class="header-item header-item--logo">
                 {%- render 'header-logo-block', section: section -%}
@@ -124,7 +134,7 @@
             {%- endif -%}
 
             {%- if logo_alignment == 'left' and section.settings.main_menu_alignment != 'left-drawer' -%}
-              <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}">
+              <div class="header-item header-item--navigation header-item--hide-mobile{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}">
                 {%- render 'header-desktop-nav', main_menu: main_menu, dropdown_alignment: dropdown_alignment -%}
               </div>
             {%- endif -%}

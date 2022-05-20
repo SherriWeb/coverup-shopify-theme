@@ -35,7 +35,7 @@
             {{ block.shopify_attributes }}>
             <blockquote class="testimonials-slider__text">
               {% assign product_image = block.settings.product.images[0] %}
-              <a href="{{ block.settings.product.url }}" class="testimonail-image" style="display: block;">
+              <div class="testimonail-image" style="display: block;">
                 <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: product_image.aspect_ratio }}%;">
                   {%- assign img_url = product_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                   <img class="lazyload"
@@ -48,7 +48,7 @@
                     <img class="lazyloaded" src="{{ product_image | img_url: '400x' }}" alt="{{ product_image.alt }}">
                   </noscript>
                 </div>
-              </a>
+              </div>
               {%- if block.settings.icon == 'quote' -%}
                 <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z" fill="#000" fill-rule="evenodd"/></svg></span>
               {%- elsif block.settings.icon == '5-stars' -%}
@@ -65,9 +65,7 @@
 
               {%- if block.settings.testimonial != blank -%}
                 <div class="rte-setting text-spacing rte--link">
-                  <a href="{{ block.settings.product.url }}" >
                     {{ block.settings.testimonial }}
-                  </a>
                 </div>
               {%- endif -%}
 
@@ -89,15 +87,20 @@
               {%- endif -%}
 
               {%- if block.settings.author != blank -%}
-                <a href="{{ block.settings.product.url }}" >
-                  <cite>{{ block.settings.author | escape }}</cite>
-                </a>
+                <cite>{{ block.settings.author | escape }}</cite>
               {%- endif -%}
               {%- if block.settings.author_info != blank -%}
-                <a href="{{ block.settings.product.url }}" >
-                  <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
-                </a>
+                <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
               {%- endif -%}
+              {% assign title_parts = block.settings.product.title | split: '—' %}
+              {% for title_part in title_parts %}
+                {% if forloop.first %}
+                  {% assign model = title_part %}
+                {% else %}
+                {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
+                {% endif %}
+              {% endfor %}
+                <a class="testimonials__product-link" href="{{ block.settings.product.url }}">{% if model %}{{ model }}{% endif %} {{ block.settings.product.variants.first.options.first }} {{ part }}</a>
             </blockquote>
           </div>
         {%- endfor -%}
