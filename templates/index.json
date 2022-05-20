@@ -345,7 +345,7 @@
         "title": "Explore Our Bestsellers",
         "home_featured_products": "workspace",
         "per_row": 8,
-        "view_all": true,
+        "view_all": false,
         "divider": false
       }
     },
@@ -355,7 +355,7 @@
         "title": "What's New",
         "home_featured_products": "iphone-12",
         "per_row": 10,
-        "view_all": true,
+        "view_all": false,
         "divider": false
       }
     },
