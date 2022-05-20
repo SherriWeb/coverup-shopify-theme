@@ -567,7 +567,8 @@
         "title": "",
         "logo_opacity": 76,
         "divider": false,
-        "height": 75
+        "height": 75,
+        "bg_color": "#f8f7f5"
       }
     },
     "blog-posts": {
