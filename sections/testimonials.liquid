@@ -97,10 +97,11 @@
                 {% if forloop.first %}
                   {% assign model = title_part %}
                 {% else %}
-                {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
+                  {% assign type = title_part %}
+                  {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
                 {% endif %}
               {% endfor %}
-                <a class="testimonials__product-link" href="{{ block.settings.product.url }}">{% if model %}{{ model }}{% endif %} {{ block.settings.product.variants.first.options.first }} {{ part }}</a>
+                <a class="testimonials__product-link" href="{{ block.settings.product.url }}">{% if model %}{{ model }}{% endif %} {{ block.settings.product.variants.first.options.first }} {{ type | remove: "#"}}</a>
             </blockquote>
           </div>
         {%- endfor -%}

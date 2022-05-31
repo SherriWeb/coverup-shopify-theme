@@ -7951,10 +7951,11 @@ lazySizesConfig.expFactor = 4;
 
   $('.related-items--slick-slider').flickity({
     // options
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    pageDots: false
+    pageDots: false,
+    imagesLoaded: true
   });
 
 })();

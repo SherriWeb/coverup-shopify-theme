@@ -49,7 +49,7 @@ Arguments
   endif
 -%}
 
-<div class="grid__item grid-product {% if section_name == "featured-collection-slider" %}grid__item--slick-slider{% endif %} {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+<div class="grid__item grid-product {% if section_name == "featured-collection-slider" or section_name == "product-recommendations" %}grid__item--slick-slider{% endif %} {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
@@ -170,10 +170,21 @@ Arguments
               {% if forloop.first %}
                 {% assign model = title_part %}
               {% else %}
-              {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
+                {% assign type = title_part %}
+                {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
               {% endif %}
             {% endfor %}
-            <div class="grid-product__title--variant-part">{{ product.variants.first.options.first }} {{ part }}</div>
+            <div class="grid-product__title--variant-part">
+              {% if product.title contains "Leather Desk Pad" %}
+                {{ product.variants.first.options.first }}
+                <span>{{ type }}</span>
+              {% elsif product.title contains "Leather Mouse Pad" %}
+                {{ product.variants.first.options.first }}
+                <span>{{ type }}</span>
+              {% else %}
+                {{ product.variants.first.options.first }} {{ type | remove: "#"}}
+              {% endif %}
+            </div>
             <div class="grid-product__title--model">{{ model }}</div>
           {% else %}
             {{ title }}

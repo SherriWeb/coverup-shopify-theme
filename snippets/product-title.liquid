@@ -19,6 +19,7 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
     {% if forloop.first %}
       {% assign model = title_part %}
     {% else %}
+      {% assign type = title_part %}
       {% capture parts %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
     {% endif %}
   {% endfor %}
@@ -26,5 +27,13 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
   {{ title }}
 {% endif %}
 
-{{ product.variants.first.options.first }} {{ parts }}
-{% if model %}<span>{{ model }}</span>{% endif %}
+{% if title contains "Leather Desk Pad" %}
+ {{ product.variants.first.options.first }} {{ model }}
+  <span>{{ type }}</span>
+{% elsif title contains "Leather Mouse Pad" %}
+ {{ product.variants.first.options.first }} {{ model }}
+  <span>{{ type }}</span>
+{% else %}
+  {{ product.variants.first.options.first }} {{ type | remove: "#"}}
+  {% if model %}<span>{{ model }}</span>{% endif %}
+{% endif %}

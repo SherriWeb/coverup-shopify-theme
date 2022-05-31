@@ -37,17 +37,41 @@
                     {% if tag contains "colour" %}
                       {% assign color = tag | remove: "colour_" %}
                         {% if color == product.variants[0].option1 %}
+
                           {% if device contains 'macbook' %}
                             {% if p.title contains product.type %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
                             {% endif %}
+                          {% elsif product.title contains "Snap" %}
+                            {% unless p.title contains "Explorer" %}
+                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                                {{ p.title | split: ' — ' | first }}
+                              </option>
+                            {% endunless %}
+                          {% elsif product.title contains "Explorer Black" %}
+                            {% unless p.title contains "Snap" %}
+                              {% unless p.title contains "Explorer Clear" %}
+                                <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                                  {{ p.title | split: ' — ' | first }}
+                                </option>
+                              {% endunless %}
+                            {% endunless %}
+                          {% elsif product.title contains "Explorer Clear" %}
+                            {% unless p.title contains "Snap" %}
+                              {% unless p.title contains "Explorer Black" %}
+                                <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                                  {{ p.title | split: ' — ' | first }}
+                                </option>
+                              {% endunless %}
+                            {% endunless %}
                           {% else %}
                             <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                               {{ p.title | split: ' — ' | first }}
                             </option>
                           {% endif %}
+
                         {% endif %}
                         {% comment %}Lightning bolt tag and variant are different{% endcomment%}
                         {% if product.variants[0].option1 == 'Gold Lightning Bolt' %}

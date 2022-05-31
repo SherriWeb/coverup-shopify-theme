@@ -16,20 +16,6 @@
 
 <div class="variant-wrapper js {% if option.name == 'Magsafe' %}magsafe-variant-ctn{% endif %} {% if option.name == 'Logo Cutout' %}logo-cutout-variant-ctn{% endif %} {% if option.name == 'Bottom Skin' %}bottom-skin-variant-ctn{% endif %}" {% if option.name == 'Color' %}style="display: none;"{% endif %} data-type="button">
 
-  <!-- Magsafe button -->
-  {% if option.name == 'Magsafe' %}
-    <!-- <label class="magsafe-input" id="magsafe-checkbox">
-      <input type="checkbox" id="magsafe-input">
-      <span class="label-text">Upgrade case with MagSafe compatible magnets (+{{ product.variants[1].price| minus: product.price | money }})</span> <span id="magsafe-popup__button">&#x3F;</span>
-    </label> -->
-    <div class="magsafe-popup">
-      <p>
-        <b>MageSafe Compatible Upgrade (+ {{ variant.price | minus: product.price | money }})</b><br>
-        If you choose this option we will add a magnet array to this case that is perfectly compatible with any MagSafe accessories
-      </p>
-    </div>
-  {% endif %}
-
   <!-- Logo cutout button -->
   {% if option.name == 'Logo Cutout' %}
     {% render 'logo-cutout-variant', option: option, product: product, forloop: forloop %}
@@ -73,6 +59,19 @@
         </span>
       </span>
     {%- endif -%}
+      <!-- Magsafe button -->
+    {% if option.name == 'Magsafe' %}
+      <!-- <label class="magsafe-input" id="magsafe-checkbox">
+        <input type="checkbox" id="magsafe-input">
+        <span class="label-text">Upgrade case with MagSafe compatible magnets (+{{ product.variants[1].price| minus: product.price | money }})</span> <span id="magsafe-popup__button">&#x3F;</span>
+      </label> -->
+      <div class="magsafe-popup">
+        <p>
+          <b>MageSafe Compatible Upgrade (+ {{ variant.price | minus: product.price | money }})</b><br>
+          If you choose this option we will add a magnet array to this case that is perfectly compatible with any MagSafe accessories
+        </p>
+      </div>
+    {% endif %}
   </label>
   {%- assign option_index = forloop.index -%}
   <fieldset class="variant-input-wrap {% if option.name == 'Logo Cutout' %}logo-cutout-buttons{% endif %} {% if option.name == 'Bottom Skin' %}bottom-skin-buttons{% endif %}"
@@ -119,7 +118,7 @@
         {%- else -%}
           <label
             for="ProductSelect-{{ section_id }}-{{ product.id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{{ value | escape }}</label>
+            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{% if value == "Magsafe" %}{{ value | escape }} +{{ product.variants[1].price | minus: product.price | money }}{% else %}{{ value | escape }}{% endif %}</label>
         {%- endif -%}
       </div>
     {%- endfor -%}
