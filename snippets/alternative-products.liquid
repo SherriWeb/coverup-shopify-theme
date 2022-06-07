@@ -67,7 +67,7 @@
         {% unless product.handle == current_product.handle %}
            {% unless same_vendor and current_product.vendor != product.vendor %}
              {% unless same_type and current_product.type != product.type %}
-                <li class="similar-products"><span class="similar-products--hover">{{ product.variants.first.options.first }}</span><a href="{{ product.url | within: collection }}"><img src="{{ product.featured_image.src | product_img_url: 'small' }}" alt="{{ product.featured_image.alt | escape }}"></a></li>
+                <li class="similar-products" data-product-colour="{{ product.variants.first.options.first }}"><a href="{{ product.url | within: collection }}"><img src="{{ product.featured_image.src | product_img_url: 'small' }}" alt="{{ product.featured_image.alt | escape }}"></a></li>
                {% assign counter = counter | plus: 1 %}
                {% if counter == break_at %}
                  {% break %}
@@ -84,7 +84,8 @@
   {% unless related_items == blank %}
     <div id="similar-styles">
       <div class="similar-products-image">
-        <span>FINISH:</span> {{ product.variants.first.options.first }}
+        {% assign init_colour = product.variants.first.options.first %}
+        <span>FINISH:</span> <span id="hover-colour">{{ product.variants.first.options.first }}</span>
         <!-- {% if product.type contains 'Wood' %}
         <span>ALTERNATIVE WOOD FINISH:</span>
         {% elsif product.type contains 'Stone' %}
@@ -147,3 +148,20 @@
     {{snap_case}} {{explorer_case}}
   </div>
 {% endif %}
+
+<script>
+  const mouseTarget = document.querySelectorAll('.similar-products');
+  const hoverColour = document.getElementById('hover-colour');
+  const carousel = document.querySelector('.related-items--slick-slider');
+
+  mouseTarget.forEach(target => {
+    target.addEventListener('mouseenter', e => {
+      hoverColour.innerHTML = e.target.getAttribute('data-product-colour');
+    })
+  });
+
+  carousel.addEventListener('mouseleave', e => {
+    hoverColour.innerHTML = '{{init_colour}}';
+  })
+
+</script>

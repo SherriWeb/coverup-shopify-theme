@@ -63,6 +63,17 @@
                 <span class="testimonial-stars">★</span>
               {%- endif -%}
 
+              {% assign title_parts = block.settings.product.title | split: '—' %}
+              {% for title_part in title_parts %}
+                {% if forloop.first %}
+                  {% assign model = title_part %}
+                {% else %}
+                  {% assign type = title_part %}
+                  {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
+                {% endif %}
+              {% endfor %}
+              <a class="testimonials__product-link" href="{{ block.settings.product.url }}">{% if model %}{{ model }}{% endif %} {{ block.settings.product.variants.first.options.first }} {{ type | remove: "#"}}</a>
+
               {%- if block.settings.testimonial != blank -%}
                 <div class="rte-setting text-spacing rte--link">
                     {{ block.settings.testimonial }}
@@ -92,16 +103,6 @@
               {%- if block.settings.author_info != blank -%}
                 <div class="testimonials__info">{{ block.settings.author_info | escape }}</div>
               {%- endif -%}
-              {% assign title_parts = block.settings.product.title | split: '—' %}
-              {% for title_part in title_parts %}
-                {% if forloop.first %}
-                  {% assign model = title_part %}
-                {% else %}
-                  {% assign type = title_part %}
-                  {% capture part %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
-                {% endif %}
-              {% endfor %}
-                <a class="testimonials__product-link" href="{{ block.settings.product.url }}">{% if model %}{{ model }}{% endif %} {{ block.settings.product.variants.first.options.first }} {{ type | remove: "#"}}</a>
             </blockquote>
           </div>
         {%- endfor -%}

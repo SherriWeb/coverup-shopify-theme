@@ -177,15 +177,15 @@ Arguments
             <div class="grid-product__title--variant-part">
               {% if product.title contains "Leather Desk Pad" %}
                 {{ product.variants.first.options.first }}
-                <span>{{ type }}</span>
+                <span>{{ model }}</span>
               {% elsif product.title contains "Leather Mouse Pad" %}
                 {{ product.variants.first.options.first }}
-                <span>{{ type }}</span>
+                <span>{{ model }}</span>
               {% else %}
                 {{ product.variants.first.options.first }} {{ type | remove: "#"}}
               {% endif %}
             </div>
-            <div class="grid-product__title--model">{{ model }}</div>
+            <div class="grid-product__title--model">{% if product.title contains "Desk Pad" or product.title contains "Mouse Pad" %}{{ product.title | split: ' ' | last }}{% else %}{{ model }}{% endif%}</div>
           {% else %}
             {{ title }}
           {% endif %}
