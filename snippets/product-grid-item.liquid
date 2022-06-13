@@ -49,7 +49,7 @@ Arguments
   endif
 -%}
 
-<div class="grid__item grid-product {% if section_name == "featured-collection-slider" or section_name == "product-recommendations" %}grid__item--slick-slider{% endif %} {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+<div class="grid__item grid-product {% if section_name == "featured-collection-slider" %}grid__item--slick-slider{% endif %} {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
       <div class="grid-product__tag grid-product__tag--custom">
@@ -235,7 +235,9 @@ Arguments
               </div>
             {%- endif -%}
           </div>
-          {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+          <div {% if template.name == "collection" %}class="hide-jm-mobile"{% endif %}>
+            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+          </div>
         </div>
       </div>
     </a>
