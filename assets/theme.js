@@ -6681,7 +6681,7 @@ lazySizesConfig.expFactor = 4;
             cartBtn.classList.remove(classes.disabled);
             cartBtn.disabled = false;
             var defaultText = cartBtnText.dataset.defaultText;
-            cartBtnText.textContent = defaultText;
+            cartBtnText.innerHTML = defaultText + " - " + theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
           } else {
             // Sold out, disable the submit button and change text
             cartBtn.classList.add(classes.disabled);
