@@ -1,3 +1,14 @@
+{%- for block in section.blocks -%}
+  {%- if block.type == 'announcement' and block.settings.alt_announcements -%}
+    {%- assign alt_announcements = "true" -%}
+    {%- assign textUS = block.settings.link_text_us -%}
+    {%- assign textEU = block.settings.link_text_eu -%}
+    {%- assign textCAN = block.settings.link_text_can -%}
+    {%- assign textAU = block.settings.link_text_au -%}
+    {%- assign textUK = block.settings.link_text -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {%- assign show_announcement = false -%}
 {%- assign announcement_block_count = 0 -%}
 {%- for block in section.blocks -%}
@@ -57,3 +68,32 @@
   </div>
 
 {% endif %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  const announcementText = document.querySelector('.announcement-link-text');
+
+
+
+  if ("{{ alt_announcements }}") {
+    let countryCode = "";
+    $.get("https://ipinfo.io?token=f5c0c9b77d6981", function(response) { // we changed to https
+      countryCode = response.country
+      console.log(countryCode)
+
+      if (countryCode === "CA") {
+        announcementText.innerHTML = "{{ textCAN }}";
+      } else if (countryCode === "EU") {
+        announcementText.innerHTML = "{{ textEU }}";
+      } else if (countryCode === "AU") {
+        announcementText.innerHTML = "{{ textAU }}";
+      } else if (countryCode === "US") {
+        announcementText.textContent = "{{ textUS }}";
+      } else if (countryCode === "UK") {
+        announcementText.innerHTML = "{{ textUK }}";
+      }
+    }, "jsonp");
+
+  }
+</script>
