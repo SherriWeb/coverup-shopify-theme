@@ -34,6 +34,18 @@
       </span>
     </button>
 
+    <button
+      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
+      name="add"
+      data-add-to-cart
+      id="sticky-atc"
+      class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
+      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
+      <span id="add-to-cart-money" data-add-to-cart-text data-default-text="{{ default_text }}" data-product-price>
+        {{ button_text }} - {{ product.price | money_without_trailing_zeros }}
+      </span>
+    </button>
+
     {%- if enable_dynamic_buttons -%}
       {{ form | payment_button }}
     {%- endif -%}

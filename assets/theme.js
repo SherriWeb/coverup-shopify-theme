@@ -6674,6 +6674,7 @@ lazySizesConfig.expFactor = 4;
         var variant = evt.detail.variant;
         var cartBtn = this.container.querySelector(this.selectors.addToCart);
         var cartBtnText = this.container.querySelector(this.selectors.addToCartText);
+        var stickyCart = document.querySelector('#sticky-atc #add-to-cart-money');
   
         if (variant) {
           if (variant.available) {
@@ -6682,6 +6683,7 @@ lazySizesConfig.expFactor = 4;
             cartBtn.disabled = false;
             var defaultText = cartBtnText.dataset.defaultText;
             cartBtnText.innerHTML = defaultText + " - " + theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
+            stickyCart.innerHTML = defaultText + " - " + theme.Currency.formatMoney(variant.price, theme.settings.moneyFormat);
           } else {
             // Sold out, disable the submit button and change text
             cartBtn.classList.add(classes.disabled);
@@ -7958,13 +7960,13 @@ lazySizesConfig.expFactor = 4;
     imagesLoaded: true
   });
 
-  $('.recommendations--slick-slider').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    pageDots: false,
-    imagesLoaded: true
-  });
+  // $('.recommendations--slick-slider').flickity({
+  //   // options
+  //   cellAlign: 'left',
+  //   contain: true,
+  //   wrapAround: true,
+  //   pageDots: true,
+  //   imagesLoaded: true
+  // });
 
 })();

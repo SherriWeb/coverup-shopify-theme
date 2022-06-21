@@ -73,7 +73,7 @@
           <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
-          <div style="margin-top: 20px;" class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+          <div style="margin-top: 20px;" class="center-btn--mobile appear-delay{% cycle '','-1','-2','-3','-4' %}">
             <a href="{{ section.settings.button_link }}" class="btn--large-text{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
               {{ section.settings.button_label }}
             </a>
