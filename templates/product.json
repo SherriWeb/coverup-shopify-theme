@@ -49,6 +49,15 @@
             "bottomPadding": "0"
           }
         },
+        "ceea091e-2757-4864-bb81-c498a828e031": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "42245",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -93,6 +102,7 @@
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "buy_buttons",
         "24660daa-f2a7-480d-8d59-1689e00dec54",
+        "ceea091e-2757-4864-bb81-c498a828e031",
         "description",
         "92ff90b1-1820-45f9-a4c7-afc30b09812c",
         "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b",
