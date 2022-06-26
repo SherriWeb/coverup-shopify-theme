@@ -565,9 +565,9 @@
       ],
       "settings": {
         "title": "",
-        "logo_opacity": 76,
+        "logo_opacity": 80,
         "divider": false,
-        "height": 75,
+        "height": 65,
         "bg_color": "#f8f7f5"
       }
     },
