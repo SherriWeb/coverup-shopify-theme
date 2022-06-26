@@ -58,6 +58,7 @@
     "collection_grid_opacity": 10,
     "collection_grid_gutter": true,
     "cart_type": "page",
+    "cart_additional_buttons": true,
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
     "social_facebook_link": "https:\/\/twitter.com\/cover_up",
@@ -265,6 +266,12 @@
       "13324117676663250413": {
         "type": "shopify:\/\/apps\/order-delivery-estimator\/blocks\/app-embed-block\/2be8f45f-2937-4f60-b6b3-7488e231d668",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": true,
         "settings": {
         }
       }
