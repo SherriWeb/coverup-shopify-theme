@@ -91,16 +91,15 @@
           },
           "1524770296206": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Hassle-free returns",
-              "link_text": "30-day postage paid returns",
+              "text": "",
+              "link_text": "Hassle Free Returns",
               "link": "",
-              "alt_announcements": false,
-              "link_text_us": "30-day postage paid returns",
-              "link_text_eu": "30-day postage paid returns",
-              "link_text_can": "30-day postage paid returns",
-              "link_text_au": "30-day postage paid returns"
+              "alt_announcements": true,
+              "link_text_us": "Hassle Free Returns",
+              "link_text_eu": "All Taxes and Duties Included",
+              "link_text_can": "Hassle Free Returns",
+              "link_text_au": "Hassle Free Returns"
             }
           },
           "1524770014057": {
