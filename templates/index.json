@@ -58,14 +58,14 @@
         "slideshow-0": {
           "type": "image",
           "settings": {
-            "top_subheading": "",
-            "title": "Woodback",
+            "top_subheading": "NEW ARRIVALS",
+            "title": "MACBOOK 2022 M2",
             "title_size": 80,
-            "subheading": "Designed by Nature, Made by Cover-Up",
-            "link": "shopify:\/\/collections\/all",
-            "link_text": "Shop Wood",
-            "link_2": "shopify:\/\/collections\/all",
-            "link_text_2": "Shop Laptop cases",
+            "subheading": "All Natural Wood & Stone Skins",
+            "link": "shopify:\/\/collections\/macbook-pro-13-m1-2020",
+            "link_text": "Shop MacBook Pro M2 (2022) Skins",
+            "link_2": "shopify:\/\/collections\/macbook-air-13-m2-2022",
+            "link_text_2": "Shop MacBook Air M2 (2022) Skins",
             "color_accent": "#000000",
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/DSCF5155.jpg",
@@ -550,7 +550,6 @@
         "21e4459c-a435-4a25-b6d5-8b755099cbfc": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Made_in_Wales_notext.png",
             "text": "Made in Wales",
             "link": ""
           }
