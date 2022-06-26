@@ -80,13 +80,13 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "",
+              "link_text": "Free Express Shipping On All Orders Over £75",
               "link": "",
-              "alt_announcements": false,
-              "link_text_us": "30-day postage paid returns",
-              "link_text_eu": "30-day postage paid returns",
-              "link_text_can": "30-day postage paid returns",
-              "link_text_au": "30-day postage paid returns"
+              "alt_announcements": true,
+              "link_text_us": "Free Express Shipping On All Orders Over $125",
+              "link_text_eu": "Free Express Shipping On All Orders Over €125",
+              "link_text_can": "Worldwide Shipping",
+              "link_text_au": "Worldwide Shipping"
             }
           },
           "1524770296206": {
