@@ -80,7 +80,7 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "Free shipping On all orders over $100",
+              "link_text": "",
               "link": "",
               "alt_announcements": false,
               "link_text_us": "30-day postage paid returns",
@@ -107,7 +107,7 @@
             "type": "logo",
             "settings": {
               "logo": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png",
-              "desktop_logo_width": 210,
+              "desktop_logo_width": 200,
               "mobile_logo_width": 170
             }
           }
