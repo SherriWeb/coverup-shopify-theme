@@ -543,13 +543,14 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Fast_Shipping_notext.png",
-            "text": "Free shipping and returns*",
+            "text": "Worldwide Shipping",
             "link": ""
           }
         },
         "21e4459c-a435-4a25-b6d5-8b755099cbfc": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Made_in_Wales.png",
             "text": "Made in Wales",
             "link": ""
           }
