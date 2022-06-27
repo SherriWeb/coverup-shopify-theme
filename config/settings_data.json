@@ -95,11 +95,11 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "Hassle Free Returns",
-              "link": "",
+              "link_text": "New MacBook Pro M2 Skins Available Now!",
+              "link": "shopify:\/\/collections\/macbook-pro-13-m1-2020",
               "alt_announcements": true,
               "link_text_us": "Hassle Free Returns",
-              "link_text_eu": "All Taxes and Duties Included",
+              "link_text_eu": "",
               "link_text_can": "Hassle Free Returns",
               "link_text_au": "Hassle Free Returns"
             }
