@@ -299,13 +299,13 @@
         "1650391256f173c8b3-0": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+            "image": "shopify:\/\/shop_images\/forbes-featured.png"
           }
         },
         "1650391256f173c8b3-1": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+            "image": "shopify:\/\/shop_images\/esquire-featured.png"
           }
         },
         "1650391256f173c8b3-2": {
@@ -317,7 +317,7 @@
         "1650391256f173c8b3-3": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+            "image": "shopify:\/\/shop_images\/macworld-featured.png"
           }
         },
         "1650391256f173c8b3-4": {
@@ -335,7 +335,7 @@
         "1650391256f173c8b3-4"
       ],
       "settings": {
-        "title": "As Seen In",
+        "title": "As Featured In",
         "sub_title": "",
         "color_background": "#f8f7f5",
         "color_text": "#212a2f"
