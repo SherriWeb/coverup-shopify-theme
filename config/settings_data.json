@@ -95,7 +95,7 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "New MacBook Pro M2 Skins Available Now!",
+              "link_text": "New MacBook Pro M2 Skins Available Now >>>",
               "link": "shopify:\/\/collections\/macbook-pro-13-m1-2020",
               "alt_announcements": true,
               "link_text_us": "Hassle Free Returns",
@@ -116,13 +116,13 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "Happiness Guarantee",
-              "link": "",
-              "alt_announcements": false,
-              "link_text_us": "30-day postage paid returns",
-              "link_text_eu": "30-day postage paid returns",
-              "link_text_can": "30-day postage paid returns",
-              "link_text_au": "30-day postage paid returns"
+              "link_text": "MacBook Air M2 Skins Available for Pre-Order >>>",
+              "link": "shopify:\/\/collections\/macbook-air-13-m2-2022",
+              "alt_announcements": true,
+              "link_text_us": "MacBook Air M2 Skins Available for Pre-Order >>>",
+              "link_text_eu": "We Ship to the EU | All Taxes and Duties Included",
+              "link_text_can": "MacBook Air M2 Skins Available for Pre-Order >>>",
+              "link_text_au": "MacBook Air M2 Skins Available for Pre-Order >>>"
             }
           }
         },
