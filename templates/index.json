@@ -299,19 +299,19 @@
         "1650391256f173c8b3-0": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes-featured.png"
+            "image": "shopify:\/\/shop_images\/forbes-featured_c250f943-8dc8-4303-813f-dcf142e88a36.png"
           }
         },
         "1650391256f173c8b3-1": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/esquire-featured.png"
+            "image": "shopify:\/\/shop_images\/esquire-featured_484a2cbf-3309-409b-89ff-eac68a86ed00.png"
           }
         },
         "1650391256f173c8b3-2": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+            "image": "shopify:\/\/shop_images\/hypebeast-featured.png"
           }
         },
         "1650391256f173c8b3-3": {
@@ -323,7 +323,13 @@
         "1650391256f173c8b3-4": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
+            "image": "shopify:\/\/shop_images\/cnet-featured.png"
+          }
+        },
+        "75b6ed68-5136-45b7-8925-71563eb8f1de": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/highsnobiety-featured.png"
           }
         }
       },
@@ -332,7 +338,8 @@
         "1650391256f173c8b3-1",
         "1650391256f173c8b3-2",
         "1650391256f173c8b3-3",
-        "1650391256f173c8b3-4"
+        "1650391256f173c8b3-4",
+        "75b6ed68-5136-45b7-8925-71563eb8f1de"
       ],
       "settings": {
         "title": "As Featured In",
