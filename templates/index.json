@@ -352,7 +352,7 @@
       "type": "featured-collection-slider",
       "settings": {
         "title": "Explore Our Bestsellers",
-        "home_featured_products": "workspace",
+        "home_featured_products": "bestsellers",
         "per_row": 8,
         "view_all": false,
         "divider": false
