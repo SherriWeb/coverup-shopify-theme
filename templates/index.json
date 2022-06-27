@@ -10,6 +10,12 @@
             "image": "shopify:\/\/shop_images\/iphone-12-lifestyle.jpg"
           }
         },
+        "8a915544-3d51-4eb0-bed1-832ef4f64cbd": {
+          "type": "collection",
+          "settings": {
+            "collection": "iphone-13-pro"
+          }
+        },
         "881c221d-3a91-4514-bd2b-828c05b15875": {
           "type": "collection",
           "settings": {
@@ -24,13 +30,6 @@
             "image": "shopify:\/\/shop_images\/aalmheiri.jpg"
           }
         },
-        "66624bae-8179-4061-b732-2690c68a90b6": {
-          "type": "collection",
-          "settings": {
-            "collection": "desk-pads",
-            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg"
-          }
-        },
         "1b2f4e16-81ae-40a8-acd6-f4c3a3496ea0": {
           "type": "collection",
           "settings": {
@@ -42,15 +41,23 @@
           "settings": {
             "collection": "macbook-pro-16-m1-2021"
           }
+        },
+        "66624bae-8179-4061-b732-2690c68a90b6": {
+          "type": "collection",
+          "settings": {
+            "collection": "desk-pads",
+            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg"
+          }
         }
       },
       "block_order": [
         "2d9be8a4-9644-491b-a07e-7262ce0d7903",
+        "8a915544-3d51-4eb0-bed1-832ef4f64cbd",
         "881c221d-3a91-4514-bd2b-828c05b15875",
         "7d0d45eb-a1d0-44ff-9607-5ea82f5b523a",
-        "66624bae-8179-4061-b732-2690c68a90b6",
         "1b2f4e16-81ae-40a8-acd6-f4c3a3496ea0",
-        "b48f09fc-050e-4ba8-a156-c44481d2ae2c"
+        "b48f09fc-050e-4ba8-a156-c44481d2ae2c",
+        "66624bae-8179-4061-b732-2690c68a90b6"
       ],
       "settings": {
       }
