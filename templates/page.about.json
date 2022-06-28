@@ -22,7 +22,8 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "overlay_opacity": 0,
+            "image": "shopify:\/\/shop_images\/IMG_7271.jpg",
+            "overlay_opacity": 16,
             "focal_point": "center center"
           }
         }
@@ -130,9 +131,9 @@
       "type": "text-and-image",
       "settings": {
         "image_width": 700,
-        "subtitle": "HAPPINESS GUARANTEE",
+        "subtitle": "100% HAPPINESS GUARANTEE",
         "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "text": "<p>We stand behind everything we make. Not completetly happy with your purchase? Our Happiness Guarantee has you covered.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
