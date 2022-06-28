@@ -6,31 +6,13 @@
       "settings": {
       }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "The Cover-Up Happiness Guarantee"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+    "1656416857482de976": {
+      "type": "text-with-logo",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
+        "image": "shopify:\/\/shop_images\/Happiness_Guaranteed.png",
+        "heading": "Our Happiness Guarantee",
+        "textarea": "We want you and your baby to be totally thrilled with your Pipette products. If you're not happy with your purchase for any\nreason, opened or unopened products can be returned for a refund or a store credit for a full 60 days after you order.",
+        "bg_color": "#f8f7f5"
       }
     },
     "165640487463678939": {
@@ -107,25 +89,15 @@
         "layout": "right",
         "divider": false
       }
-    },
-    "1656416857482de976": {
-      "type": "text-with-logo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Happiness_Guaranteed.png",
-        "heading": "The Cover-Up Happiness Guarantee",
-        "textarea": "",
-        "bg_color": ""
-      }
     }
   },
   "order": [
     "main",
-    "rich-text",
+    "1656416857482de976",
     "165640487463678939",
     "165640490533a1b614",
     "1656404963ec40e0e4",
     "16564049699f767713",
-    "1656405044acc90525",
-    "1656416857482de976"
+    "1656405044acc90525"
   ]
 }
