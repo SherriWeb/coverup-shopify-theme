@@ -85,10 +85,10 @@
       "type": "text-and-image",
       "settings": {
         "image_width": 700,
-        "subtitle": "Materials",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
+        "subtitle": "",
+        "title": "Materials",
+        "text": "<p>We use the best of what nature has to offer - from wood, stone, seashell and merino wool to make products that will last for the long haul.<\/p>",
+        "button_label": "DISCOVER OUR MATERIALS →",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
@@ -97,21 +97,6 @@
       }
     },
     "1656404963ec40e0e4": {
-      "type": "text-and-image",
-      "settings": {
-        "image_width": 700,
-        "subtitle": "MATERIALS",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "16564049699f767713": {
       "type": "text-and-image",
       "settings": {
         "image_width": 700,
@@ -126,11 +111,26 @@
         "divider": false
       }
     },
+    "16564049699f767713": {
+      "type": "text-and-image",
+      "settings": {
+        "image_width": 700,
+        "subtitle": "",
+        "title": "SUSTAINABILITY",
+        "text": "<p>We'd love the world to be a better place because of Cover-Up and we know responsible b<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "1656405044acc90525": {
       "type": "text-and-image",
       "settings": {
         "image_width": 700,
-        "subtitle": "SUSTAINABILITY",
+        "subtitle": "HAPPINESS GUARANTEE",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
         "button_label": "",
