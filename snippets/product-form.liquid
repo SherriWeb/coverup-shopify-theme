@@ -80,4 +80,7 @@
       {{ current_variant | json }}
     </textarea>
   {%- endif -%}
+  {% if shop.currency ==  "EUR" %}
+    <div style="text-align: center; margin: 10px 0 0">Price Includes all EU Taxes and Duties</div>
+  {% endif %}
 {%- endform -%}

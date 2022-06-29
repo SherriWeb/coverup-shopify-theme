@@ -7934,6 +7934,19 @@ lazySizesConfig.expFactor = 4;
     $('#phone-case-popup').removeClass('active');
   });
 
+  $('.toolbar__item-help').mouseenter(function() {
+    $('.toolbar__help-menu').addClass('active');
+  })
+  $('.toolbar__help-menu').mouseenter(function() {
+    $('.toolbar__help-menu').addClass('active');
+  })
+  $('.toolbar__help-menu').mouseleave(function() {
+    $('.toolbar__help-menu').removeClass('active');
+  })
+  $('.toolbar__item-help').mouseleave(function() {
+    $('.toolbar__help-menu').removeClass('active');
+  })
+
   // Flickity product slider
   $('.grid--slick-slider').flickity({
     // options
@@ -7960,13 +7973,13 @@ lazySizesConfig.expFactor = 4;
     imagesLoaded: true
   });
 
-  // $('.recommendations--slick-slider').flickity({
-  //   // options
-  //   cellAlign: 'left',
-  //   contain: true,
-  //   wrapAround: true,
-  //   pageDots: true,
-  //   imagesLoaded: true
-  // });
+  $('.recommendations--slick-slider').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true,
+    pageDots: true,
+    imagesLoaded: true
+  });
 
 })();

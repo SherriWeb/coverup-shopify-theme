@@ -61,7 +61,7 @@
           {%- endif -%}
           {%- if related_collection.products_count > 1 -%}
             <div class="product-recommendations">
-              <div class="recommendations--slick-slider grid grid--uniform" data-aos="overflow__animation" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "pageDots": true, "imagesLoaded": true }'>
+              <div class="recommendations--slick-slider grid grid--uniform" data-aos="overflow__animation" >
                 {%- for product in related_collection.products limit: number_of_products -%}
                   {%- render 'product-grid-item',
                     product: product,

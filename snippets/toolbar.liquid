@@ -118,6 +118,18 @@
         </div>
       {%- endif -%}
 
+      <div class="toolbar__item toolbar__item-help">
+        HELP
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"/></svg>
+        <div class="toolbar__help-menu">
+          <ul>
+            {% for link in linklists[section.settings.help_menu].links %}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
       {%- if show_selectors -%}
         <div class="toolbar__item">
           {%- render 'multi-selectors',
