@@ -7973,13 +7973,13 @@ lazySizesConfig.expFactor = 4;
     imagesLoaded: true
   });
 
-  $('.recommendations--slick-slider').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    pageDots: true,
-    imagesLoaded: true
-  });
+  // $('.recommendations--slick-slider').flickity({
+  //   // options
+  //   cellAlign: 'left',
+  //   contain: true,
+  //   wrapAround: true,
+  //   pageDots: true,
+  //   imagesLoaded: true
+  // });
 
 })();
