@@ -7982,4 +7982,23 @@ lazySizesConfig.expFactor = 4;
   //   imagesLoaded: true
   // });
 
+
+  let interval = null
+
+  let domWorks = () => {
+    let d = document.querySelector('.rebuy-checkbox-label');
+    if(d){
+      console.log('dom manipulation', d)
+      document.querySelectorAll('.rebuy-checkbox-label').forEach(i => {
+        console.log(i)
+        let check = document.createElement('span');
+        check.classList.add('checkmark');
+        i.append(check);
+      })
+      // $('.rebuy-checkbox-label')
+      clearInterval(interval) // Change it via reference
+    }
+  }
+  interval = setInterval(domWorks, 1000);
+
 })();

@@ -12702,3 +12702,52 @@ span.instock {
     font-size: calc(var(--typeBaseSize)*.92);
   }
 }
+
+
+.rebuy-addon__item {
+  display: flex;
+}
+
+.rebuy-addon__item-checkbox {
+  order: 3;
+}
+
+.rebuy-addon__item-info {
+  width: 100%;
+}
+
+.rebuy-addon__item-info > div {
+  width: 100%;
+}
+
+.rebuy-checkbox-label input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: -10px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--color-body-text);
+}
+
+.checkmark:after {
+  position: absolute;
+  content: "+";
+  top: 2px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.rebuy-checkbox:checked ~ .checkmark {
+  background-color: var(--colorBorder);;
+}
+
+.rebuy-checkbox:checked ~ .checkmark:after {
+  content: "x";
+}
