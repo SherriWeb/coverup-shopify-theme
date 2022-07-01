@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "9b565aab-b129-407e-a7f4-4f3963348bbd": {
+          "type": "product-short-description",
+          "settings": {
+          }
+        },
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c": {
           "type": "alternative-products",
           "settings": {
@@ -96,6 +101,7 @@
       },
       "block_order": [
         "price",
+        "9b565aab-b129-407e-a7f4-4f3963348bbd",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
