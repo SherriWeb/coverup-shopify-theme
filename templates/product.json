@@ -181,15 +181,6 @@
         "divider": false
       }
     },
-    "1652455440f13cf44e": {
-      "type": "text-with-logo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
-        "heading": "Made From Nature, For Nature",
-        "textarea": "We craft one-of-a-kind tech accessories from planet-friendly nature materials. Whether it be wood, stone or wool felt, everyone one of our products encompasses the individuality and uniqueness that can only be found in nature.",
-        "bg_color": "#fafafa"
-      }
-    },
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
@@ -236,6 +227,15 @@
         "align_text": "left",
         "layout": "right",
         "divider": false
+      }
+    },
+    "1652455440f13cf44e": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
+        "heading": "Made From Nature, For Nature",
+        "textarea": "We craft one-of-a-kind tech accessories from planet-friendly nature materials. Whether it be wood, stone or wool felt, everyone one of our products encompasses the individuality and uniqueness that can only be found in nature.",
+        "bg_color": "#fafafa"
       }
     },
     "product-recommendations": {
@@ -357,10 +357,10 @@
     "main",
     "sub",
     "1647023327820f2ff0",
-    "1652455440f13cf44e",
     "text-and-image",
     "text-and-image2",
     "165245540006a0c402",
+    "1652455440f13cf44e",
     "product-recommendations",
     "recently-viewed",
     "collection-return",
