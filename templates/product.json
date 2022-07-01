@@ -193,11 +193,11 @@
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSCF5055_2_1920x1080_f157f66d-63a1-4b3c-b5fc-ce89037c5b5d.jpg",
+        "image": "{{ product.metafields.product.iwtone_image.value }}",
         "image_width": 700,
         "subtitle": "",
-        "title": "Handmade from Real Wood",
-        "text": "<p>Each one is completely unique. Just think of it as your very own work of art, all courtesy of Mother Nature<\/p>",
+        "title": "{{ product.metafields.product.iwtone_title.value }}",
+        "text": "<p>{{ product.metafields.product.iwtone_text | metafield_tag }}<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
