@@ -46,7 +46,7 @@
         "1657032130260e94e3-1": {
           "type": "liquid",
           "settings": {
-            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h2 style=\"text-align:center; line-height: 120%;\">One-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1>\n<p style=\"text-align:center;\">Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1>\n<p style=\"text-align:center;\">Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
             "width": "100%",
             "alignment": "center"
           }
