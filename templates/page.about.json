@@ -46,7 +46,7 @@
         "1657032130260e94e3-1": {
           "type": "liquid",
           "settings": {
-            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1>\n<p style=\"text-align:center;\">Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1><p style=\"text-align:center;\">We craft one-of-a-kind tech accessories from nature's finest materials. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>",
             "width": "100%",
             "alignment": "center"
           }
@@ -63,12 +63,6 @@
     "rich-text": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "One-a-kind-tech accessories. Handcrafted from natures's finest materials."
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
@@ -78,7 +72,6 @@
         }
       },
       "block_order": [
-        "heading",
         "text"
       ],
       "settings": {
