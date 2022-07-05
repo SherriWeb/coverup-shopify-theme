@@ -131,7 +131,8 @@
     "1656405044acc90525": {
       "type": "text-and-image",
       "settings": {
-        "image_width": 700,
+        "image": "shopify:\/\/shop_images\/sillyselleb.jpg",
+        "image_width": 500,
         "subtitle": "100% HAPPINESS GUARANTEE",
         "title": "Our Promise",
         "text": "<p>We stand behind everything we make. Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
