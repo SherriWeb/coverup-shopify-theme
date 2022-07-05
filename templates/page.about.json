@@ -116,7 +116,8 @@
     "16564049699f767713": {
       "type": "text-and-image",
       "settings": {
-        "image_width": 700,
+        "image": "shopify:\/\/shop_images\/57.jpg",
+        "image_width": 500,
         "subtitle": "",
         "title": "Sustainability",
         "text": "<p>We'd love the world to be a better place because of Cover-Up and we know responsible b<\/p>",
