@@ -62,18 +62,6 @@
     },
     "rich-text": {
       "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>We craft one-of-a-kind tech accessories from nature's finest materials. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
       "settings": {
         "align_text": "center",
         "narrow_column": true,
