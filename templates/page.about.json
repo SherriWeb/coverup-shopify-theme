@@ -12,10 +12,10 @@
         "slideshow-0": {
           "type": "image",
           "settings": {
-            "top_subheading": "HANDCRAFTED SINCE 2009",
-            "title": "Two line\ntitle slide.",
-            "title_size": 80,
-            "subheading": "And optional subtext",
+            "top_subheading": "HANDCRAFTED FROM NATURE SINCE 2009",
+            "title": "Handcrafted From Nature",
+            "title_size": 58,
+            "subheading": "Since 2009.",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -24,7 +24,7 @@
             "text_align": "vertical-center horizontal-center",
             "image": "shopify:\/\/shop_images\/about-us-header-bg.jpg",
             "overlay_opacity": 16,
-            "focal_point": "center center"
+            "focal_point": "20% 50%"
           }
         }
       },
