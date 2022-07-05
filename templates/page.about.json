@@ -22,7 +22,7 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/IMG_7271.jpg",
+            "image": "shopify:\/\/shop_images\/about-us-header-bg.jpg",
             "overlay_opacity": 16,
             "focal_point": "center center"
           }
@@ -32,11 +32,11 @@
         "slideshow-0"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "550px",
         "mobile_height": "auto",
-        "parallax": true,
+        "parallax": false,
         "style": "bars",
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 7
       }
     },
