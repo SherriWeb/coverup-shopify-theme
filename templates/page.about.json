@@ -141,6 +141,26 @@
         "layout": "right",
         "divider": false
       }
+    },
+    "1657032130608e1dcb": {
+      "type": "advanced-content",
+      "blocks": {
+        "1657032130260e94e3-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h1 style=\"text-align:center;\">Custom content<\/h1>\n<p style=\"text-align:center;\">Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1657032130260e94e3-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -151,6 +171,7 @@
     "165640490533a1b614",
     "1656404963ec40e0e4",
     "16564049699f767713",
-    "1656405044acc90525"
+    "1656405044acc90525",
+    "1657032130608e1dcb"
   ]
 }
