@@ -351,6 +351,69 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
+    },
+    "1657206484b1ea70b4": {
+      "type": "rich-text-image",
+      "blocks": {
+        "16572064848c2fc777-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text with image"
+          }
+        },
+        "16572064848c2fc777-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "12c9e693-00b0-44f2-bdf2-a4cc6c141580": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16572064848c2fc777-0",
+        "16572064848c2fc777-1",
+        "12c9e693-00b0-44f2-bdf2-a4cc6c141580"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1657206526532ef91b": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": true
+      }
+    },
+    "16572065373d713ea0": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": true
+      }
     }
   },
   "order": [
@@ -366,6 +429,9 @@
     "collection-return",
     "16524655488f0d8f8c",
     "1646327106f1714ba7",
-    "1652455445b5d5109c"
+    "1652455445b5d5109c",
+    "1657206484b1ea70b4",
+    "1657206526532ef91b",
+    "16572065373d713ea0"
   ]
 }
