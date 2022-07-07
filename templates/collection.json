@@ -28,7 +28,7 @@
         "0174d4bf-7282-4a96-b389-7bdc524544f2": {
           "type": "cta_block",
           "settings": {
-            "placement": 8,
+            "placement": 6,
             "type": "gift_card",
             "header": "",
             "richtext": ""
@@ -37,7 +37,7 @@
         "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
           "type": "cta_block",
           "settings": {
-            "placement": 11,
+            "placement": 10,
             "type": "textarea",
             "header": "",
             "richtext": "<p>Free Express Shipping<\/p>"
