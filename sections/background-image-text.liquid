@@ -6,6 +6,8 @@
   }
 {%- endstyle -%}
 
+{% if section.settings.image != blank %}
+
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
@@ -74,6 +76,8 @@
 </div>
 
 <div class="background-media-text__spacer background-media-text--{{ section.settings.height }}"></div>
+
+{% endif %}
 
 {% schema %}
   {

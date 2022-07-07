@@ -7973,15 +7973,17 @@ lazySizesConfig.expFactor = 4;
     imagesLoaded: true
   });
 
-  // $('.recommendations--slick-slider').flickity({
-  //   // options
-  //   cellAlign: 'left',
-  //   contain: true,
-  //   wrapAround: true,
-  //   pageDots: true,
-  //   imagesLoaded: true
-  // });
-
+  setTimeout(() => {
+    $('.recommendations--slick-slider').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      pageDots: true,
+      imagesLoaded: true
+    });
+    console.log('test')
+  }, 3000);
 
   let interval = null
 
