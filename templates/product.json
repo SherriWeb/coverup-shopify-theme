@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "9b565aab-b129-407e-a7f4-4f3963348bbd": {
+          "type": "product-short-description",
+          "settings": {
+          }
+        },
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c": {
           "type": "alternative-products",
           "settings": {
@@ -96,6 +101,7 @@
       },
       "block_order": [
         "price",
+        "9b565aab-b129-407e-a7f4-4f3963348bbd",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
@@ -175,67 +181,14 @@
         "divider": false
       }
     },
-    "16524554285d0e17ea": {
-      "type": "static-logos",
-      "blocks": {
-        "4095da4b-3ebe-4de2-b130-53ff816fcce2": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
-          }
-        },
-        "87d9106b-5677-4410-92a7-8a62c0f25861": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
-          }
-        },
-        "f8b9477b-e66f-4d95-bae5-9e830413256e": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
-          }
-        },
-        "310e5bb5-36bb-4a2c-bd9b-c929a0f32071": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mobile-receipt-shopify.png"
-          }
-        },
-        "700a7e85-30f1-4e2b-a4db-24083f912261": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png"
-          }
-        }
-      },
-      "block_order": [
-        "4095da4b-3ebe-4de2-b130-53ff816fcce2",
-        "87d9106b-5677-4410-92a7-8a62c0f25861",
-        "f8b9477b-e66f-4d95-bae5-9e830413256e",
-        "310e5bb5-36bb-4a2c-bd9b-c929a0f32071",
-        "700a7e85-30f1-4e2b-a4db-24083f912261"
-      ],
-      "settings": {
-      }
-    },
-    "1652455440f13cf44e": {
-      "type": "text-with-logo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
-        "heading": "Made From Nature, For Nature",
-        "textarea": "We craft one-of-a-kind tech accessories from planet-friendly nature materials. Whether it be wood, stone or wool felt, everyone one of our products encompasses the individuality and uniqueness that can only be found in nature.",
-        "bg_color": "#fafafa"
-      }
-    },
     "text-and-image": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSCF5055_2_1920x1080_f157f66d-63a1-4b3c-b5fc-ce89037c5b5d.jpg",
+        "image": "{{ product.metafields.product.iwtone_image.value }}",
         "image_width": 700,
         "subtitle": "",
-        "title": "Handmade from Real Wood",
-        "text": "<p>Each one is completely unique. Just think of it as your very own work of art, all courtesy of Mother Nature<\/p>",
+        "title": "{{ product.metafields.product.iwtone_title.value }}",
+        "text": "<p>{{ product.metafields.product.iwtone_text | metafield_tag }}<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -247,11 +200,11 @@
     "text-and-image2": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSCF5103_1920x1080_d546c6fb-f9a6-4b33-a25b-9a992f170a08.jpg",
+        "image": "{{ product.metafields.product.iwttwo_image.value }}",
         "image_width": 700,
         "subtitle": "",
-        "title": "Natural Protection for Your MacBook",
-        "text": "<p>As well as looking good, the #WoodBack is designed to protect your MacBook from scratches and nicks.<\/p>",
+        "title": "{{ product.metafields.product.iwttwo_title.value }}",
+        "text": "<p>{{ product.metafields.product.iwttwo_text | metafield_tag }}<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -263,17 +216,26 @@
     "165245540006a0c402": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSCF5237_1920x1080_afb698a4-8141-40cc-977e-95360cc783a8.jpg",
+        "image": "{{ product.metafields.product.iwtthree_image.value }}",
         "image_width": 700,
         "subtitle": "",
-        "title": "How We Make Our Skins",
-        "text": "<p>Combining modern and traditional craftmanshop, each piece of wood is laser cut, before being hand-sanded (the good old fashioned way!) to create a super smooth exterior. Coated with a specially selected finish made from a clend of vegatable oils and waxes, the raw wood is given a subtle natural shine that allows it to age beautifully over time - with added protection from water and everyday dirt.<\/p>",
+        "title": "{{ product.metafields.product.iwtthree_title.value }}",
+        "text": "<p>{{ product.metafields.product.iwtthree_text | metafield_tag }}<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
         "divider": false
+      }
+    },
+    "1652455440f13cf44e": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
+        "heading": "Made From Nature, For Nature",
+        "textarea": "We craft one-of-a-kind tech accessories from planet-friendly nature materials. Whether it be wood, stone or wool felt, everyone one of our products encompasses the individuality and uniqueness that can only be found in nature.",
+        "bg_color": "#fafafa"
       }
     },
     "product-recommendations": {
@@ -395,11 +357,10 @@
     "main",
     "sub",
     "1647023327820f2ff0",
-    "16524554285d0e17ea",
-    "1652455440f13cf44e",
     "text-and-image",
     "text-and-image2",
     "165245540006a0c402",
+    "1652455440f13cf44e",
     "product-recommendations",
     "recently-viewed",
     "collection-return",
