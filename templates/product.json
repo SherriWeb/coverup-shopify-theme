@@ -241,7 +241,7 @@
         "16572064848c2fc777-1": {
           "type": "text",
           "settings": {
-            "enlarge_text": true,
+            "enlarge_text": false,
             "text": "<p>{{ product.metafields.richtextimage.text1 | metafield_tag }}<\/p>"
           }
         },
