@@ -89,8 +89,8 @@
           "type": "tab",
           "settings": {
             "title": "FAQ",
-            "content": "",
-            "page": "faqs"
+            "content": "<p>{{ product.metafields.product_tag.product_tag_faq | metafield_tag }}<\/p>",
+            "page": ""
           }
         },
         "70383448-357a-46d5-8284-1f7916363275": {
