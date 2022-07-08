@@ -292,6 +292,7 @@
     },
     "1652455440f13cf44e": {
       "type": "text-with-logo",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext_65189e21-0425-478e-ba87-51e8bb6a5cbd.png",
         "heading": "Made From Nature, For Nature",
