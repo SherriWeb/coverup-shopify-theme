@@ -358,19 +358,20 @@
         "16572064848c2fc777-0": {
           "type": "heading",
           "settings": {
-            "title": "Rich text with image"
+            "title": "{{ product.metafields.richtextimage.header.value }}"
           }
         },
         "16572064848c2fc777-1": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>{{ product.metafields.richtextimage.text1 | metafield_tag }}<\/p>"
           }
         },
         "12c9e693-00b0-44f2-bdf2-a4cc6c141580": {
           "type": "image",
           "settings": {
+            "image": "{{ product.metafields.richtextimage.image.value }}"
           }
         }
       },
@@ -383,36 +384,6 @@
         "align_text": "center",
         "narrow_column": true,
         "divider": false
-      }
-    },
-    "1657206526532ef91b": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": true
-      }
-    },
-    "16572065373d713ea0": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "focal_point": "center",
-        "layout": "left",
-        "height": 550,
-        "framed": false,
-        "parallax": true
       }
     }
   },
@@ -430,8 +401,6 @@
     "16524655488f0d8f8c",
     "1646327106f1714ba7",
     "1652455445b5d5109c",
-    "1657206484b1ea70b4",
-    "1657206526532ef91b",
-    "16572065373d713ea0"
+    "1657206484b1ea70b4"
   ]
 }
