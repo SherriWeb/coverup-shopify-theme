@@ -326,9 +326,9 @@
         "e115116d-0d46-4be1-8591-f7e9d3074c7a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext_f8ff4f26-70cf-4362-b329-865059b2cd2d.png",
-            "subheading": "Happiness Guarantee",
-            "textarea": "If you're not feeling the positive vibes in 30 days, we'll give you a full refund, no questions asked."
+            "image": "shopify:\/\/shop_images\/Made_in_Wales.png",
+            "subheading": "MADE BY US",
+            "textarea": "All our products are handmade by us in our workshop. And thanks to nature, every product is one-of-a-kind."
           }
         },
         "3975ed31-ad23-40be-8866-472276db7ae9": {
@@ -343,8 +343,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext_f8ff4f26-70cf-4362-b329-865059b2cd2d.png",
-            "subheading": "five-star customer service",
-            "textarea": "Our customer care team are here for you, going above and beyond to make sure you're happy."
+            "subheading": "Happiness Guarantee",
+            "textarea": "If you're not feeling the positive vibes in 30 days, we'll give you a full refund, no questions asked."
           }
         }
       },
