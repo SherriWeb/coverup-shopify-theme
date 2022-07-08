@@ -229,6 +229,40 @@
         "divider": false
       }
     },
+    "1657206484b1ea70b4": {
+      "type": "rich-text-image",
+      "blocks": {
+        "16572064848c2fc777-0": {
+          "type": "heading",
+          "settings": {
+            "title": "{{ product.metafields.richtextimage.header.value }}"
+          }
+        },
+        "16572064848c2fc777-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>{{ product.metafields.richtextimage.text1 | metafield_tag }}<\/p>"
+          }
+        },
+        "12c9e693-00b0-44f2-bdf2-a4cc6c141580": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.richtextimage.image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "16572064848c2fc777-0",
+        "16572064848c2fc777-1",
+        "12c9e693-00b0-44f2-bdf2-a4cc6c141580"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "1652455440f13cf44e": {
       "type": "text-with-logo",
       "settings": {
@@ -351,40 +385,6 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
-    },
-    "1657206484b1ea70b4": {
-      "type": "rich-text-image",
-      "blocks": {
-        "16572064848c2fc777-0": {
-          "type": "heading",
-          "settings": {
-            "title": "{{ product.metafields.richtextimage.header.value }}"
-          }
-        },
-        "16572064848c2fc777-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>{{ product.metafields.richtextimage.text1 | metafield_tag }}<\/p>"
-          }
-        },
-        "12c9e693-00b0-44f2-bdf2-a4cc6c141580": {
-          "type": "image",
-          "settings": {
-            "image": "{{ product.metafields.richtextimage.image.value }}"
-          }
-        }
-      },
-      "block_order": [
-        "16572064848c2fc777-0",
-        "16572064848c2fc777-1",
-        "12c9e693-00b0-44f2-bdf2-a4cc6c141580"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
     }
   },
   "order": [
@@ -394,13 +394,13 @@
     "text-and-image",
     "text-and-image2",
     "165245540006a0c402",
+    "1657206484b1ea70b4",
     "1652455440f13cf44e",
     "product-recommendations",
     "recently-viewed",
     "collection-return",
     "16524655488f0d8f8c",
     "1646327106f1714ba7",
-    "1652455445b5d5109c",
-    "1657206484b1ea70b4"
+    "1652455445b5d5109c"
   ]
 }
