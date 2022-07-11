@@ -2,9 +2,6 @@
 {%- for block in section.blocks -%}
   {% assign blockName = block.type | split: '_' | first | split: ',' %}
   {% assign block_types = block_types | concat: blockName %}
-  {% if block.type == "heading" %}
-    {% assign block_heading = block.settings.title %}
-  {% endif %}
   {% if block.type == "text" %}
     {% assign block_text = block.settings.text %}
   {% endif %}
@@ -14,8 +11,8 @@
 {%- endfor -%}
 
 
-{% if block_types contains "heading" and block_types contains "text" and block_types contains "image" %}
-{% if block_heading != blank and block_text != blank and block_image != blank  %}
+{% if block_types contains "text" and block_types contains "image" %}
+{% if block_text != blank and block_image != blank  %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
