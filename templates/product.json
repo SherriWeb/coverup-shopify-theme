@@ -248,7 +248,7 @@
         "12c9e693-00b0-44f2-bdf2-a4cc6c141580": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.richtextimage.image.value }}"
+            "img": "{{ product.metafields.richtextimage.image.value }}"
           }
         }
       },
@@ -276,7 +276,6 @@
         "5e19624c-7214-40ab-aa23-8006d78f725b": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.richtextimage2.image.value }}"
           }
         }
       },
