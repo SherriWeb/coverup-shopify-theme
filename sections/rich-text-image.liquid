@@ -16,7 +16,7 @@
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-  <div style="margin-top: 40px;" class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+  <div style="margin-top: 100px;" class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
     {%- for block in section.blocks -%}
       <div class="theme-block" {{ block.shopify_attributes }}>
         {%- case block.type -%}
