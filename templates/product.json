@@ -276,6 +276,7 @@
         "5e19624c-7214-40ab-aa23-8006d78f725b": {
           "type": "image",
           "settings": {
+            "img": "{{ product.metafields.richtextimage2.image.value }}"
           }
         }
       },
