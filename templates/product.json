@@ -270,6 +270,12 @@
             "enlarge_text": false,
             "text": "<p>{{ product.metafields.richtextimage.text3 | metafield_tag }}<\/p>"
           }
+        },
+        "90e73fb3-6ccb-4638-a415-d94c1aa62367": {
+          "type": "image",
+          "settings": {
+            "img": "{{ product.metafields.richtextimage.image3.value }}"
+          }
         }
       },
       "block_order": [
@@ -278,7 +284,8 @@
         "12c9e693-00b0-44f2-bdf2-a4cc6c141580",
         "a081a048-59b9-4720-9df1-dff12ced3298",
         "cf266a18-9932-492e-8392-de9dd9b9edc0",
-        "b3f457e7-18a6-4838-bfce-535ec9ff109b"
+        "b3f457e7-18a6-4838-bfce-535ec9ff109b",
+        "90e73fb3-6ccb-4638-a415-d94c1aa62367"
       ],
       "settings": {
         "align_text": "center",
