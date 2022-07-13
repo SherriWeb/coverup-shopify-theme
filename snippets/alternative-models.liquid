@@ -33,7 +33,6 @@
                 {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
                 {% paginate collection.products by 1000 %}
                 {% for p in collections[collection_name2].products %}
-                  {{ p.title }}
                   {% for tag in p.tags %}
                     {% if tag contains "colour" %}
                       {% assign color = tag | remove: "colour_" %}
