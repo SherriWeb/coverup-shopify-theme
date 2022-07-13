@@ -235,7 +235,7 @@
         "image": "{{ product.metafields.product.iwtfourth_image.value }}",
         "image_width": 700,
         "subtitle": "",
-        "title": "Image with text{{ product.metafields.product.iwttfourth_title.value }}",
+        "title": "{{ product.metafields.product.iwttfourth_title.value }}",
         "text": "<p>{{ product.metafields.product.iwtfourth_text | metafield_tag }}<\/p>",
         "button_label": "",
         "button_link": "",
