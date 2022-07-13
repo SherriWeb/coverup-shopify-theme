@@ -31,6 +31,7 @@
             {% if child_link.links != blank %}
               {% for grandchild_link in child_link.links %}
                 {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
+                {{ collection_name2 }}
                 {% paginate collection.products by 1000 %}
                 {% for p in collections[collection_name2].products %}
                   {% for tag in p.tags %}
