@@ -229,6 +229,22 @@
         "divider": false
       }
     },
+    "165772629940ba5168": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "{{ product.metafields.product.iwtfourth_image.value }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Image with text{{ product.metafields.product.iwttfourth_title.value }}",
+        "text": "<p>{{ product.metafields.product.iwtfourth_text | metafield_tag }}<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
     "1657206484b1ea70b4": {
       "type": "rich-text-image",
       "blocks": {
@@ -452,6 +468,7 @@
     "text-and-image",
     "text-and-image2",
     "165245540006a0c402",
+    "165772629940ba5168",
     "1657206484b1ea70b4",
     "1657294532ba4359a8",
     "1652455440f13cf44e",
