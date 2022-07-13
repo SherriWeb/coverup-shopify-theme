@@ -47,6 +47,7 @@
             </div>
           {%- when 'image' -%}
             {%- if block.settings.image != blank -%}
+              {{ block.settings.image }}
               <div class="rte-image__img">
                 {%- assign img_url = block.settings.img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                 <img class="lazyload"
