@@ -2,17 +2,16 @@
 {%- for block in section.blocks -%}
   {% assign blockName = block.type | split: '_' | first | split: ',' %}
   {% assign block_types = block_types | concat: blockName %}
-  {% if block.type == "text" %}
+  {% if block.type == "text" and block.type != blank %}
     {% assign block_text = block.settings.text %}
   {% endif %}
-  {% if block.type == "image" %}
+  {% if block.type == "image" and block.type != blank %}
     {% assign block_image = block.setting.img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
   {% endif %}
 {%- endfor -%}
 
 
 {% if block_types contains "text" and block_types contains "image" %}
-{% if block_text != blank and block_image != blank  %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
@@ -63,7 +62,6 @@
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
 
-{% endif %}
 {% endif %}
 
   {% schema %}
