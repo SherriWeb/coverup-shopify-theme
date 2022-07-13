@@ -40,7 +40,7 @@
 
                           {% if device contains 'macbook' %}
                             {% if p.title contains product.type %}
-                              <option data-id="{{p}} == {{product.id}}" {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                              <option data-id="{{p.title}} == {{product.title}}" {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
                             {% endif %}
