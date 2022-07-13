@@ -21,7 +21,7 @@
 {% endcomment %}
 
 {% unless product.type == 'Sleeves' or model == "Leather Desk Pad" or model == "Leather Mouse Pad" %}
-<div onChange="linkToModel(this)" id="alternative-model-select">
+<select onChange="linkToModel(this)" id="alternative-model-select">
   {% for link in linklists.mega-menu.links %}
     {% if link.title == "Shop by Device" %}
       {% if link.links != blank %}
@@ -31,7 +31,6 @@
             {% if child_link.links != blank %}
               {% for grandchild_link in child_link.links %}
                 {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
-                {{ collection_name2 }}
                 {% paginate collection.products by 1000 %}
                 {% for p in collections[collection_name2].products %}
                   {% for tag in p.tags %}
@@ -93,7 +92,7 @@
       {% endif %}
     {% endif %}
   {% endfor %}
-</div>
+</select>
 {% endunless %}
 
 {% if product.type == 'Sleeves' %}
