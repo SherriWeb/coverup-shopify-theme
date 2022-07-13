@@ -33,6 +33,7 @@
                 {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
                 {% paginate collection.products by 1000 %}
                 {% for p in collections[collection_name2].products %}
+                  {{ p }}
                   {% for tag in p.tags %}
                     {% if tag contains "colour" %}
                       {% assign color = tag | remove: "colour_" %}
@@ -40,7 +41,7 @@
 
                           {% if device contains 'macbook' %}
                             {% if p.title contains product.type %}
-                              <option data-id="{{p.title}} == {{product.title}}" {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
                             {% endif %}
