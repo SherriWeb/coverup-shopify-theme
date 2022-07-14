@@ -110,7 +110,7 @@
                 {% for p in collections[collection_name2].products %}
                   {% if p.url contains title_part %}
                     <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
-                      {{ p.title | split: ' — ' | first }}
+                      {{ p.title | split: ' — ' | first }}: {{ p.metafields.size.dimension }}
                     </option>
                   {% endif %}
                 {% endfor %}
