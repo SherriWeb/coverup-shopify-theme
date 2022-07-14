@@ -47,7 +47,6 @@
             </div>
           {%- when 'image' -%}
             {%- assign img_url = block.settings.img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            {{ img_url }}
             {%- unless img_url contains "no-image" -%}
               {{ block.settings.image }}
               <div class="rte-image__img">
