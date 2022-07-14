@@ -110,7 +110,7 @@
                 {% for p in collections[collection_name2].products %}
                   {% if p.url contains title_part %}
                     <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
-                      {{ p.title | split: ' — ' | first }}: {{ p.metafields.size.dimension }}
+                      {{ p.title | split: ' — ' | first }}
                     </option>
                   {% endif %}
                 {% endfor %}
@@ -139,7 +139,7 @@
     {% endfor %}
     {% if color == product.variants[0].option1 %}
       <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
-        {{ p.title | split: ' — ' | last }}
+        {{ p.title | split: ' — ' | last }}: {{ p.metafields.size.dimension }}
       </option>
     {% endif %}
   {% endfor %}
