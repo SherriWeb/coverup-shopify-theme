@@ -61,13 +61,13 @@
                               {% endunless %}
                             {% endunless %}
                           {% elsif product.title contains "Snap" %}
-                            {% unless p.title contains "Explorer Clear" %}
+                            {% unless p.title contains "Explorer" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
                             {% endunless %}
                           {% elsif product.title contains "Explorer" %}
-                            {% unless p.title contains "Snap" %}
+                            {% unless p.title contains "Snap" or p.title contains "Explorer Clear" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
