@@ -61,25 +61,17 @@
                               {% endunless %}
                             {% endunless %}
                           {% elsif product.title contains "Snap" %}
-                            {% if p.title contains "Snap Black" %}
+                            {% unless p.title contains "Explorer" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
-                            {% else %}
-                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
-                                {{ p.title | split: ' — ' | first }}
-                              </option>
-                            {% endif %}
+                            {% endunless %}
                           {% elsif product.title contains "Explorer" %}
-                            {% if p.title contains "Explorer Black" %}
+                            {% unless p.title contains "Snap" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
-                            {% else %}
-                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
-                                {{ p.title | split: ' — ' | first }}
-                              </option>
-                            {% endif %}
+                            {% endunless %}
                           {% else %}
                             <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                               {{ p.title | split: ' — ' | first }}
