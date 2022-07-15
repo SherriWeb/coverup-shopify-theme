@@ -61,11 +61,17 @@
                               {% endunless %}
                             {% endunless %}
                           {% elsif product.title contains "Snap" %}
-                            {% unless p.title contains "Explorer" %}
+                            {% if p.title contains "Explorer Black" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
-                            {% endunless %}
+                            {% elsif p.title contains "Explorer Clear" %}
+                              
+                            {% else %}
+                              <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                                {{ p.title | split: ' — ' | first }}
+                              </option>
+                            {% endif %}
                           {% elsif product.title contains "Explorer" %}
                             {% unless p.title contains "Snap" %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
