@@ -113,6 +113,7 @@
 {% endfor %}
 
 {% assign product_collection = product.title | split: '—' | first | handleize %}
+{{ product_collection }}
 {% paginate collection.products by 1000 %}
   {% for p in collections[product_collection].products %}
 
