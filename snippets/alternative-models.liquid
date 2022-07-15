@@ -65,8 +65,6 @@
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
-                            {% elsif p.title contains "Snap Clear" %}
-                              
                             {% else %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
@@ -77,8 +75,6 @@
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
                               </option>
-                            {% elsif p.title contains "Explorer Clear" %}
-                              
                             {% else %}
                               <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
                                 {{ p.title | split: ' — ' | first }}
