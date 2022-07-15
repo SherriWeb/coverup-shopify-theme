@@ -113,7 +113,9 @@
 {% endfor %}
 
 {% assign product_collection = product.title | split: '—' | first | handleize %}
-{{ product_collection }}
+{% if product_collection == "iphone-se-2020-2022" %}
+  {% assign product_collection = "iphone-se" %}
+{% endif  %}
 {% paginate collection.products by 1000 %}
   {% for p in collections[product_collection].products %}
 
