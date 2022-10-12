@@ -6,45 +6,121 @@
       "settings": {
       }
     },
+    "ab1bde25-8988-4a8b-beb2-55fb358413e7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15675912192250__ab1bde25-8988-4a8b-beb2-55fb358413e7-1665580530da9d52ca-0": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQs"
+          }
+        },
+        "template--15675912192250__ab1bde25-8988-4a8b-beb2-55fb358413e7-1665580530da9d52ca-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Find answers to our most frequently asked questions below.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675912192250__ab1bde25-8988-4a8b-beb2-55fb358413e7-1665580530da9d52ca-0",
+        "template--15675912192250__ab1bde25-8988-4a8b-beb2-55fb358413e7-1665580530da9d52ca-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
         "faq-0": {
           "type": "rich-text",
           "settings": {
-            "title": "Shipping",
-            "text": ""
+            "title": "Shipping & Delivery",
+            "text": "",
+            "align_text": "left"
           }
         },
         "faq-1": {
           "type": "question",
           "settings": {
+            "title": "How long will my order take to reach me?",
+            "text": "<p><strong>Standard Shipping<\/strong><\/p><p>Cover-Up customers live all across the globe, so we can ship to anywhere with a letterbox. <\/p><p>We usually dispatch orders within 1-2 working days. Shipping times vary based on selected service and destination. Regular post ranges from 3 to 28 working days depending on the shipping address.<\/p><p><\/p><p>For a shipping estimate to your country, please see our <a href=\"\/pages\/shipping\" title=\"Shipping\">Shipping page<\/a>.<\/p>"
+          }
+        },
+        "1a8c5505-329b-43cd-90da-9399fdde45a5": {
+          "type": "question",
+          "settings": {
+            "title": "Where do you ship from?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "36634633-af18-42c3-aab2-53591b7ca239": {
+          "type": "question",
+          "settings": {
+            "title": "What countries do you ship to?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "4ecce428-17c8-4d30-a4fb-3852d1fc070d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I track my order?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
         "faq-2": {
           "type": "question",
           "settings": {
+            "title": "Will I have to pay customs or import charges?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "0d930891-cb04-4f83-a935-19e6558d1fcf": {
+          "type": "question",
+          "settings": {
+            "title": "My shipping address is wrong, how do I update my address?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
         "faq-3": {
           "type": "rich-text",
           "settings": {
-            "title": "Returns",
-            "text": ""
+            "title": "Returns & Exchanges",
+            "text": "",
+            "align_text": "left"
           }
         },
         "faq-4": {
           "type": "question",
           "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "d9321fd9-f275-4434-8e02-e7c9ffb0abd5": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Rich text",
+            "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+            "align_text": "left"
           }
         }
       },
       "block_order": [
         "faq-0",
         "faq-1",
+        "1a8c5505-329b-43cd-90da-9399fdde45a5",
+        "36634633-af18-42c3-aab2-53591b7ca239",
+        "4ecce428-17c8-4d30-a4fb-3852d1fc070d",
         "faq-2",
+        "0d930891-cb04-4f83-a935-19e6558d1fcf",
         "faq-3",
-        "faq-4"
+        "faq-4",
+        "d9321fd9-f275-4434-8e02-e7c9ffb0abd5"
       ],
       "settings": {
         "title": ""
@@ -53,6 +129,7 @@
   },
   "order": [
     "main",
+    "ab1bde25-8988-4a8b-beb2-55fb358413e7",
     "faq"
   ]
 }
