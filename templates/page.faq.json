@@ -183,7 +183,7 @@
           "type": "rich-text",
           "settings": {
             "title": "Our Products",
-            "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+            "text": "",
             "align_text": "left"
           }
         },
@@ -211,7 +211,7 @@
         "deee0e80-44cf-4ed7-bdb1-793fa345fd66": {
           "type": "question",
           "settings": {
-            "title": "Are you products sustainable?",
+            "title": "Are your products sustainable?",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         }
