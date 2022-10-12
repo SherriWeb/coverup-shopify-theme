@@ -182,9 +182,37 @@
         "d06cb408-76c9-4568-b843-805878bd885e": {
           "type": "rich-text",
           "settings": {
-            "title": "Rich text",
+            "title": "Our Products",
             "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
             "align_text": "left"
+          }
+        },
+        "57254387-5913-4266-8aa0-ddeb3ee51f21": {
+          "type": "question",
+          "settings": {
+            "title": "Where are Cover-Up products designed?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "ba1f0c46-af2f-4d85-8554-204c5729b22b": {
+          "type": "question",
+          "settings": {
+            "title": "Where are Cover-Up products made?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "635e8ed7-fccf-47d2-b727-4d0765d96388": {
+          "type": "question",
+          "settings": {
+            "title": "What materials do you use? Are they real?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "deee0e80-44cf-4ed7-bdb1-793fa345fd66": {
+          "type": "question",
+          "settings": {
+            "title": "Are you products sustainable?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         }
       },
@@ -209,7 +237,11 @@
         "1612fedc-ec78-49f0-8e73-6121d26fa058",
         "1687c9cf-d1d5-4ec3-bbf0-c176be5cd258",
         "cef7cb01-1044-444b-8810-68c50d7f9379",
-        "d06cb408-76c9-4568-b843-805878bd885e"
+        "d06cb408-76c9-4568-b843-805878bd885e",
+        "57254387-5913-4266-8aa0-ddeb3ee51f21",
+        "ba1f0c46-af2f-4d85-8554-204c5729b22b",
+        "635e8ed7-fccf-47d2-b727-4d0765d96388",
+        "deee0e80-44cf-4ed7-bdb1-793fa345fd66"
       ],
       "settings": {
         "title": ""
