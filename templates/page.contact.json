@@ -19,7 +19,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Have a question? Need some help? Want to know more about a product, returns, shipping options, or just fancy a chat? We’re always happy to help, so give us a call, tweet us, or drop us an email.<\/p>"
+            "text": "<p>Have a question? Need some help? Want to know more about a product, returns, shipping options, or just fancy a chat? We’re always happy to help; fill out the form below, tweet us, or drop us an email.<\/p>"
           }
         }
       },
@@ -36,7 +36,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "MAKE AN ENQUIRY",
+        "title": "",
         "text": "<p>We're based in the UK, so work on GMT. If we're not around, we'll try and get back to you ASAP the next working day.<\/p>",
         "show_phone": false,
         "narrow_column": true
@@ -61,9 +61,9 @@
           "settings": {
             "enable_image": false,
             "image_width": 650,
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "title": "Looking for Something Else?",
+            "text": "<p>For returns and exchanges head <a href=\"\/pages\/request-a-return\" target=\"_blank\" title=\"Request A Return\">here<\/a>.<br\/>Track your order <a href=\"https:\/\/www.getcasely.com\/pages\/order-lookup\">here<\/a>.<\/p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -72,8 +72,8 @@
           "settings": {
             "enable_image": false,
             "image_width": 650,
-            "title": "Press",
-            "text": "<p>If you'd like any further information, high resolution images, products for review, or would just like to say hi: help@cover-up.com<\/p>",
+            "title": "Our Details",
+            "text": "<p>Infinity Creations Ltd t\/a Cover-Up<br\/>Unit 1c, Kingsway Buildings<br\/>Bridgend Industrial Estate<br\/>Bridgend<br\/>CF31 3YH<br\/>United Kingdom<\/p><p>Company No: 11354317<br\/>VAT No: 296859818<\/p>",
             "button_label": "",
             "button_link": ""
           }
