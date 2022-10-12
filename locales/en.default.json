@@ -308,7 +308,7 @@
       "reviews": "Reviews"
     },
     "product": {
-      "description": "Description",
+      "description": "Details",
       "in_stock_label": "In stock — ships in 1-2 days",
       "stock_label": {
         "one": "Low stock - {{ count }} item left",
