@@ -89,7 +89,7 @@
         "faq-3": {
           "type": "rich-text",
           "settings": {
-            "title": "Returns & Exchanges",
+            "title": "Returns, Exchanges & Replacements",
             "text": "",
             "align_text": "left"
           }
@@ -97,16 +97,58 @@
         "faq-4": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
+            "title": "What is your returns policy?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "a54c83a2-7986-4dcc-8a63-a4b808df393b": {
+          "type": "question",
+          "settings": {
+            "title": "Do I have to pay for returns?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "18e9f4c5-291d-4987-9724-e85be3da7ed8": {
+          "type": "question",
+          "settings": {
+            "title": "I returned my order, how long will it take to get a refund?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "f2e434ee-a0ec-4b38-be75-b3de0abb25f0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I exchange my order?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "5906e2dd-e8b0-445f-99c5-1402f17fc7ce": {
+          "type": "question",
+          "settings": {
+            "title": "My order is damaged or defective. Can I get a replacement?",
             "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         },
         "d9321fd9-f275-4434-8e02-e7c9ffb0abd5": {
           "type": "rich-text",
           "settings": {
-            "title": "Rich text",
-            "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+            "title": "Orders",
+            "text": "",
             "align_text": "left"
+          }
+        },
+        "bca36d5b-ca32-4122-aa55-71b102089241": {
+          "type": "question",
+          "settings": {
+            "title": "What if my order doesn’t arrive?",
+            "text": ""
+          }
+        },
+        "8dcc95b7-ad27-4304-943e-3f692ed7e183": {
+          "type": "question",
+          "settings": {
+            "title": "How do I cancel my order?",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
           }
         }
       },
@@ -120,7 +162,13 @@
         "0d930891-cb04-4f83-a935-19e6558d1fcf",
         "faq-3",
         "faq-4",
-        "d9321fd9-f275-4434-8e02-e7c9ffb0abd5"
+        "a54c83a2-7986-4dcc-8a63-a4b808df393b",
+        "18e9f4c5-291d-4987-9724-e85be3da7ed8",
+        "f2e434ee-a0ec-4b38-be75-b3de0abb25f0",
+        "5906e2dd-e8b0-445f-99c5-1402f17fc7ce",
+        "d9321fd9-f275-4434-8e02-e7c9ffb0abd5",
+        "bca36d5b-ca32-4122-aa55-71b102089241",
+        "8dcc95b7-ad27-4304-943e-3f692ed7e183"
       ],
       "settings": {
         "title": ""
