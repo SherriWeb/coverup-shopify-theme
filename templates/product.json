@@ -71,6 +71,7 @@
         },
         "92ff90b1-1820-45f9-a4c7-afc30b09812c": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "Materials",
             "content": "<p>{{ product.metafields.product_tag.materials | metafield_tag }}<\/p>",
@@ -87,6 +88,7 @@
         },
         "a3b18c10-306a-42d3-aeb5-d1f16f1ca732": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "FAQ",
             "content": "<p>{{ product.metafields.product_tag.product_tag_faq | metafield_tag }}<\/p>",
