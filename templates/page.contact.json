@@ -36,7 +36,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "Contact us",
+        "title": "",
         "text": "<p>We're based in the UK, so work on GMT. If we're not around, we'll try and get back to you ASAP the next working day.<\/p>",
         "show_phone": false,
         "narrow_column": true
