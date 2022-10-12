@@ -50,8 +50,8 @@
           "settings": {
             "enable_image": false,
             "image_width": 650,
-            "title": "Our Details",
-            "text": "<p>Infinity Creations Ltd t\/a Cover-Up<br\/>Unit 1c, Kingsway Buildings<br\/>Bridgend Industrial Estate<br\/>Bridgend<br\/>CF31 3YH<br\/>United Kingdom<\/p><p>Company No: 11354317<br\/>VAT No: 296859818<\/p>",
+            "title": "Other Ways to Get in Touch",
+            "text": "<p><strong>Email<\/strong><br\/>help@cover-up.com<\/p><p><strong>Tweet Us<\/strong><br\/><a href=\"https:\/\/twitter.com\/cover_up\" title=\"@Cover-Up\">@cover_up<\/a><\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -62,7 +62,7 @@
             "enable_image": false,
             "image_width": 650,
             "title": "Looking for Something Else?",
-            "text": "<p>For returns and exchanges head <a href=\"\/pages\/request-a-return\" target=\"_blank\" title=\"Request A Return\">here<\/a>.<br\/>Track your order <a href=\"https:\/\/www.getcasely.com\/pages\/order-lookup\">here<\/a>.<\/p>",
+            "text": "<p>For returns and exchanges head <a href=\"\/pages\/request-a-return\" target=\"_blank\" title=\"Request A Return\">here<\/a>.<br\/>Track your order <a href=\"\/pages\/shipping\" title=\"Shipping\">here<\/a>.<\/p>",
             "button_label": "",
             "button_link": ""
           }
