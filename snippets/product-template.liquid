@@ -380,7 +380,7 @@
                       {% capture tab_content %}
                         {% render 'shipping-rates' %}
                       {% endcapture %}
-                      {%- render 'tab', id: tab_id, title: 'Shipping', content: tab_content -%}
+                      {%- render 'tab', id: tab_id, title: 'Shipping & Returns', content: tab_content -%}
                     </div>
                   {%- when 'icon_tab' -%}
                     {% if product.metafields.tab_icon.icon != blank %}
