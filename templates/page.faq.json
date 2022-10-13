@@ -169,7 +169,7 @@
           "type": "question",
           "settings": {
             "title": "How do I use a promotional code you sent me?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Add the items you'd like to buy to your Shopping Cart, and then click the 'Checkout' button. This will start the checkout process, where you'll then be asked to add your personal details. Once you've added your details, and before you need to give your payment details there will be a box saying 'Gift card or discount code'. Add your code in here and then click 'Apply'. Your discount should now be applied.<\/p>"
           }
         },
         "cef7cb01-1044-444b-8810-68c50d7f9379": {
