@@ -76,27 +76,11 @@
         "subtitle": "",
         "title": "Better materials = Better products",
         "text": "<p>We use the best of what nature has to offer - from wood, stone, seashell and merino wool to make products that will last for the long haul.<\/p><p>We work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.<\/p>",
-        "button_label": "Explore Our Materials →",
+        "button_label": "Explore our materials →",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
-        "divider": false
-      }
-    },
-    "165640490533a1b614": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/57.jpg",
-        "image_width": 700,
-        "subtitle": "Better Materials = Better Products",
-        "title": "",
-        "text": "<p>We use the best of what nature has to offer - from wood, stone, seashell and merino wool to make products that will last for the long haul.<\/p>",
-        "button_label": "DISCOVER OUR MATERIALS →",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "layout": "left",
         "divider": false
       }
     },
@@ -140,7 +124,7 @@
         "subtitle": "",
         "title": "Happiness Guarantee",
         "text": "<p>We stand behind everything we make. Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
-        "button_label": "See Our Happiness Guarantee →",
+        "button_label": "See our Happiness Guarantee →",
         "button_link": "shopify:\/\/pages\/happiness-guarantee",
         "button_style": "primary",
         "align_text": "left",
@@ -155,7 +139,6 @@
     "1657032130608e1dcb",
     "rich-text",
     "165640487463678939",
-    "165640490533a1b614",
     "1656404963ec40e0e4",
     "16564049699f767713",
     "1656405044acc90525"
