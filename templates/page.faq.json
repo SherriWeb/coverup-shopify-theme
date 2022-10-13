@@ -162,7 +162,7 @@
           "type": "question",
           "settings": {
             "title": "Can I add items to my order after I have hit the place my order?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>If you want to add an item to your order please <a href=\"mailto:help@cover-up.com\" title=\"mailto:help@cover-up.com\">email our support team <\/a>within 24hrs of your purchase and as long as your order hasn't shipped we'll take care of this for you,<\/p>"
           }
         },
         "1687c9cf-d1d5-4ec3-bbf0-c176be5cd258": {
