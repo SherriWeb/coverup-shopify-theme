@@ -148,7 +148,7 @@
           "type": "question",
           "settings": {
             "title": "How do I cancel my order?",
-            "text": "<p>As long as we haven't already shipped it, you can cancel your order within 24 hours of placing it. <\/p><p>You can do this yourself by clicking the 'Edit \/ Cancel' order link in your order confirmation email or by emailing our support team. <\/p><p>We may still be able to cancel your order after 24 hours if we haven't shipped it. <\/p><p><\/p><p>Anything after this window will be treated as a regular refund.<\/p>"
+            "text": "<p>As long as we haven't already shipped it, you can cancel your order within 24 hours of placing it. <\/p><p>You can do this yourself by clicking the 'Edit \/ Cancel' order link in your order confirmation email or by <a href=\"mailto:help@cover-up.com\" title=\"mailto:help@cover-up.com\">emailing our support team<\/a>. <\/p><p>We may still be able to cancel your order after 24 hours if we haven't shipped it, so please <a href=\"mailto:help@cover-up.com\" title=\"mailto:help@cover-up.com\">email our support team as soon as possible<\/a>.<\/p><p>Anything after this window will be treated as a regular refund.<\/p>"
           }
         },
         "5cec1e64-eb84-41d8-8d28-4e5c3fc3c494": {
