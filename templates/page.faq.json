@@ -69,7 +69,7 @@
           "type": "question",
           "settings": {
             "title": "Can I track my order?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Our Standard Shipping service only offers tracking within the UK or USA as standard. We offer an additonal option to upgrade to a tracked service for other counries. <\/p><p>All Express Shipping orders come with tracking as standard.<\/p>"
           }
         },
         "faq-2": {
