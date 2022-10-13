@@ -176,7 +176,7 @@
           "type": "question",
           "settings": {
             "title": "I haven't received a confirmation email after I placed my order?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Uh-oh. It’s likely that for some reason your order hasn’t completed or there's a typo in your email address. Please contact our support team and we’ll double check this for you so that you can go ahead and place your order again.<\/p>"
           }
         },
         "d06cb408-76c9-4568-b843-805878bd885e": {
