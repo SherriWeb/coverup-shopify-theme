@@ -126,7 +126,7 @@
           "type": "question",
           "settings": {
             "title": "My order is damaged or defective. Can I get a replacement?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>We’re pretty stringent with our quality control, but occasionally something might slip through the cracks. If your product is faulty, or we sent you an incorrect order by mistake, we will normally replace it free of charge or you can send it back to us within 60 days of delivery for a full refund (including shipping).<\/p><p>If you been using your Cover-Up product and it becomes damaged through wear and tear, a drop, water damage or it was removed as part of a repair, then we unfortunately cannot offer a replacement. <\/p>"
           }
         },
         "d9321fd9-f275-4434-8e02-e7c9ffb0abd5": {
