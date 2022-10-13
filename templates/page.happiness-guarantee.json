@@ -76,7 +76,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Do you have any another questions that we haven't answered above? Please feel free to reach out to our friendly team with your queries - help@cover-up.com<\/p>"
+            "text": "<p>Do you have any another questions that we haven't answered above? Please feel free to reach out to our friendly team with your queries - <strong>help@cover-up.com<\/strong><\/p>"
           }
         }
       },
