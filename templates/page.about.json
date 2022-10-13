@@ -71,6 +71,7 @@
     "165640487463678939": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_7271.jpg",
         "image_width": 700,
         "subtitle": "Products",
         "title": "Products That Wear in Not Out",
@@ -86,6 +87,7 @@
     "165640490533a1b614": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/57.jpg",
         "image_width": 700,
         "subtitle": "Our Materials",
         "title": "The best of mother nature",
@@ -101,6 +103,7 @@
     "1656404963ec40e0e4": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/hapiness-guarantee-damaged-defective_2506785a-c165-4db7-ab2a-e10ef5466271.jpg",
         "image_width": 700,
         "subtitle": "CRAFTSMANSHIP",
         "title": "Image with text",
@@ -118,7 +121,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sustainability.jpg",
         "image_width": 500,
-        "subtitle": "",
+        "subtitle": "Better Materials = Better Products",
         "title": "We use only the good stuff",
         "text": "<p>We'd love the world to be a better place because of Cover-Up and we know responsible b<\/p>",
         "button_label": "",
@@ -135,7 +138,7 @@
         "image": "shopify:\/\/shop_images\/sillyselleb.jpg",
         "image_width": 500,
         "subtitle": "",
-        "title": "Our Happiness Guarantee",
+        "title": "Happiness Guarantee",
         "text": "<p>We stand behind everything we make. Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
         "button_label": "Learn more →",
         "button_link": "shopify:\/\/pages\/happiness-guarantee",
