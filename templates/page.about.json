@@ -89,7 +89,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/57.jpg",
         "image_width": 700,
-        "subtitle": "Our Materials",
+        "subtitle": "Better Materials = Better Products",
         "title": "The best of mother nature",
         "text": "<p>We use the best of what nature has to offer - from wood, stone, seashell and merino wool to make products that will last for the long haul.<\/p>",
         "button_label": "DISCOVER OUR MATERIALS →",
@@ -121,9 +121,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sustainability.jpg",
         "image_width": 500,
-        "subtitle": "Better Materials = Better Products",
+        "subtitle": "",
         "title": "We use only the good stuff",
-        "text": "<p>We'd love the world to be a better place because of Cover-Up and we know responsible b<\/p>",
+        "text": "<p>We might only be small but we know we can have a big impact. In an industry where most products are made from plastic, we decided to make things a little more naturally. <\/p><p>Through our products, processes and packaging we're actively working towards having a positive impact on the planet.<\/p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -135,7 +135,7 @@
     "1656405044acc90525": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/sillyselleb.jpg",
+        "image": "shopify:\/\/shop_images\/happiness-guarantee-not_what-you-expected_fde413cc-429b-4903-8391-2f1b137fe896.jpg",
         "image_width": 500,
         "subtitle": "",
         "title": "Happiness Guarantee",
