@@ -155,7 +155,7 @@
           "type": "question",
           "settings": {
             "title": "What currency can I pay in?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Depending on where you're browsing from, we try to select the best currency for you to pay in. All transactions are processed in the currency shown on the product and checkout pages. <\/p>"
           }
         },
         "1612fedc-ec78-49f0-8e73-6121d26fa058": {
