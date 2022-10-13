@@ -141,7 +141,7 @@
           "type": "question",
           "settings": {
             "title": "What if my order doesn’t arrive?",
-            "text": "<p>If your order doesn’t arrive within the maximum estimated timeframe we’ll send out a replacement using express shipping wherever it’s available. Simply <a href=\"mailto:support@bellroy.com\">email our support team <\/a>with your order details.<\/p>"
+            "text": "<p>If your order doesn’t arrive within the maximum estimated timeframe we’ll send out a replacement using express shipping wherever it’s available. Simply <a href=\"mailto:help@cover-up.com\" title=\"mailto:help@cover-up.com\">email our support team<\/a> with your order details.<\/p>"
           }
         },
         "8dcc95b7-ad27-4304-943e-3f692ed7e183": {
