@@ -119,7 +119,7 @@
           "type": "question",
           "settings": {
             "title": "Can I exchange my order?",
-            "text": "<p>In most cases, yes. Please complete drop us an email to help@cover-up.com and we'll do our very best to help you.<\/p>"
+            "text": "<p>In most cases, yes. Please complete <a href=\"mailto:help@cover-up.com\" title=\"mailto:help@cover-up.com\">drop our support team an email<\/a> and we'll do our very best to help you.<\/p>"
           }
         },
         "5906e2dd-e8b0-445f-99c5-1402f17fc7ce": {
