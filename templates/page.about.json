@@ -138,7 +138,7 @@
         "title": "Our Happiness Guarantee",
         "text": "<p>We stand behind everything we make. Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
         "button_label": "Learn more →",
-        "button_link": "https:\/\/www.cover-up.com\/pages\/our-guarantee",
+        "button_link": "shopify:\/\/pages\/happiness-guarantee",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
