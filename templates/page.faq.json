@@ -19,7 +19,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Find answers to our most frequently asked questions below.<\/p>"
+            "text": "<p>Find answers to our most frequently asked questions below.<\/p><p>If you can't find the answer you're looking for please feel free to drop as email: help@cover-up.com and we'll get back to you as quickly as we can. <\/p>"
           }
         }
       },
