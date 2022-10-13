@@ -134,8 +134,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/sillyselleb.jpg",
         "image_width": 500,
-        "subtitle": "100% HAPPINESS GUARANTEE",
-        "title": "Our Promise",
+        "subtitle": "",
+        "title": "Our Happiness Guarantee",
         "text": "<p>We stand behind everything we make. Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
         "button_label": "Learn more →",
         "button_link": "https:\/\/www.cover-up.com\/pages\/our-guarantee",
