@@ -191,14 +191,14 @@
           "type": "question",
           "settings": {
             "title": "Where are Cover-Up products designed?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>The design process mostly happens in our workshop in Wales, UK. The Cover-Up workshop is equipped with a design lab that lets us prototype new styles using 3D printing, laser cutting and other fun machines. <\/p>"
           }
         },
         "ba1f0c46-af2f-4d85-8554-204c5729b22b": {
           "type": "question",
           "settings": {
             "title": "Where are Cover-Up products made?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>The vast majority of our products come to life in our own workshop in Wales. <\/p><p>For some products such as wireless chargers we may source electrical components from countries such as China.<\/p>"
           }
         },
         "635e8ed7-fccf-47d2-b727-4d0765d96388": {
