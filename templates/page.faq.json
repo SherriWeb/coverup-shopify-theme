@@ -212,7 +212,7 @@
           "type": "question",
           "settings": {
             "title": "Are your products sustainable?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>Our number one environmental goal is to make products that are used and loved for as long as possible. This is why we chose to use natural materials from the world around us. <\/p><p>Each product page on our website contains a sustainability tab where you'll find details on the sustainability of each material we use.<\/p>"
           }
         }
       },
