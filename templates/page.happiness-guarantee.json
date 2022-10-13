@@ -34,6 +34,7 @@
     "1656431260a8443cdb": {
       "type": "text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/hapiness-guarantee-damaged-defective.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Damaged or Defective?",
@@ -42,7 +43,7 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
