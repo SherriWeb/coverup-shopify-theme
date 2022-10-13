@@ -69,6 +69,33 @@
         "layout": "right",
         "divider": false
       }
+    },
+    "6a61b96f-efc0-4319-aa83-54569b043b63": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16168784134394__6a61b96f-efc0-4319-aa83-54569b043b63-1665667640121e813f-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--16168784134394__6a61b96f-efc0-4319-aa83-54569b043b63-1665667640121e813f-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Do you have any another questions that we haven't answered above? Please feel free to reach out to our friendly team with your queries - help@cover-up.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16168784134394__6a61b96f-efc0-4319-aa83-54569b043b63-1665667640121e813f-0",
+        "template--16168784134394__6a61b96f-efc0-4319-aa83-54569b043b63-1665667640121e813f-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -77,6 +104,7 @@
     "165640490533a1b614",
     "1656431260a8443cdb",
     "3f6cf1a2-73fd-43fd-91b0-c2a2332e23a7",
-    "3bd563c4-951c-4de8-9eb9-017df775786f"
+    "3bd563c4-951c-4de8-9eb9-017df775786f",
+    "6a61b96f-efc0-4319-aa83-54569b043b63"
   ]
 }
