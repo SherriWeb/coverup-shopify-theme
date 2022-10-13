@@ -68,19 +68,35 @@
         "divider": false
       }
     },
+    "c171f657-2f20-4b51-951b-c42a6be09f1c": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cherry-macbook-skin-homepage-mobile_6177a8d5-02b7-4f41-9276-a33a5e60ddb4.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Making work a little more enjoyable.",
+        "text": "<p>It’s simple: when you feel good while working, you’re able to do your best work. We aim to bring joy to your day through a more empathetic, ergonomic, and sustainable approach to how we treat our body and mind while working<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
     "165640487463678939": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_7271.jpg",
         "image_width": 700,
         "subtitle": "",
-        "title": "Better materials = Better products",
+        "title": "Better materials means better products",
         "text": "<p>We use the best of what nature has to offer - from wood, stone, seashell and merino wool to make products that will last for the long haul.<\/p><p>We work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.<\/p>",
         "button_label": "Explore our materials →",
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -96,7 +112,7 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     },
@@ -112,7 +128,7 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "right",
+        "layout": "left",
         "divider": false
       }
     },
@@ -128,7 +144,7 @@
         "button_link": "shopify:\/\/pages\/happiness-guarantee",
         "button_style": "primary",
         "align_text": "left",
-        "layout": "left",
+        "layout": "right",
         "divider": false
       }
     }
@@ -138,6 +154,7 @@
     "slideshow",
     "1657032130608e1dcb",
     "rich-text",
+    "c171f657-2f20-4b51-951b-c42a6be09f1c",
     "165640487463678939",
     "1656404963ec40e0e4",
     "16564049699f767713",
