@@ -83,7 +83,7 @@
           "type": "question",
           "settings": {
             "title": "My shipping address is wrong, how do I update my address?",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+            "text": "<p>You can edit the shipping address in your order within the first 24 hours of placing your order by logging into your account or clicking the 'Edit Order' link in your order confirmation email. <\/p>"
           }
         },
         "faq-3": {
