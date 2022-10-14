@@ -168,12 +168,12 @@
         "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
+            "subheading": "",
             "heading": "Announce your promotion",
             "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
+            "cta_text1": "",
             "cta_link1": "",
-            "cta_text2": "Shop All",
+            "cta_text2": "",
             "cta_link2": "",
             "video_url": "",
             "width": "33",
