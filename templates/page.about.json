@@ -167,12 +167,19 @@
           "type": "form",
           "settings": {
           }
+        },
+        "ea961c77-22e6-4ec0-9663-ee174f7e86ab": {
+          "type": "disclaimer",
+          "settings": {
+            "disclaimer": "Note: You can opt-out at any time. See our <a href=\"\/pages\/privacy-policy\">Privacy Policy<\/a> and <a href=\"\/pages\/terms-of-use\">Terms<\/a>."
+          }
         }
       },
       "block_order": [
         "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-0",
         "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-1",
-        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2"
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2",
+        "ea961c77-22e6-4ec0-9663-ee174f7e86ab"
       ],
       "settings": {
         "color_background": "#f9f9f9",
