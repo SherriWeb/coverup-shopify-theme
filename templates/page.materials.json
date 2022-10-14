@@ -76,6 +76,15 @@
         "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "bg_color": "#f8f7f5"
       }
+    },
+    "50d22b81-d316-4cbb-8cbb-b846e2e95ef9": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Stone.png",
+        "heading": "Stone",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
+        "bg_color": ""
+      }
     }
   },
   "order": [
@@ -83,6 +92,7 @@
     "66a9adea-02fe-49ce-84f3-e74974c1e96a",
     "42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067",
     "1656416857482de976",
-    "d563aef6-e8ec-40c6-ada4-f4a741ee834f"
+    "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
+    "50d22b81-d316-4cbb-8cbb-b846e2e95ef9"
   ]
 }
