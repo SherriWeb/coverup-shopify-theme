@@ -147,6 +147,37 @@
         "layout": "right",
         "divider": false
       }
+    },
+    "c763657e-8d54-4182-bcd1-9e819729f5f2": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-0": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up and save"
+          }
+        },
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        },
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2": {
+          "type": "form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-0",
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-1",
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
     }
   },
   "order": [
@@ -158,6 +189,7 @@
     "165640487463678939",
     "1656404963ec40e0e4",
     "16564049699f767713",
-    "1656405044acc90525"
+    "1656405044acc90525",
+    "c763657e-8d54-4182-bcd1-9e819729f5f2"
   ]
 }
