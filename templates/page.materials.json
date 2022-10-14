@@ -71,8 +71,9 @@
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f": {
       "type": "text-with-logo",
       "settings": {
+        "image": "shopify:\/\/shop_images\/One_of_a_Kind.png",
         "heading": "Wood",
-        "textarea": "",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "bg_color": "#f8f7f5"
       }
     }
