@@ -94,6 +94,15 @@
         "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "bg_color": "#f8f7f5"
       }
+    },
+    "a88ef106-0b37-4c45-8139-3f8deeeaedfd": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Wool_Felt.png",
+        "heading": "Wool Felt",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
+        "bg_color": ""
+      }
     }
   },
   "order": [
@@ -103,6 +112,7 @@
     "1656416857482de976",
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9",
-    "146cbfae-fb75-4851-99db-67a8e8a42a41"
+    "146cbfae-fb75-4851-99db-67a8e8a42a41",
+    "a88ef106-0b37-4c45-8139-3f8deeeaedfd"
   ]
 }
