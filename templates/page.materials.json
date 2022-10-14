@@ -202,7 +202,7 @@
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-bottom horizontal-left",
-            "focal_point": "bottom",
+            "focal_point": "center",
             "color_accent": "rgba(0,0,0,0)",
             "boxed": false,
             "framed": false
