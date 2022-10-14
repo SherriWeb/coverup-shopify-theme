@@ -104,6 +104,63 @@
         "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "bg_color": "#f8f7f5"
       }
+    },
+    "1a03b0b6-dd85-4441-905a-7a9dbbfd6668": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-top horizontal-left",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0",
+        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
     }
   },
   "order": [
@@ -114,6 +171,7 @@
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9",
     "146cbfae-fb75-4851-99db-67a8e8a42a41",
-    "a88ef106-0b37-4c45-8139-3f8deeeaedfd"
+    "a88ef106-0b37-4c45-8139-3f8deeeaedfd",
+    "1a03b0b6-dd85-4441-905a-7a9dbbfd6668"
   ]
 }
