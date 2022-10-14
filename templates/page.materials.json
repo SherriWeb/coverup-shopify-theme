@@ -87,6 +87,72 @@
         "bg_color": "#f8f7f5"
       }
     },
+    "b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "4217e004-496f-4382-a52b-0662a02e7fe7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/materials-stone-product.jpg",
+            "link": "",
+            "width": "33"
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-0",
+        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-1",
+        "4217e004-496f-4382-a52b-0662a02e7fe7"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
+    },
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd": {
       "type": "text-with-logo",
       "settings": {
@@ -245,6 +311,7 @@
     "1656416857482de976",
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9",
+    "b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b",
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd",
     "1a03b0b6-dd85-4441-905a-7a9dbbfd6668",
     "146cbfae-fb75-4851-99db-67a8e8a42a41",
