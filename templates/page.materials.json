@@ -87,15 +87,6 @@
         "bg_color": "#f8f7f5"
       }
     },
-    "146cbfae-fb75-4851-99db-67a8e8a42a41": {
-      "type": "text-with-logo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Shell.png",
-        "heading": "Seashell",
-        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
-        "bg_color": "#f8f7f5"
-      }
-    },
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd": {
       "type": "text-with-logo",
       "settings": {
@@ -119,7 +110,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "50",
+            "width": "33",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-top horizontal-left",
@@ -140,7 +131,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "50",
+            "width": "33",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
@@ -149,11 +140,95 @@
             "boxed": false,
             "framed": false
           }
+        },
+        "f4b19387-99ea-465b-b5b2-e53327370ec9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/materials-felt-product_63dbe609-e33c-4a44-80d5-020b3234ae9d.jpg",
+            "link": "",
+            "width": "33"
+          }
         }
       },
       "block_order": [
         "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0",
-        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1"
+        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1",
+        "f4b19387-99ea-465b-b5b2-e53327370ec9"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": true
+      }
+    },
+    "146cbfae-fb75-4851-99db-67a8e8a42a41": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Shell.png",
+        "heading": "Seashell",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
+        "bg_color": "#f8f7f5"
+      }
+    },
+    "9b86ce42-7d51-4455-9c06-30f89cc6363b": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "a828fc92-24bf-43ca-a717-9137e25969dd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/materials-shell-product.jpg",
+            "link": "",
+            "width": "33"
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-0",
+        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-1",
+        "a828fc92-24bf-43ca-a717-9137e25969dd"
       ],
       "settings": {
         "full_width": false,
@@ -170,8 +245,9 @@
     "1656416857482de976",
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9",
-    "146cbfae-fb75-4851-99db-67a8e8a42a41",
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd",
-    "1a03b0b6-dd85-4441-905a-7a9dbbfd6668"
+    "1a03b0b6-dd85-4441-905a-7a9dbbfd6668",
+    "146cbfae-fb75-4851-99db-67a8e8a42a41",
+    "9b86ce42-7d51-4455-9c06-30f89cc6363b"
   ]
 }
