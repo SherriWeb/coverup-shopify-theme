@@ -6,12 +6,39 @@
       "settings": {
       }
     },
+    "42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16634886947066__42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067-1665760795bd2396a8-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "template--16634886947066__42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067-1665760795bd2396a8-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067-1665760795bd2396a8-0",
+        "template--16634886947066__42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067-1665760795bd2396a8-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "1656416857482de976": {
       "type": "text-with-logo",
       "settings": {
         "image": "shopify:\/\/shop_images\/One_of_a_Kind.png",
-        "heading": "Materials",
-        "textarea": "We want you to be totally thrilled with your Cover-Up products. If you're not happy with your purchase for any\nreason, opened or unopened products can be returned for a refund or exchanged for a full 60 days after you order.",
+        "heading": "Veg Tanned Leather",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
         "bg_color": "#f8f7f5"
       }
     },
@@ -89,14 +116,67 @@
         "narrow_column": true,
         "divider": false
       }
+    },
+    "e4362470-4651-471d-974f-19a920acd75b": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-0": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-2": {
+          "type": "variant_picker",
+          "settings": {
+            "size_chart": "",
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-0",
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-1",
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-2",
+        "template--16634886947066__e4362470-4651-471d-974f-19a920acd75b-1665760471c7473316-3"
+      ],
+      "settings": {
+        "featured_product": "",
+        "divider": false,
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
     }
   },
   "order": [
     "main",
+    "42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067",
     "1656416857482de976",
     "165640490533a1b614",
     "1656431260a8443cdb",
     "3bd563c4-951c-4de8-9eb9-017df775786f",
-    "6a61b96f-efc0-4319-aa83-54569b043b63"
+    "6a61b96f-efc0-4319-aa83-54569b043b63",
+    "e4362470-4651-471d-974f-19a920acd75b"
   ]
 }
