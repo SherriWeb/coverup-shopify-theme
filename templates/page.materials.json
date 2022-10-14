@@ -13,7 +13,7 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Materials",
+            "title": "Our Materials",
             "title_size": 50,
             "subheading": "",
             "link": "",
@@ -22,6 +22,7 @@
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/materials-felt.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
@@ -101,7 +102,7 @@
         "image": "shopify:\/\/shop_images\/Wool_Felt.png",
         "heading": "Wool Felt",
         "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
-        "bg_color": ""
+        "bg_color": "#f8f7f5"
       }
     }
   },
