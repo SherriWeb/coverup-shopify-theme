@@ -60,15 +60,6 @@
         "divider": false
       }
     },
-    "1656416857482de976": {
-      "type": "text-with-logo",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Leather.png",
-        "heading": "Vegetable Tanned Leather",
-        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
-        "bg_color": "#f8f7f5"
-      }
-    },
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f": {
       "type": "text-with-logo",
       "settings": {
@@ -76,6 +67,63 @@
         "heading": "Wood",
         "textarea": "Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.",
         "bg_color": "#f8f7f5"
+      }
+    },
+    "361f7d86-d622-4251-bcc0-765555a52d25": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0",
+        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
       }
     },
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9": {
@@ -276,19 +324,95 @@
         "space_above": true,
         "space_below": true
       }
+    },
+    "1656416857482de976": {
+      "type": "text-with-logo",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Leather.png",
+        "heading": "Vegetable Tanned Leather",
+        "textarea": "Why use the bad stuff when you can have good? Inspired by our surroundings, we work hard at choosing only premium natural materials from suppliers who care about their customers and the environment too.",
+        "bg_color": "#f8f7f5"
+      }
+    },
+    "ea07c970-7860-4855-831f-94dfbee22c93": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "33",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "focal_point": "center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "9717a654-b366-41a4-8c64-ec1bf6474969": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33"
+          }
+        }
+      },
+      "block_order": [
+        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0",
+        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-1",
+        "9717a654-b366-41a4-8c64-ec1bf6474969"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true
+      }
     }
   },
   "order": [
     "main",
     "66a9adea-02fe-49ce-84f3-e74974c1e96a",
     "42f78dcc-7822-4f6a-a5ef-bf4ccc9bd067",
-    "1656416857482de976",
     "d563aef6-e8ec-40c6-ada4-f4a741ee834f",
+    "361f7d86-d622-4251-bcc0-765555a52d25",
     "50d22b81-d316-4cbb-8cbb-b846e2e95ef9",
     "b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b",
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd",
     "1a03b0b6-dd85-4441-905a-7a9dbbfd6668",
     "146cbfae-fb75-4851-99db-67a8e8a42a41",
-    "9b86ce42-7d51-4455-9c06-30f89cc6363b"
+    "9b86ce42-7d51-4455-9c06-30f89cc6363b",
+    "1656416857482de976",
+    "ea07c970-7860-4855-831f-94dfbee22c93"
   ]
 }
