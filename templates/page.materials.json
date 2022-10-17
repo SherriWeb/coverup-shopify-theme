@@ -83,7 +83,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "50",
+            "width": "33",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
@@ -126,7 +126,7 @@
           "settings": {
             "link": "",
             "text": "",
-            "width": "100",
+            "width": "33",
             "height": 300,
             "color_tint": "#000000",
             "color_tint_opacity": 8,
