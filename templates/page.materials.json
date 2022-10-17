@@ -337,6 +337,27 @@
     "ea07c970-7860-4855-831f-94dfbee22c93": {
       "type": "promo-grid",
       "blocks": {
+        "ed7fd184-0306-4037-8046-81f80a518473": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "\"Really beautiful and smells lovely. Excellent quality. Nice addition to my office desk.\" - Michael C",
+            "image": "shopify:\/\/shop_images\/materials-leather-2.jpg",
+            "width": "33",
+            "height": 300,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
+        "9717a654-b366-41a4-8c64-ec1bf6474969": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/materials-leather.jpg",
+            "link": "",
+            "width": "33"
+          }
+        },
         "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0": {
           "type": "advanced",
           "settings": {
@@ -344,7 +365,7 @@
             "heading": "Leather Desk Pad",
             "textarea": "A large leather Desk Pad to give your workspace the ultimate upgrade.",
             "cta_text1": "Shop This →",
-            "cta_link1": "",
+            "cta_link1": "https:\/\/www.cover-up.com\/collections\/desk-pads\/products\/large-leather-desk-pad-tan",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/materials-leather-product.png",
@@ -358,33 +379,12 @@
             "boxed": false,
             "framed": false
           }
-        },
-        "9717a654-b366-41a4-8c64-ec1bf6474969": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/materials-leather.jpg",
-            "link": "",
-            "width": "33"
-          }
-        },
-        "ed7fd184-0306-4037-8046-81f80a518473": {
-          "type": "simple",
-          "settings": {
-            "link": "",
-            "text": "\"Really beautiful and smells lovely. Excellent quality. Nice addition to my office desk.\" - Michael C",
-            "image": "shopify:\/\/shop_images\/materials-leather-2.jpg",
-            "width": "33",
-            "height": 300,
-            "color_tint": "#000000",
-            "color_tint_opacity": 8,
-            "framed": false
-          }
         }
       },
       "block_order": [
-        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0",
+        "ed7fd184-0306-4037-8046-81f80a518473",
         "9717a654-b366-41a4-8c64-ec1bf6474969",
-        "ed7fd184-0306-4037-8046-81f80a518473"
+        "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0"
       ],
       "settings": {
         "full_width": false,
