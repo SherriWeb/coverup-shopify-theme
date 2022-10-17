@@ -101,7 +101,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "50",
+            "width": "33",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
@@ -116,7 +116,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/materials-stone-product.jpg",
             "link": "",
-            "width": "50"
+            "width": "33"
           }
         },
         "6fe2b8a5-02a5-459c-8e4b-04f0ef8fe8af": {
@@ -124,7 +124,7 @@
           "settings": {
             "link": "",
             "text": "",
-            "width": "100",
+            "width": "33",
             "height": 300,
             "color_tint": "#000000",
             "color_tint_opacity": 8,
