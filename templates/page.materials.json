@@ -101,28 +101,7 @@
             "cta_text2": "Shop All",
             "cta_link2": "",
             "video_url": "",
-            "width": "33",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
-        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-1": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "33",
+            "width": "50",
             "height": 500,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
@@ -137,20 +116,19 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/materials-stone-product.jpg",
             "link": "",
-            "width": "33"
+            "width": "50"
           }
         }
       },
       "block_order": [
         "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-0",
-        "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-1",
         "4217e004-496f-4382-a52b-0662a02e7fe7"
       ],
       "settings": {
         "full_width": false,
         "gutter_size": 20,
-        "space_above": true,
-        "space_below": true
+        "space_above": false,
+        "space_below": false
       }
     },
     "a88ef106-0b37-4c45-8139-3f8deeeaedfd": {
@@ -165,25 +143,12 @@
     "1a03b0b6-dd85-4441-905a-7a9dbbfd6668": {
       "type": "promo-grid",
       "blocks": {
-        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0": {
-          "type": "advanced",
+        "4507ed87-109e-4e3a-8f79-978f9f856779": {
+          "type": "image",
           "settings": {
-            "subheading": "",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "",
-            "cta_link1": "",
-            "cta_text2": "",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "33",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-top horizontal-left",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
+            "image": "shopify:\/\/shop_images\/materials-felt-product-2_f39532dc-bf67-41f0-b2cc-fba1dbfdd67e.jpg",
+            "link": "",
+            "width": "33"
           }
         },
         "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1": {
@@ -191,7 +156,7 @@
           "settings": {
             "subheading": "",
             "heading": "MacBook Sleeve",
-            "textarea": "Include the smaller details of your",
+            "textarea": "Simple Felt sleeve for MacBook 13\".",
             "cta_text1": "Shop This",
             "cta_link1": "",
             "cta_text2": "",
@@ -218,7 +183,7 @@
         }
       },
       "block_order": [
-        "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-0",
+        "4507ed87-109e-4e3a-8f79-978f9f856779",
         "template--16634886947066__1a03b0b6-dd85-4441-905a-7a9dbbfd6668-16657639159630b9a9-1",
         "f4b19387-99ea-465b-b5b2-e53327370ec9"
       ],
