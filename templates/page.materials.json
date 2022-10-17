@@ -256,12 +256,25 @@
             "link": "",
             "width": "33"
           }
+        },
+        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "\"Such pretty colours used and perfect workmanship, , thank you x\" - AJ",
+            "width": "33",
+            "height": 500,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
         }
       },
       "block_order": [
         "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-0",
         "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-1",
-        "a828fc92-24bf-43ca-a717-9137e25969dd"
+        "a828fc92-24bf-43ca-a717-9137e25969dd",
+        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f"
       ],
       "settings": {
         "full_width": false,
