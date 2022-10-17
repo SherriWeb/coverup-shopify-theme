@@ -391,7 +391,7 @@
             "title": "Wood",
             "text": "<p>Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.<\/p>",
             "button_label": "Discover Wood →",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/materials"
           }
         },
         "165001916815e068f7-1": {
@@ -403,7 +403,7 @@
             "title": "Stone",
             "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with an enticing texture you’ll never get bored of touching.<\/p>",
             "button_label": "Discover Stone →",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/materials"
           }
         },
         "165001916815e068f7-2": {
@@ -415,7 +415,7 @@
             "title": "Leather",
             "text": "<p>The real deal. Italian, full grain and vegetable tanned. Our leather is buttery soft, durable and has a natural look and feel. The more you use it, the better it gets.<\/p>",
             "button_label": "Discover Leather →",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/materials"
           }
         },
         "9d675772-c11e-4c11-aba6-dbd030f7215f": {
@@ -427,7 +427,7 @@
             "title": "Seashell",
             "text": "<p>A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells.<\/p>",
             "button_label": "Discover Shell →",
-            "button_link": ""
+            "button_link": "shopify:\/\/pages\/materials"
           }
         }
       },
