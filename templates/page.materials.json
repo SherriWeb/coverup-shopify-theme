@@ -233,10 +233,11 @@
           "settings": {
             "link": "",
             "text": "\"Absolutely stunning, the nicest case I’ve ever bought... Such pretty colours and perfect workmanship\" - AJ",
+            "image": "shopify:\/\/shop_images\/materials-shell-product-2.jpg",
             "width": "33",
             "height": 500,
             "color_tint": "#000000",
-            "color_tint_opacity": 8,
+            "color_tint_opacity": 12,
             "framed": false
           }
         },
