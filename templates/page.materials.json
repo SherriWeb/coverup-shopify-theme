@@ -93,27 +93,6 @@
             "framed": false
           }
         },
-        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "50",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
         "e8d4a7b6-5e4a-4689-a159-2e75dde397ba": {
           "type": "image",
           "settings": {
@@ -126,6 +105,7 @@
           "settings": {
             "link": "",
             "text": "",
+            "image": "shopify:\/\/shop_images\/materials-wood.jpg",
             "width": "33",
             "height": 300,
             "color_tint": "#000000",
@@ -136,7 +116,6 @@
       },
       "block_order": [
         "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0",
-        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1",
         "e8d4a7b6-5e4a-4689-a159-2e75dde397ba",
         "2fd4af35-b424-4ec5-8494-c001e4a5f5e1"
       ],
