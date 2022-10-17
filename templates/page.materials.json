@@ -199,7 +199,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Shell.png",
         "heading": "Seashell",
-        "textarea": "A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells.",
+        "textarea": "A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells. \n\nWe source our abalone shells from South Africa, New Zealand and Japan where they are a by-product from the food industry. They’re not caught in the wild so not only are these shells stunningly beautiful, but the process of harvesting them doesn't harm any natural habitats or wild abalones.",
         "bg_color": "#f8f7f5"
       }
     },
