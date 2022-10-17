@@ -118,11 +118,24 @@
             "link": "",
             "width": "50"
           }
+        },
+        "6fe2b8a5-02a5-459c-8e4b-04f0ef8fe8af": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "",
+            "width": "100",
+            "height": 300,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
         }
       },
       "block_order": [
         "template--16634886947066__b0bfc1a9-7a61-4b03-b42d-bbaf2d346d7b-1665765369d1440334-0",
-        "4217e004-496f-4382-a52b-0662a02e7fe7"
+        "4217e004-496f-4382-a52b-0662a02e7fe7",
+        "6fe2b8a5-02a5-459c-8e4b-04f0ef8fe8af"
       ],
       "settings": {
         "full_width": false,
