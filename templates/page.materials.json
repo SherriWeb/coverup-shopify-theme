@@ -366,18 +366,24 @@
             "width": "33"
           }
         },
-        "6cd84dbd-db0e-4c6a-a500-cb2190535129": {
-          "type": "image",
+        "ed7fd184-0306-4037-8046-81f80a518473": {
+          "type": "simple",
           "settings": {
             "link": "",
-            "width": "33"
+            "text": "\"Little did I know the new pad, despite or because of its simplicity, would make me feel like I was sitting in the lap of luxury.\" - Lisa S",
+            "image": "shopify:\/\/shop_images\/materials-leather-2.jpg",
+            "width": "33",
+            "height": 300,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
           }
         }
       },
       "block_order": [
         "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0",
         "9717a654-b366-41a4-8c64-ec1bf6474969",
-        "6cd84dbd-db0e-4c6a-a500-cb2190535129"
+        "ed7fd184-0306-4037-8046-81f80a518473"
       ],
       "settings": {
         "full_width": false,
