@@ -113,11 +113,19 @@
             "boxed": false,
             "framed": false
           }
+        },
+        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "33"
+          }
         }
       },
       "block_order": [
         "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0",
-        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1"
+        "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-1",
+        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba"
       ],
       "settings": {
         "full_width": false,
