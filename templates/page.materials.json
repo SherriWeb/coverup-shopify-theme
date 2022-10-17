@@ -65,21 +65,13 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/One_of_a_Kind.png",
         "heading": "Wood",
-        "textarea": "Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.",
+        "textarea": "Wood is at the heart of everything we do – so it's important that our timber comes from sustainable sources. We make sure our wood comes from FSC certified suppliers that are committed to sourcing wood from responsibly managed forests.\n\nCombining modern and traditional craftsmanship, each piece of wood is laser cut, before being hand-sanded (the good old fashioned way!) to create a super smooth exterior. Coated with a specially selected finish made from a blend of vegetable oils and waxes, the raw wood is given a subtle natural shine that allows it to age beautifully over time - with added protection from water and everyday dirt.",
         "bg_color": "#f8f7f5"
       }
     },
     "361f7d86-d622-4251-bcc0-765555a52d25": {
       "type": "promo-grid",
       "blocks": {
-        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/materials-wood-2_966ac790-f7c1-40b8-9d2f-3c589835ad10.jpg",
-            "link": "",
-            "width": "33"
-          }
-        },
         "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0": {
           "type": "advanced",
           "settings": {
@@ -114,12 +106,20 @@
             "color_tint_opacity": 8,
             "framed": false
           }
+        },
+        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/materials-wood-2_966ac790-f7c1-40b8-9d2f-3c589835ad10.jpg",
+            "link": "",
+            "width": "33"
+          }
         }
       },
       "block_order": [
-        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba",
         "template--16634886947066__361f7d86-d622-4251-bcc0-765555a52d25-1666008569607352f2-0",
-        "2fd4af35-b424-4ec5-8494-c001e4a5f5e1"
+        "2fd4af35-b424-4ec5-8494-c001e4a5f5e1",
+        "e8d4a7b6-5e4a-4689-a159-2e75dde397ba"
       ],
       "settings": {
         "full_width": false,
