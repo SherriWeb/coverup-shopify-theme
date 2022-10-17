@@ -206,27 +206,6 @@
     "9b86ce42-7d51-4455-9c06-30f89cc6363b": {
       "type": "promo-grid",
       "blocks": {
-        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-0": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "",
-            "cta_text2": "Shop All",
-            "cta_link2": "",
-            "video_url": "",
-            "width": "33",
-            "height": 500,
-            "text_size": 100,
-            "text_align": "vertical-center horizontal-center",
-            "focal_point": "center",
-            "color_accent": "rgba(0,0,0,0)",
-            "boxed": false,
-            "framed": false
-          }
-        },
         "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-1": {
           "type": "advanced",
           "settings": {
@@ -249,6 +228,18 @@
             "framed": false
           }
         },
+        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f": {
+          "type": "simple",
+          "settings": {
+            "link": "",
+            "text": "\"Such pretty colours and perfect workmanship, , thank you x\" - AJ",
+            "width": "33",
+            "height": 500,
+            "color_tint": "#000000",
+            "color_tint_opacity": 8,
+            "framed": false
+          }
+        },
         "a828fc92-24bf-43ca-a717-9137e25969dd": {
           "type": "image",
           "settings": {
@@ -256,25 +247,12 @@
             "link": "",
             "width": "33"
           }
-        },
-        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f": {
-          "type": "simple",
-          "settings": {
-            "link": "",
-            "text": "\"Such pretty colours used and perfect workmanship, , thank you x\" - AJ",
-            "width": "33",
-            "height": 500,
-            "color_tint": "#000000",
-            "color_tint_opacity": 8,
-            "framed": false
-          }
         }
       },
       "block_order": [
-        "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-0",
         "template--16634886947066__9b86ce42-7d51-4455-9c06-30f89cc6363b-166576506530e3332d-1",
-        "a828fc92-24bf-43ca-a717-9137e25969dd",
-        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f"
+        "bb1b8afe-7795-4bb2-92d8-3b4ffda3989f",
+        "a828fc92-24bf-43ca-a717-9137e25969dd"
       ],
       "settings": {
         "full_width": false,
