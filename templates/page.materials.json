@@ -123,7 +123,8 @@
           "type": "simple",
           "settings": {
             "link": "",
-            "text": "",
+            "text": "\"Beautifully made cover, evocative of the outdoors. You can feel all the whirls and ridges of the skin.\" - LP",
+            "image": "shopify:\/\/shop_images\/materials-stone-product-2.jpg",
             "width": "33",
             "height": 300,
             "color_tint": "#000000",
