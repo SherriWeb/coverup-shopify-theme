@@ -361,11 +361,12 @@
         "9717a654-b366-41a4-8c64-ec1bf6474969": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/materials-leather.jpg",
             "link": "",
             "width": "33"
           }
         },
-        "394f84e7-1808-44f7-9b6e-7d12a4be7426": {
+        "6cd84dbd-db0e-4c6a-a500-cb2190535129": {
           "type": "image",
           "settings": {
             "link": "",
@@ -376,7 +377,7 @@
       "block_order": [
         "template--16634886947066__ea07c970-7860-4855-831f-94dfbee22c93-16660086014792d3b4-0",
         "9717a654-b366-41a4-8c64-ec1bf6474969",
-        "394f84e7-1808-44f7-9b6e-7d12a4be7426"
+        "6cd84dbd-db0e-4c6a-a500-cb2190535129"
       ],
       "settings": {
         "full_width": false,
