@@ -27,7 +27,6 @@
         },
         "0174d4bf-7282-4a96-b389-7bdc524544f2": {
           "type": "cta_block",
-          "disabled": true,
           "settings": {
             "placement": 6,
             "type": "gift_card",
