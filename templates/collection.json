@@ -31,7 +31,8 @@
             "placement": 6,
             "type": "gift_card",
             "header": "",
-            "richtext": ""
+            "richtext": "",
+            "image": "{{ collection.metafields.custom.cta_image_1.value }}"
           }
         },
         "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
