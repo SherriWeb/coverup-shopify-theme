@@ -164,18 +164,10 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=MpyDjLb6kZY",
             "video_link": "MacBook Skin"
           }
-        },
-        "502795f6-99ba-425b-8c4d-7be2c8a47d64": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=eRdzVJmYJdQ",
-            "video_link": "Keyboard Skin"
-          }
         }
       },
       "block_order": [
-        "ad046452-4084-4ae3-9e14-bf75c32ff976",
-        "502795f6-99ba-425b-8c4d-7be2c8a47d64"
+        "ad046452-4084-4ae3-9e14-bf75c32ff976"
       ],
       "settings": {
         "title": "How To Install",
