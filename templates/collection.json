@@ -37,7 +37,6 @@
         },
         "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
           "type": "cta_block",
-          "disabled": true,
           "settings": {
             "placement": 10,
             "type": "textarea",
