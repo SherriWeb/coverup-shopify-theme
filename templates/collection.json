@@ -29,7 +29,7 @@
           "type": "cta_block",
           "settings": {
             "placement": 6,
-            "type": "gift_card",
+            "type": "textarea",
             "header": "",
             "richtext": "",
             "image": "{{ collection.metafields.custom.cta_image_1.value }}"
