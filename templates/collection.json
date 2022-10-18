@@ -27,6 +27,7 @@
         },
         "0174d4bf-7282-4a96-b389-7bdc524544f2": {
           "type": "cta_block",
+          "disabled": true,
           "settings": {
             "placement": 6,
             "type": "textarea",
@@ -37,6 +38,7 @@
         },
         "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
           "type": "cta_block",
+          "disabled": true,
           "settings": {
             "placement": 10,
             "type": "textarea",
