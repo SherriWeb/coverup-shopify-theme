@@ -36,7 +36,7 @@
         </div>
 
         <label for="ContactFormOrder-{{ section.id }}">{{ 'contact.form.order' | t }}</label>
-        <input type="orderno" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[orderno]" value="{% if form.order %}{{ form.order }}{% elsif customer %}{{ customer.order }}{% endif %}">
+        <input type="orderno" id="ContactFormOrder-{{ section.id }}" class="input-full" name="contact[orderno]" value="{% if form.order %}{{ form.order }}{% elsif customer %}{{ customer.order }}{% endif %}">
 
         {%- if section.settings.show_phone -%}
           <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
