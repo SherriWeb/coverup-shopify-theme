@@ -8,12 +8,13 @@
   <div class="collapsibles-wrapper collapsibles-wrapper--border-bottom">
     <button type="button"
       class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible-trigger-btn--text-left collapsible--auto-height{% if force_open %} is-open{% endif %} {% if title == "Details" %}collapsible-trigger-btn--desc{% elsif title == "Materials & Sizing" %}collapsible-trigger-btn--size{% elsif title == "Shipping & Returns" %}collapsible-trigger-btn--shipping{% else %}collapsible-trigger-btn--sustain{% endif %}" aria-controls="Product-content-{{ id }}"
-      {% if force_open or title == "Details" %}aria-expanded="true"{% endif %}>
+      {% if force_open %}aria-expanded="true"{% endif %}
+      {% if title == "Details" %}aria-expanded="true"{% endif %}>
       {{ title }}
       {%- render 'collapsible-icons' -%}
     </button>
     <div id="Product-content-{{ id }}"
-      class="collapsible-content collapsible-content--all{% if force_open or title == "Details" %} is-open{% endif %}"
+      class="collapsible-content collapsible-content--all{% if force_open %} is-open{% endif %} {% if title == "Details" %}is-open{% endif %}"
       {% if force_open %}style="height: auto;"{% endif %}>
       <div class="collapsible-content__inner rte">
         {{ content }}
