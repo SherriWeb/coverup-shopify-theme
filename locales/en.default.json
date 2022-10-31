@@ -165,7 +165,8 @@
       "phone": "Phone number",
       "message": "Message",
       "send": "Send",
-      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+      "order": "Order (optional)"
     }
   },
   "customer": {
