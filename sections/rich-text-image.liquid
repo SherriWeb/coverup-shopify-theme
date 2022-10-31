@@ -1,3 +1,5 @@
+{% if block_types contains "text" and block_types contains "image" %}
+
 {% assign block_types = '' %}
 {%- for block in section.blocks -%}
   {% assign blockName = block.type | split: '_' | first | split: ',' %}
@@ -10,8 +12,6 @@
   {% endif %}
 {%- endfor -%}
 
-
-{% if block_types contains "text" and block_types contains "image" %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
