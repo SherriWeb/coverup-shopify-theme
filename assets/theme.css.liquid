@@ -2280,10 +2280,25 @@ button[disabled],html input[disabled]{
   left: 5px;
   height: 20px;
   width: 20px;
-  background-image: url("{{ 'icon-sustainability.png' | asset_img_url }}");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.collapsible-trigger-btn--desc:after {
+  background-image: url("{{ 'details-tab-icon.png' | asset_img_url }}");
+}
+
+.collapsible-trigger-btn--size:after {
+  background-image: url("{{ 'materials-tab-icon.png' | asset_img_url }}");
+}
+
+.collapsible-trigger-btn--shipping:after {
+  background-image: url("{{ 'shipping-tab-icon.png' | asset_img_url }}");
+}
+
+.collapsible-trigger-btn--sustain:after {
+  background-image: url("{{ 'icon-sustainability.png' | asset_img_url }}");
 }
 
 .collapsible-trigger-btn{
