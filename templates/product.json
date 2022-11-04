@@ -50,8 +50,8 @@
             "locale_option": "geolocation",
             "locale_fallback": "",
             "theme": "light",
-            "topPadding": "10",
-            "bottomPadding": "10"
+            "topPadding": "0",
+            "bottomPadding": "0"
           }
         },
         "ceea091e-2757-4864-bb81-c498a828e031": {
