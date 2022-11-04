@@ -65,7 +65,7 @@
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
 
-{% if block_types contains "text" and block_types contains "image" %}</div>{% else %}</div>{% endif %}
+{% if block_types contains "text" and block_types contains "image" and block_text != blank %}</div>{% else %}</div>{% endif %}
 
   {% schema %}
     {
