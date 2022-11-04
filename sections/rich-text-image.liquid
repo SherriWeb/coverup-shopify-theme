@@ -11,7 +11,7 @@
 {%- endfor -%}
 
 
-
+{% if block_types contains "text" and block_types contains "image" %}{% else %}<div style="display: none;">{% endif %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
@@ -64,6 +64,8 @@
   </div>
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
+
+  {% if block_types contains "text" and block_types contains "image" %}{% else %}</div>{% endif %}
 
   {% schema %}
     {
