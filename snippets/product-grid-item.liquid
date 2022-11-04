@@ -188,7 +188,7 @@ Arguments
             <div class="grid-product__title--model">{% if product.title contains "Desk Pad" or product.title contains "Mouse Pad" %}{{ product.title | split: ' ' | last }}{% else %}{{ model }}{% endif%}</div>
           {% else %}
             {% if product.title contains "Wireless Charger" %}
-              {{ product.variants.first.options.first }} {{ product.title }}
+              <div class="grid-product__title--variant-part">{{ product.variants.first.options.first }} {{ product.title }}</div>
             {% else %}
               {{ product.title }}
             {% endif %}
