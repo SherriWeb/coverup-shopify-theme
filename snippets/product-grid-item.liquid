@@ -181,7 +181,6 @@ Arguments
               {% elsif product.title contains "Leather Mouse Pad" %}
                 {{ product.variants.first.options.first }}
                 <span>{{ model }}</span>
-              {% elsif product.title contains "Wireless Charger" %}
               {% else %}
                 {{ product.variants.first.options.first }} {{ type | remove: "#"}}
               {% endif %}
