@@ -183,7 +183,7 @@ Arguments
                 <span>{{ model }}</span>
               {% elsif product.title contains "Wireless Charger" %}
               {% else %}
-                {{ product.variants.first.options.first }}
+                {{ product.variants.first.options.first }} {{ type | remove: "#"}}
               {% endif %}
             </div>
             <div class="grid-product__title--model">{% if product.title contains "Desk Pad" or product.title contains "Mouse Pad" %}{{ product.title | split: ' ' | last }}{% else %}{{ model }}{% endif%}</div>
