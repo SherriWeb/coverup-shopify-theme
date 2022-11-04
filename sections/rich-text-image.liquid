@@ -11,7 +11,7 @@
 {%- endfor -%}
 
 
-{% if block_types contains "text" and block_types contains "image" and block_text != blank %}{% else %}<div class="testetset">{% endif %}
+{% if block_types contains "text" and block_types contains "image" and block_text != blank %}{% else %}<div class="hide-section">{% endif %}
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
