@@ -10,12 +10,12 @@
   {% endif %}
 {%- endfor -%}
 
-{% if block_types contains "text" and block_types contains "image" %}
+
 
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-  <div style="margin-top: 100px;" class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+  <div style="margin-top: 100px;" class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}" {% if block_types contains "text" and block_types contains "image" %}{% else %}style="display:none;"{% endif %}>
     {%- for block in section.blocks -%}
       <div class="theme-block" {{ block.shopify_attributes }}>
         {%- case block.type -%}
@@ -64,8 +64,6 @@
   </div>
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
-
-{% endif %}
 
   {% schema %}
     {
