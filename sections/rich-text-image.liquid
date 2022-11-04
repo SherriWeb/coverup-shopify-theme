@@ -1,5 +1,3 @@
-
-
 {% assign block_types = '' %}
 {%- for block in section.blocks -%}
   {% assign blockName = block.type | split: '_' | first | split: ',' %}
@@ -11,6 +9,8 @@
     {% assign block_image = block.setting.img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
   {% endif %}
 {%- endfor -%}
+
+{% if block_types contains "text" and block_types contains "image" %}
 
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
@@ -65,7 +65,7 @@
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
 
-
+{% endif %}
 
   {% schema %}
     {
