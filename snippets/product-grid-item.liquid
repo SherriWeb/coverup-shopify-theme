@@ -187,7 +187,7 @@ Arguments
             </div>
             <div class="grid-product__title--model">{% if product.title contains "Desk Pad" or product.title contains "Mouse Pad" %}{{ product.title | split: ' ' | last }}{% else %}{{ model }}{% endif%}</div>
           {% else %}
-            {{ title }}
+            {{ product.title }}
           {% endif %}
         </div>
         {%- if settings.vendor_enable -%}
