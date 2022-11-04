@@ -1,4 +1,4 @@
-{% if block_types contains "text" and block_types contains "image" %}
+
 
 {% assign block_types = '' %}
 {%- for block in section.blocks -%}
@@ -65,7 +65,7 @@
 
   {%- if section.settings.divider -%}</div>{%- endif -%}
 
-{% endif %}
+
 
   {% schema %}
     {
