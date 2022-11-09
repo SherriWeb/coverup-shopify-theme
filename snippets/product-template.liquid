@@ -344,8 +344,6 @@
                       {{ block.settings.code }}
                     </div>
                   {%- when 'custom_variants' -%}
-                    {% assign hide_models = false %}
-              
                     {% unless product.type contains 'Wireless Charger' or product.type contains "Wireless Power Bank - Shell" or product.type contains "Wireless Power Bank - Stone" or product.type contains "Wireless Power Bank - Wood" %}
                       <div class="product-block alternative-models" {{ block.shopify_attributes }}>
                         {% render 'alternative-models' %}
