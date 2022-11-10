@@ -28,7 +28,7 @@
     <label class="bottom-skin-input" id="bottom-skin-checkbox">
       <input type="checkbox" id="bottom-skin-input">
       <span class="variant__custom-check"></span>
-      <span class="bottom-skin-input__label" data-price="{{ product.price_max }}--{{ product.price_min }}">Add bottom skin <span style="white-space: nowrap;">(+{{ product.variants[3].price | minus: product.price | money }})</span></span>
+      <span class="bottom-skin-input__label">Add bottom skin <span style="white-space: nowrap;">(+{{ product.price_max | minus: product.price_min | money }})</span></span>
     </label>
   {% endif %}
 
