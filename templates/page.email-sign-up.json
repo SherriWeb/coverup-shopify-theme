@@ -22,10 +22,31 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "8d56ebaa-dcd5-4549-b954-c4edb6ded1ff": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16667181023482__8d56ebaa-dcd5-4549-b954-c4edb6ded1ff-1668443220ba612027-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"klaviyo-form-T4DdxV\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16667181023482__8d56ebaa-dcd5-4549-b954-c4edb6ded1ff-1668443220ba612027-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
     "main",
-    "166843777790d9a4c2"
+    "166843777790d9a4c2",
+    "8d56ebaa-dcd5-4549-b954-c4edb6ded1ff"
   ]
 }
