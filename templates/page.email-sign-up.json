@@ -50,12 +50,12 @@
         "template--16667181023482__149f9af5-a4c0-4633-92a6-76369dfa19e0-1668454566ee6129dd-0"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "550px",
         "mobile_height": "auto",
         "parallax": true,
         "style": "bars",
         "autoplay": true,
-        "autoplay_speed": 5
+        "autoplay_speed": 8
       }
     }
   },
