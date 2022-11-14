@@ -20,7 +20,7 @@
         "2dc6d230-a6da-4acb-8679-66c1f2b2e224"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "space_around": true
       }
     }
