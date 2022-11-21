@@ -82,7 +82,7 @@
             "type": "announcement",
             "settings": {
               "text": "BLACK FRIDAY SALE:",
-              "link_text": "15% OFF > £50 | 20% OFF > £125 | 25% OFF >£200<br>*Or equivalent in your local currency. Discount auto applied at checkout",
+              "link_text": "15% OFF > £50 | 20% OFF > £125 | 25% OFF >£200<br>*Or equivalent in your currency. Discount auto applied at checkout",
               "link": "",
               "alt_announcements": true,
               "link_text_us": "Free Express Shipping On All Orders Over $125",
