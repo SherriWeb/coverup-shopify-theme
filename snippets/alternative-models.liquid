@@ -20,7 +20,7 @@
   models with the same case
 {% endcomment %}
 
-{% unless product.type == 'Sleeves' or model == "Leather Desk Pad" or model == "Leather Mouse Pad" %}
+{% unless product.type == 'Sleeves' or model == "Leather Desk Pad" or model == "Leather Mouse Pad" or product.type == "Power Adapters & Chargers" %}
 <select onChange="linkToModel(this)" id="alternative-model-select">
   {% for link in linklists.mega-menu.links %}
     {% if link.title == "Shop by Device" %}
@@ -102,6 +102,36 @@
 {% endunless %}
 
 {% if product.type == 'Sleeves' %}
+<select onChange="linkToModel(this)" id="alternative-model-select">
+  {% for link in linklists.mega-menu.links %}
+    {% if link.title == "Shop by Device" %}
+      {% if link.links != blank %}
+        {% for child_link in link.links %}
+          {% assign link_title_downcase = child_link.title | downcase %}
+          {% if link_title_downcase contains device %}
+            {% if child_link.links != blank %}
+              {% for grandchild_link in child_link.links %}
+                {% assign collection_name2 = grandchild_link.url | remove: '/collections/' %}
+                {% paginate collection.products by 1000 %}
+                {% for p in collections[collection_name2].products %}
+                  {% if p.url contains title_part %}
+                    <option {% if p.id == product.id %}selected{% endif %} value="{{ p.url }}">
+                      {{ p.title | split: ' — ' | first }}
+                    </option>
+                  {% endif %}
+                {% endfor %}
+                {% endpaginate %}
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</select>
+{% endif %}
+
+{% if product.type == 'Power Adapters & Chargers' %}
 <select onChange="linkToModel(this)" id="alternative-model-select">
   {% for link in linklists.mega-menu.links %}
     {% if link.title == "Shop by Device" %}
