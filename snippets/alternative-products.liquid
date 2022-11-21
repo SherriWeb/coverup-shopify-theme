@@ -40,6 +40,7 @@
 {% assign model = product.title | split: '—' | first | replace: ' ', '' | strip | downcase %}
 
 {% for c in product.collections %}
+  <span>{{ c }}</span>
   {% unless exclusions contains c.handle %}
     {% assign col_down = c.title | replace: ' ', '' | strip | downcase %}
     {% if col_down contains model %}
@@ -49,7 +50,6 @@
     {% endif %}
   {% endunless %}
 {% endfor %}
-<span>{{ model }}</span>
 
 {% comment %}
   If we have a relevant collection.
