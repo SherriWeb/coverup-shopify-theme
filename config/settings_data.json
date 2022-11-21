@@ -82,11 +82,11 @@
             "type": "announcement",
             "settings": {
               "text": "BLACK FRIDAY SALE:",
-              "link_text": "15% OFF > £50 | 20% OFF > £125 | 25% OFF >£200<br>*Or equivalent in your currency. Discount auto applied in cart",
+              "link_text": "15% OFF >£50 | 20% OFF >£125 | 25% OFF >£200<br>*Or equivalent in your currency. Discount auto applied in cart",
               "link": "",
               "alt_announcements": true,
-              "link_text_us": "15% OFF > $60 | 20% OFF > $150 | 25% OFF >$235<br>*Or equivalent in your currency. Discount auto applied in cart",
-              "link_text_eu": "15% OFF > €60 | 20% OFF > €150 | 25% OFF >€235<br>*Or equivalent in your currency. Discount auto applied in cart",
+              "link_text_us": "15% OFF >$60 | 20% OFF >$150 | 25% OFF >$235<br>*Or equivalent in your currency. Discount auto applied in cart",
+              "link_text_eu": "15% OFF >€60 | 20% OFF >€150 | 25% OFF >€235<br>*Or equivalent in your currency. Discount auto applied in cart",
               "link_text_can": "",
               "link_text_au": ""
             }
