@@ -2,6 +2,7 @@
   "sections": {
     "164995542281f6ff3c": {
       "type": "collection-shortcuts",
+      "disabled": true,
       "blocks": {
         "2d9be8a4-9644-491b-a07e-7262ce0d7903": {
           "type": "collection",
