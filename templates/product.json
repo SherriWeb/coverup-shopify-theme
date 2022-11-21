@@ -45,6 +45,7 @@
         },
         "24660daa-f2a7-480d-8d59-1689e00dec54": {
           "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "disabled": true,
           "settings": {
             "data_key": "credit-promotion-auto-size",
             "locale_option": "geolocation",
