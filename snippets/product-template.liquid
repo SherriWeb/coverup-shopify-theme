@@ -344,11 +344,11 @@
                       {{ block.settings.code }}
                     </div>
                   {%- when 'custom_variants' -%}
-                    {% unless product.type contains 'Wireless Charger' or product.type contains "Wireless Power Bank - Shell" or product.type contains "Wireless Power Bank - Stone" or product.type contains "Wireless Power Bank - Wood" %}
+                    
                       <div class="product-block alternative-models" {{ block.shopify_attributes }}>
                         {% render 'alternative-models' %}
                       </div>
-                    {% endunless %}
+
                     <div class="product-block variant-flex" {{ block.shopify_attributes }}>
                       {%- for option in product.options_with_values -%}
                         {%- render 'custom-variant',
