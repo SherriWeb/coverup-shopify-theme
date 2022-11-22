@@ -54,6 +54,13 @@
         {% break %}
       {% endif %}
     {% endif %}
+    {% if model contains "wirelesscharger" %}
+      {% if model contains col_down %}
+        {% assign found_a_collection = true %}
+        {% assign collection = c %}
+        {% break %}
+      {% endif %}
+    {% endif %}
   {% endunless %}
 {% endfor %}
 
