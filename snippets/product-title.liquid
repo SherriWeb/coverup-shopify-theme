@@ -23,8 +23,6 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
       {% capture parts %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
     {% endif %}
   {% endfor %}
-{% elsif title contains "Power Bank" %}
-  {{ title }}
 {% else %}
   {{ title }}
 {% endif %}
@@ -37,5 +35,5 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
   <span>{{ type }}</span>
 {% else %}
   {{ product.variants.first.options.first }} {{ type | remove: "#"}}
-  {% if model %}<span>{{ model }}</span>{% endif %}
+  {% if model %}<span>{{ model }}</span>{% endif %}2
 {% endif %}
