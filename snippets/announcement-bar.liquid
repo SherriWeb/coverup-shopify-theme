@@ -81,16 +81,16 @@
       countryCode = response.country
       console.log(countryCode, "country", "{{ textUS }}")
 
-      if (countryCode === "CA") {
-        announcementText.innerHTML = "{{ textCAN }}";
-      } else if (countryCode === "EU") {
-        announcementText.innerHTML = "{{ textEU }}";
-      } else if (countryCode === "AU") {
-        announcementText.innerHTML = "{{ textAU }}";
-      } else if (countryCode === "US") {
-        announcementText.textContent = "{{ textUS  }}";
-      } else if (countryCode === "UK") {
-        announcementText.innerHTML = "{{ textUK }}";
+      if (countryCode === 'CA') {
+        announcementText.innerHTML = '{{ textCAN }}';
+      } else if (countryCode === 'EU') {
+        announcementText.innerHTML = '{{ textEU }}';
+      } else if (countryCode === 'AU') {
+        announcementText.innerHTML = '{{ textAU }}';
+      } else if (countryCode === 'US') {
+        announcementText.textContent = '{{ textUS  }}';
+      } else if (countryCode === 'UK') {
+        announcementText.innerHTML = '{{ textUK }}';
       }
     }, "jsonp");
 
