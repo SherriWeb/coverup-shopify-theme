@@ -40,9 +40,9 @@
 {% assign model = product.title | split: '—' | first | replace: ' ', '' | strip | downcase %}
 
 {% for c in product.collections %}
-  <span>{{ c }}</span>
   {% unless exclusions contains c.handle %}
     {% assign col_down = c.title | replace: ' ', '' | strip | downcase %}
+    <span>{{ col_down }}-{{ model }}</span>
     {% if col_down contains model %}
       {% assign found_a_collection = true %}
       {% assign collection = c %}
