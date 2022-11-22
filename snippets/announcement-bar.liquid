@@ -79,7 +79,7 @@
     let countryCode = "";
     $.get("https://ipinfo.io?token=f5c0c9b77d6981", function(response) { // we changed to https
       countryCode = response.country
-      console.log(countryCode, "country", textUS)
+      console.log(countryCode, "country", "{{ textUS }}")
 
       if (countryCode === "CA") {
         announcementText.innerHTML = "{{ textCAN }}";
