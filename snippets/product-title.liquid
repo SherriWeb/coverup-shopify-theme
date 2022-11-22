@@ -35,5 +35,5 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
   <span>{{ type }}</span>
 {% else %}
   {{ product.variants.first.options.first }} {{ type | remove: "#"}}
-  {% if model %}<span>{{ model }}</span>{% endif %}2
+  {% if model %}<span>{{ model }}</span>{% endif %}
 {% endif %}
