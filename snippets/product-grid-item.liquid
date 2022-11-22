@@ -189,6 +189,8 @@ Arguments
           {% else %}
             {% if product.title contains "Wireless Charger" %}
               <div class="grid-product__title--variant-part">{{ product.variants.first.options.first }} {{ product.title }}</div>
+            {% elsif product.title contains "Wireless Power Bank" %}
+              <div class="grid-product__title--variant-part">{{ product.variants.first.options.first }} {{ product.title }}</div>
             {% else %}
               {{ product.title }}
             {% endif %}
