@@ -23,6 +23,15 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
       {% capture parts %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
     {% endif %}
   {% endfor %}
+{% elsif title contains "Power Bank" %}
+    {% for title_part in title_parts %}
+    {% if forloop.first %}
+      {% assign model = title_part %}
+    {% else %}
+      {% assign type = title_part %}
+      {% capture parts %}{% if title_part contains "WoodBack" %}WoodBack{% elsif title_part contains "Stone" %}Stone{% elsif title_part contains "Shell" %}Shell{% else %}{{ title_part }}{% endif %}{% endcapture %}
+    {% endif %}
+  {% endfor %}
 {% else %}
   {{ title }}
 {% endif %}
