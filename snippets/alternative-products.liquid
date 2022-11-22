@@ -42,14 +42,13 @@
 {% for c in product.collections %}
   {% unless exclusions contains c.handle %}
     {% assign col_down = c.title | replace: ' ', '' | strip | downcase %}
-    <span>{{ col_down }}//{{ model }}</span>
     {% if col_down contains model %}
       {% assign found_a_collection = true %}
       {% assign collection = c %}
       {% break %}
     {% endif %}
     {% if model contains "wirelesspowerbank" %}
-      {% if col_down contains model %}
+      {% if model contains col_down %}
         {% assign found_a_collection = true %}
         {% assign collection = c %}
         {% break %}
