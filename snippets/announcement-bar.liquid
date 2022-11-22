@@ -87,15 +87,15 @@
       console.log(countryCode, "country", textUS)
 
       if (countryCode === 'CA') {
-        announcementText.innerHTML = '{{ textCAN }}';
+        announcementText.innerHTML = textCAN;
       } else if (countryCode === 'EU') {
-        announcementText.innerHTML = '{{ textEU }}';
+        announcementText.innerHTML = textEU;
       } else if (countryCode === 'AU') {
-        announcementText.innerHTML = '{{ textAU }}';
+        announcementText.innerHTML = textAU;
       } else if (countryCode === 'US') {
         announcementText.innerHTML = textUS;
       } else if (countryCode === 'UK') {
-        announcementText.innerHTML = '{{ textUK }}';
+        announcementText.innerHTML = textUK;
       }
     }, "jsonp");
 
