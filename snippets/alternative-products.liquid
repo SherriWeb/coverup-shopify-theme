@@ -38,7 +38,7 @@
 {% endcomment %}
 
 {% assign model = product.title | split: '—' | first | replace: ' ', '' | strip | downcase %}
-{{ model }}
+
 {% for c in product.collections %}
   {% unless exclusions contains c.handle %}
     {% assign col_down = c.title | replace: ' ', '' | strip | downcase %}
