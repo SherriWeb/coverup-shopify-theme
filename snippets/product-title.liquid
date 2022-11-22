@@ -24,9 +24,9 @@ DO NOT INSERT JAVASCRIPT INTO THIS SNIPPET
     {% endif %}
   {% endfor %}
 {% elsif title contains "Power Bank" %}
-  {{ title }}-
+  {{ title }}{{ parts }}
 {% else %}
-  {{ title }}
+  {{ title }}={{ parts }}
 {% endif %}
 
 {% if title contains "Leather Desk Pad" %}
