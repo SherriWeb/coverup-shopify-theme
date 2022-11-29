@@ -80,10 +80,9 @@
         "blocks": {
           "992c459b-1a9a-42b9-84df-87f479702063": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "NEW: Wireless Power Banks >>>",
-              "link_text": "",
+              "text": "NEW",
+              "link_text": "Wireless Power Banks >>>",
               "link": "shopify:\/\/collections\/wireless-power-banks",
               "alt_announcements": false,
               "link_text_us": "",
