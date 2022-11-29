@@ -78,6 +78,20 @@
       "header": {
         "type": "header",
         "blocks": {
+          "992c459b-1a9a-42b9-84df-87f479702063": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "NEW: Wireless Power Banks >>>",
+              "link_text": "",
+              "link": "shopify:\/\/collections\/wireless-power-banks",
+              "alt_announcements": false,
+              "link_text_us": "",
+              "link_text_eu": "",
+              "link_text_can": "",
+              "link_text_au": ""
+            }
+          },
           "1524770296206": {
             "type": "announcement",
             "settings": {
@@ -114,6 +128,7 @@
           }
         },
         "block_order": [
+          "992c459b-1a9a-42b9-84df-87f479702063",
           "1524770296206",
           "1524770014057",
           "92e3fb8f-f149-4f1b-a04a-db16864234c4"
