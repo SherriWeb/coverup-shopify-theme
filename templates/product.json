@@ -36,6 +36,12 @@
             "inventory_transfers_enable": true
           }
         },
+        "019c3489-90d2-4a8f-8a1f-35d620c1f805": {
+          "type": "custom",
+          "settings": {
+            "code": "<p style=\"text-align:center\">Ordering for Christmas? <a href=\"https:\/\/www.cover-up.com\/pages\/christmas-delivery-dates\">View our Shipping Deadlines →<\/a><\/p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -115,6 +121,7 @@
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
         "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
+        "019c3489-90d2-4a8f-8a1f-35d620c1f805",
         "buy_buttons",
         "24660daa-f2a7-480d-8d59-1689e00dec54",
         "456d36f0-1381-44d6-b9ab-b0f0eaf5f3d3",
