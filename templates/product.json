@@ -24,11 +24,6 @@
             "variant_labels": true
           }
         },
-        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4": {
-          "type": "icon_tab",
-          "settings": {
-          }
-        },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
           "type": "inventory_status",
           "settings": {
@@ -77,6 +72,11 @@
             "collection_id_enabled": false
           }
         },
+        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4": {
+          "type": "icon_tab",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -119,13 +119,13 @@
         "9b565aab-b129-407e-a7f4-4f3963348bbd",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
-        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "019c3489-90d2-4a8f-8a1f-35d620c1f805",
         "buy_buttons",
         "24660daa-f2a7-480d-8d59-1689e00dec54",
         "456d36f0-1381-44d6-b9ab-b0f0eaf5f3d3",
         "ceea091e-2757-4864-bb81-c498a828e031",
+        "f3fe66f5-a02a-4626-9e45-26d0a5f245c4",
         "description",
         "92ff90b1-1820-45f9-a4c7-afc30b09812c",
         "c178574a-b1f9-49e2-ab6e-e2099fc1ca5b",
