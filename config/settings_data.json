@@ -81,9 +81,9 @@
           "992c459b-1a9a-42b9-84df-87f479702063": {
             "type": "announcement",
             "settings": {
-              "text": "",
-              "link_text": "New Product: Wireless Power Banks >>>",
-              "link": "shopify:\/\/collections\/wireless-power-banks",
+              "text": "Ordering for Christmas?",
+              "link_text": "Click Here For Holiday Shipping Deadlines",
+              "link": "shopify:\/\/pages\/christmas-delivery-dates",
               "alt_announcements": false,
               "link_text_us": "",
               "link_text_eu": "",
@@ -187,7 +187,7 @@
             "settings": {
               "show_footer_title": true,
               "title": "We only give discounts to people on our mailing list.",
-              "text": "",
+              "text": "<p><\/p>",
               "container_width": 20
             }
           },
