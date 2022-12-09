@@ -143,7 +143,7 @@
           "sticky_collection": false,
           "announcement_compact": true,
           "announcement_above_header": true,
-          "toolbar_menu": "top-navigation",
+          "toolbar_menu": "",
           "help_menu": "help-dropdown",
           "toolbar_social": false,
           "show_locale_selector": true,
