@@ -82,7 +82,7 @@
             "type": "announcement",
             "settings": {
               "text": "Ordering for Christmas?",
-              "link_text": "Free Express Shipping on All UK orders. <br>Order by Dec 19th for Delivery by Dec 24th",
+              "link_text": "Free Express Shipping on All UK orders. <br>Order by Dec 20th for Delivery by Dec 24th",
               "link": "shopify:\/\/pages\/christmas-delivery-dates",
               "alt_announcements": false,
               "link_text_us": "Last Day for Standard Shipping is Dec 13 for delivery by Dec 24.",
