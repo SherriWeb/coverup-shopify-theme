@@ -33,6 +33,7 @@
         },
         "019c3489-90d2-4a8f-8a1f-35d620c1f805": {
           "type": "custom",
+          "disabled": true,
           "settings": {
             "code": "<p style=\"text-align:center\">Ordering for Christmas? <a href=\"https:\/\/www.cover-up.com\/pages\/christmas-delivery-dates\">View our Shipping Deadlines →<\/a><\/p>"
           }
