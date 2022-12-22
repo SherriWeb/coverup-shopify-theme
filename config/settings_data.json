@@ -82,8 +82,8 @@
             "type": "announcement",
             "settings": {
               "text": "",
-              "link_text": "Free Express Shipping on All UK orders. <br>Order by Dec 20th for Delivery by Dec 24th",
-              "link": "shopify:\/\/pages\/christmas-delivery-dates",
+              "link_text": "Free Standard Shipping on All UK orders over £50.",
+              "link": "",
               "alt_announcements": true,
               "link_text_us": "Free Express Shipping on All US orders >$150",
               "link_text_eu": "Click Here for Holiday Shipping Deadlines",
