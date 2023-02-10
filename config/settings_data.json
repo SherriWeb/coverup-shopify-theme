@@ -93,12 +93,11 @@
           },
           "1524770296206": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "",
-              "link_text": "New MacBook Pro M2 Skins Available Now >>>",
-              "link": "shopify:\/\/collections\/macbook-pro-13-m1-2020",
-              "alt_announcements": true,
+              "link_text": "New Samsung Galaxy S23 Cases Available Now >>>",
+              "link": "shopify:\/\/collections\/samsung-galaxy-s23",
+              "alt_announcements": false,
               "link_text_us": "Hassle Free Returns",
               "link_text_eu": "",
               "link_text_can": "Hassle Free Returns",
