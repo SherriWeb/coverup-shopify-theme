@@ -143,13 +143,13 @@
       "blocks": {
         "2d758477-c01d-4920-8da3-fb08e7831ed0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "title": "Happy 2023 from  us to you :)"
           }
         },
         "16500204132bb4ba4d-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Designed by Nature, Made by Cover-Up"
           }
