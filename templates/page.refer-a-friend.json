@@ -4,9 +4,30 @@
       "type": "main-page-full-width",
       "settings": {
       }
+    },
+    "fd12539e-dd70-434d-b1ef-18ad65ead5e4": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16744985297146__fd12539e-dd70-434d-b1ef-18ad65ead5e4-1677508874d1b2694f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"349571\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16744985297146__fd12539e-dd70-434d-b1ef-18ad65ead5e4-1677508874d1b2694f-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "fd12539e-dd70-434d-b1ef-18ad65ead5e4"
   ]
 }
