@@ -833,5 +833,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".grey {background-color: #f1f1f1;}"
+    ]
   }
 }
