@@ -76,7 +76,7 @@
         "template--16744985297146__0ad737a6-24e2-4015-ae6b-cd569b5fad98-1677668851aa294ed2-1"
       ],
       "custom_css": [
-        ".grey {}"
+        ".grey {background-color: #f1f1f1;}"
       ],
       "settings": {
         "title": "FAQs"
