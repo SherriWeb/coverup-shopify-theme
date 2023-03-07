@@ -354,5 +354,13 @@
   },
   "date_formats": {
     "month_day_year": "%b %d, %Y"
+  },
+  "shopify": {
+    "checkout": {
+      "marketing": {
+        "accept_marketing_checkbox_label": "Yes, email me with latest Cover-Up news and special offers (opt out at any time)",
+        "accept_sms_checkbox_label": "Yes, text me with latest Cover-Up offers (opt out at any time)"
+      }
+    }
   }
 }
