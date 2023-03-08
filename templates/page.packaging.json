@@ -1,0 +1,202 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "#NaturallyDifferent",
+            "title_size": 58,
+            "subheading": "Since 2009.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/about-us-header-bg.jpg",
+            "overlay_opacity": 16,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1657032130608e1dcb": {
+      "type": "advanced-content",
+      "blocks": {
+        "1657032130260e94e3-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-of-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1><p style=\"text-align:center;\">Since 2009 we've been trying to do something a little different. In an industry consisting of a sea of sameness, we craft one-of-a-kind tech accessories from nature's finest materials. Our goal is that every Cover-Up product gives a sense of individuality that matches your own. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1657032130260e94e3-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "c171f657-2f20-4b51-951b-c42a6be09f1c": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-our-mission.jpg",
+        "image_width": 700,
+        "subtitle": "OUR MISSION",
+        "title": "Creating different",
+        "text": "<p>We’ve always considered ourselves makers at our core. <\/p><p>Build to last. No flashy logos. No senseless details. Let the materials do the talking. Our products are made naturally and designed simply. But you'd never call them boring. <\/p><p>Tired of accessories that looked the same, we decided to create our own. Something different. And thanks to nature, every case, skin or desk pad we make<em> is different<\/em>, each with it's own unique pattern, texture or patina. <\/p><p>So we’re not kidding when we say they're one-of-a-kind.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "165640487463678939": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-our-process.jpg",
+        "image_width": 700,
+        "subtitle": "Materials Matter",
+        "title": "Better materials, better products",
+        "text": "<p>Nature sits at the heart of our story. Surrounded by miles of beaches, woodlands and mountains in every direction, we use the best of what it has to offer. <\/p><p>From wood, stone, seashell and merino wool to leather. Our patterns and patinas are the real deal, not printed on. <\/p><p>We make products that will last for the long haul. Day by day, each piece develops it's own character, getting even better with age. Our cases and skins often outlast our customers phones and MacBooks. <\/p>",
+        "button_label": "Explore our materials →",
+        "button_link": "shopify:\/\/pages\/materials",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1656404963ec40e0e4": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-craftedbyus-2.jpg",
+        "image_width": 700,
+        "subtitle": "OUR PROCESS",
+        "title": "Crafted in Wales (by us)",
+        "text": "<p>We choose quality over quantity.  Quality matters. We don’t make a big thing of it, but our customers know and appreciate the difference.  <\/p><p>From our small workshop that we call home our products are designed and manufactured by us. Not far away factories. Just people who care. <\/p><p>And, we sweat the small stuff. Small things matter. They add up. Then, they turn into big things. <\/p><p><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16564049699f767713": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sustainability.jpg",
+        "image_width": 500,
+        "subtitle": "MADE RESPONSIBLY",
+        "title": "We use only the good stuff",
+        "text": "<p>We might only be small but we know we can have a big impact. In an industry where most products are made from plastic, we decided to take a different path through the forest. <\/p><p>We love to do more with less because everyone knows that less is more. Through our products, processes and packaging we're on a journey towards having a positive impact on the planet.<\/p><p><\/p><p><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1656405044acc90525": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/happiness-guarantee-not_what-you-expected_fde413cc-429b-4903-8391-2f1b137fe896.jpg",
+        "image_width": 500,
+        "subtitle": "DOING THINGS THE RIGHT WAY",
+        "title": "Happiness Guarantee",
+        "text": "<p>We think our products look even better in person than they do on screen. And we stand behind everything we make. <\/p><p>Not completely happy with your purchase? Just let us know - our Happiness Guarantee has you covered.<\/p>",
+        "button_label": "See our Happiness Guarantee →",
+        "button_link": "shopify:\/\/pages\/happiness-guarantee",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "c763657e-8d54-4182-bcd1-9e819729f5f2": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-0": {
+          "type": "title",
+          "settings": {
+            "title": "Hello, Nature Lover"
+          }
+        },
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know about all things Cover-Up — think special releases, first access to limited editions and sale events. Yup, all the good stuff. Put your name on the list here.<\/p>"
+          }
+        },
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2": {
+          "type": "form",
+          "settings": {
+          }
+        },
+        "ea961c77-22e6-4ec0-9663-ee174f7e86ab": {
+          "type": "disclaimer",
+          "settings": {
+            "disclaimer": "Note: You can opt-out at any time. See our <a href=\"\/pages\/privacy-policy\">Privacy Policy<\/a> and <a href=\"\/pages\/terms-of-use\">Terms<\/a>."
+          }
+        }
+      },
+      "block_order": [
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-0",
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-1",
+        "template--15675912651002__c763657e-8d54-4182-bcd1-9e819729f5f2-166573563960ab9fc6-2",
+        "ea961c77-22e6-4ec0-9663-ee174f7e86ab"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "1657032130608e1dcb",
+    "rich-text",
+    "c171f657-2f20-4b51-951b-c42a6be09f1c",
+    "165640487463678939",
+    "1656404963ec40e0e4",
+    "16564049699f767713",
+    "1656405044acc90525",
+    "c763657e-8d54-4182-bcd1-9e819729f5f2"
+  ]
+}
