@@ -13,16 +13,16 @@
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "#NaturallyDifferent",
+            "title": "Our Packaging",
             "title_size": 58,
-            "subheading": "Since 2009.",
+            "subheading": "",
             "link": "",
             "link_text": "",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/about-us-header-bg.jpg",
+            "image": "shopify:\/\/shop_images\/our-packaging.jpg",
             "overlay_opacity": 16,
             "focal_point": "center center"
           }
