@@ -15,7 +15,7 @@
             "top_subheading": "",
             "title": "Our Packaging",
             "title_size": 58,
-            "subheading": "",
+            "subheading": "Not content with making our products #naturallydifferent, we thought we’d do it to our packaging too.",
             "link": "",
             "link_text": "",
             "link_2": "",
@@ -53,7 +53,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Not content with making our products #naturallydifferent, we thought we’d do it with our packaging too.<\/p>"
+            "text": "<p>Not<br\/>content with making our products #naturallydifferent, we thought we’d do it<br\/>with our packaging too.<\/p>"
           }
         }
       },
@@ -74,7 +74,7 @@
           "type": "liquid",
           "settings": {
             "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-of-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1><p style=\"text-align:center;\">Since 2009 we've been trying to do something a little different. In an industry consisting of a sea of sameness, we craft one-of-a-kind tech accessories from nature's finest materials. Our goal is that every Cover-Up product gives a sense of individuality that matches your own. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>",
-            "width": "100%",
+            "width": "50%",
             "alignment": "center"
           }
         }
