@@ -204,6 +204,46 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
+    },
+    "b232a6fe-7c39-4511-a1a6-105386a3b831": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/coffee-beans.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/packaging-process.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0",
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "align_text_header": "center",
+        "align_text_columns": "center",
+        "divider": false
+      }
     }
   },
   "order": [
@@ -216,6 +256,7 @@
     "1656404963ec40e0e4",
     "16564049699f767713",
     "1656405044acc90525",
-    "c763657e-8d54-4182-bcd1-9e819729f5f2"
+    "c763657e-8d54-4182-bcd1-9e819729f5f2",
+    "b232a6fe-7c39-4511-a1a6-105386a3b831"
   ]
 }
