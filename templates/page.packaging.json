@@ -40,26 +40,6 @@
         "autoplay_speed": 7
       }
     },
-    "1657032130608e1dcb": {
-      "type": "advanced-content",
-      "blocks": {
-        "1657032130260e94e3-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-of-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1><p style=\"text-align:center;\">Since 2009 we've been trying to do something a little different. In an industry consisting of a sea of sameness, we craft one-of-a-kind tech accessories from nature's finest materials. Our goal is that every Cover-Up product gives a sense of individuality that matches your own. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "1657032130260e94e3-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -85,6 +65,26 @@
         "align_text": "center",
         "narrow_column": true,
         "divider": false
+      }
+    },
+    "1657032130608e1dcb": {
+      "type": "advanced-content",
+      "blocks": {
+        "1657032130260e94e3-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p class=\"subheading\" style=\"text-align:center;\">Our Story<p>\n<h1 style=\"text-align:center; line-height: 120%; margin-top:0px\";\">One-of-a-kind-tech accessories.<br\/> Handcrafted from nature's finest materials.<\/h1><p style=\"text-align:center;\">Since 2009 we've been trying to do something a little different. In an industry consisting of a sea of sameness, we craft one-of-a-kind tech accessories from nature's finest materials. Our goal is that every Cover-Up product gives a sense of individuality that matches your own. From wood and stone to wool felt, our products feature a uniqueness and long lasting quality that can only be found in our natural surroundings.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1657032130260e94e3-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "c171f657-2f20-4b51-951b-c42a6be09f1c": {
@@ -209,8 +209,8 @@
   "order": [
     "main",
     "slideshow",
-    "1657032130608e1dcb",
     "rich-text",
+    "1657032130608e1dcb",
     "c171f657-2f20-4b51-951b-c42a6be09f1c",
     "165640487463678939",
     "1656404963ec40e0e4",
