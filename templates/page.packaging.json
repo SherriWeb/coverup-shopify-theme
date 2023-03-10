@@ -62,6 +62,25 @@
     },
     "rich-text": {
       "type": "rich-text",
+      "blocks": {
+        "fdcceaaf-24ee-4034-8666-154445e9d590": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "56b2e586-6aa3-4d73-b54a-041fa97227d2": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Not content with making our products #naturallydifferent, we thought we’d do it with our packaging too.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fdcceaaf-24ee-4034-8666-154445e9d590",
+        "56b2e586-6aa3-4d73-b54a-041fa97227d2"
+      ],
       "settings": {
         "align_text": "center",
         "narrow_column": true,
