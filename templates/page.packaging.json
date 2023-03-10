@@ -53,7 +53,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Not<br\/>content with making our products #naturallydifferent, we thought we’d do it<br\/>with our packaging too.<\/p>"
+            "text": "<p>We're not just committed to making some of the best looking<br\/>products out there, we're also committed to making the planet look good! <\/p><p>Sustainability has always been at the forefront of our minds, and we're always on the lookout for ways to help us leave a smaller footprint - even down to the way we package our products.<\/p><p>But that doesn't mean we're content with just any old packaging.<\/p><p>We've teamed up with Favini, an iconic Italian paper mill with 25 years of history, to bring you something truly revolutionary. They've developed a process that turns organic waste materials like coconut, fruits, nuts, and coffee into something incredible: Paper.<\/p><p>But don't think this is just some gimmick. Using coffee waste to make paper, not only saves trees, but it also diverts waste from landfills and reduces carbon emissions. <\/p><p>So, join us in raising a cup of coffee (or tea, we don't judge) to a more sustainable future. <\/p><p>And the next time you receive one of our products in the mail, remember that the packaging is just as cool as what's inside.<\/p>"
           }
         }
       },
@@ -64,6 +64,46 @@
       "settings": {
         "align_text": "center",
         "narrow_column": true,
+        "divider": false
+      }
+    },
+    "b232a6fe-7c39-4511-a1a6-105386a3b831": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/coffee-beans.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/packaging-process.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0",
+        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "align_text_header": "center",
+        "align_text_columns": "center",
         "divider": false
       }
     },
@@ -204,59 +244,19 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
-    },
-    "b232a6fe-7c39-4511-a1a6-105386a3b831": {
-      "type": "text-columns",
-      "blocks": {
-        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/coffee-beans.jpg",
-            "image_width": 650,
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/packaging-process.jpg",
-            "image_width": 650,
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-0",
-        "template--16751842394362__b232a6fe-7c39-4511-a1a6-105386a3b831-16784677299b62651b-1"
-      ],
-      "settings": {
-        "title": "",
-        "sub_title": "",
-        "align_text_header": "center",
-        "align_text_columns": "center",
-        "divider": false
-      }
     }
   },
   "order": [
     "main",
     "slideshow",
     "rich-text",
+    "b232a6fe-7c39-4511-a1a6-105386a3b831",
     "1657032130608e1dcb",
     "c171f657-2f20-4b51-951b-c42a6be09f1c",
     "165640487463678939",
     "1656404963ec40e0e4",
     "16564049699f767713",
     "1656405044acc90525",
-    "c763657e-8d54-4182-bcd1-9e819729f5f2",
-    "b232a6fe-7c39-4511-a1a6-105386a3b831"
+    "c763657e-8d54-4182-bcd1-9e819729f5f2"
   ]
 }
