@@ -6,38 +6,20 @@
       "settings": {
       }
     },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slideshow-0": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "Our Packaging",
-            "title_size": 58,
-            "subheading": "Not content with making our products #naturallydifferent, we thought we’d do it to our packaging too.",
-            "link": "",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/our-packaging.jpg",
-            "overlay_opacity": 16,
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "slideshow-0"
-      ],
+    "c27a5038-8581-41c0-b550-a41506bbf750": {
+      "type": "hero-video",
       "settings": {
-        "section_height": "550px",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "bars",
-        "autoplay": false,
-        "autoplay_speed": 7
+        "title": "Our Packaging",
+        "title_size": 80,
+        "subheading": "Not content with making our products #naturallydifferent, we thought we’d do it to our packaging too.",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3f95928e9fc841b6bc547fff9bd30dd9.mp4",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
       }
     },
     "rich-text": {
@@ -134,20 +116,38 @@
         "divider": false
       }
     },
-    "c27a5038-8581-41c0-b550-a41506bbf750": {
-      "type": "hero-video",
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 58,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/our-packaging.jpg",
+            "overlay_opacity": 16,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
       "settings": {
-        "title": "",
-        "title_size": 80,
-        "subheading": "",
-        "link_text": "",
-        "link": "",
-        "color_accent": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3f95928e9fc841b6bc547fff9bd30dd9.mp4",
-        "overlay_opacity": 0,
-        "section_height": "650px",
-        "mobile_height": "auto"
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 7
       }
     },
     "17853f83-26e5-4a64-b4fd-b66756c29c94": {
@@ -219,11 +219,11 @@
   },
   "order": [
     "main",
-    "slideshow",
+    "c27a5038-8581-41c0-b550-a41506bbf750",
     "rich-text",
     "b232a6fe-7c39-4511-a1a6-105386a3b831",
     "7034d04d-f6ce-4c9a-8f48-1d7885740e77",
-    "c27a5038-8581-41c0-b550-a41506bbf750",
+    "slideshow",
     "17853f83-26e5-4a64-b4fd-b66756c29c94",
     "c763657e-8d54-4182-bcd1-9e819729f5f2"
   ]
