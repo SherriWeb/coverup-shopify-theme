@@ -79,19 +79,6 @@
       "header": {
         "type": "header",
         "blocks": {
-          "992c459b-1a9a-42b9-84df-87f479702063": {
-            "type": "announcement",
-            "settings": {
-              "text": "",
-              "link_text": "Free Standard Shipping on All U.K. orders over £50.",
-              "link": "",
-              "alt_announcements": true,
-              "link_text_us": "Free Express Shipping on All US orders >$150",
-              "link_text_eu": "Fast Shipping to EU. Duties and Taxes Included.",
-              "link_text_can": "We Ship Worldwide",
-              "link_text_au": "We Ship Worldwide"
-            }
-          },
           "1524770296206": {
             "type": "announcement",
             "settings": {
@@ -103,6 +90,19 @@
               "link_text_eu": "",
               "link_text_can": "Hassle Free Returns",
               "link_text_au": "Hassle Free Returns"
+            }
+          },
+          "992c459b-1a9a-42b9-84df-87f479702063": {
+            "type": "announcement",
+            "settings": {
+              "text": "",
+              "link_text": "Free Standard Shipping on All U.K. orders over £50.",
+              "link": "",
+              "alt_announcements": true,
+              "link_text_us": "Free Express Shipping on All US orders >$150",
+              "link_text_eu": "Fast Shipping to EU. Duties and Taxes Included.",
+              "link_text_can": "We Ship Worldwide",
+              "link_text_au": "We Ship Worldwide"
             }
           },
           "1524770014057": {
@@ -128,8 +128,8 @@
           }
         },
         "block_order": [
-          "992c459b-1a9a-42b9-84df-87f479702063",
           "1524770296206",
+          "992c459b-1a9a-42b9-84df-87f479702063",
           "1524770014057",
           "92e3fb8f-f149-4f1b-a04a-db16864234c4"
         ],
