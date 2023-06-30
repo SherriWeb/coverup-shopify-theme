@@ -22,7 +22,7 @@
       <span class="icon-and-text{% if inventory_visible == true %} inventory--low{% endif %}{% unless current_variant.available %} hide{% endunless %}">
         <span class="icon icon--inventory"></span>
         <span class="instock {{ product.metafields.c_f.preorder_date }}" data-product-inventory data-threshold="{{ block.settings.inventory_threshold }}">
-          {% if product.metafields.c_f.preorder_date != blank %}
+          {% if product.metafields.c_f.preorder_date == blank %}
             {%- if inventory_visible -%}
               {{ 'products.product.stock_label' | t: count: current_variant.inventory_quantity }}
             {%- else -%}
