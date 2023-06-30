@@ -18,6 +18,10 @@
         assign default_text = 'products.product.preorder' | t
         assign button_text = 'products.product.preorder' | t
       endif
+      if product.metafields.c_f.preorder_date != blank
+        assign default_text = 'products.product.preorder' | t
+        assign button_text = 'products.product.preorder' | t
+      endif
       unless current_variant.available
         assign button_text = 'products.product.sold_out' | t
       endunless
@@ -42,11 +46,7 @@
       class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--secondary{% endif %}"
       {% unless current_variant.available %} disabled="disabled"{% endunless %}>
       <span id="add-to-cart-money" data-add-to-cart-text data-default-text="{{ default_text }}" data-product-price>
-        {% if product.metafields.c_f.preorder_date == blank %}
-          {{ button_text }} - {{ product.price | money_without_trailing_zeros }}
-        {% else %}
-          Preorder
-        {% endif %}
+        {{ button_text }} - {{ product.price | money_without_trailing_zeros }}
       </span>
     </button>
 
