@@ -7850,8 +7850,14 @@ label.tag__checkbox-wrapper{
     }
 
 .variant__button-label--logo-cutout.disabled:after {
-  top: 13px !important;
+  top: 22px !important;
   left: 6px !important;
+}
+
+@media screen and (min-width: 427px) {
+  .variant__button-label--logo-cutout.disabled:after {
+    top: 13px !important;
+  }
 }
 
 .variant-input-wrap input[type=radio]:focus+label{
@@ -12744,6 +12750,7 @@ span.instock {
   border: 1px solid var(--colorBorder) !important;
   margin-bottom: 5px !important;
   padding: 0 !important;
+  align-items: center !important;
 }
 
 .rebuy-product-media {
