@@ -1,11 +1,7 @@
 {
   "sections": {
     "main": {
-<<<<<<< HEAD
       "type": "shipping-page",
-=======
-      "type": "main-page",
->>>>>>> c788ea5dd33a087e762907424f8fa82f9400e346
       "settings": {
       }
     }
@@ -13,8 +9,4 @@
   "order": [
     "main"
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c788ea5dd33a087e762907424f8fa82f9400e346
