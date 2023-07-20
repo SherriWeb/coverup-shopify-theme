@@ -23,8 +23,29 @@
 
 -%}
 
+<style>
+  .grid-product__content--block-{{ blockid }}{
+    background-color: {{ bgcolor }};
+    color: {{ textcolor }};
+    border-radius: 5px;
+    background-image: url({{ image | img_url: "800x" }});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media screen and (min-width: 600px) {
+    .grid-product__content--block-{{ blockid }}{
+      min-height: 400px;
+    }
+  }
+</style>
+
 <div class="grid__item grid-product {{ grid_item_width }}" data-aos="row-of-{{ per_row }}">
-  <div class="grid-product__content">
+  <div class="grid-product__content grid-product__content--block-{{ blockid }}">
     {% if type == 'gift_card' %}
       <a class="grid-product__gift-card" href="/products/gift-card">
         <div class="grid-product__image-mask">
@@ -36,9 +57,11 @@
 
     {% if type == 'textarea' %}
       <div class="grid-product__text">
-        {% if header != blank %}<p>{{ header }}</p>{% endif %}
+        {% if header != blank %}
+          <h3 style="font-size: 30px;" class="grid-product__title--variant-part">{{ header }}</h3>
+        {% endif %}
         {% if richtext != blank %}{{ richtext }}{% endif %}
-        {% if image != blank %}<img src="{{ image | img_url: "300x300" }}">{% endif %}
+        {% comment %} {% if image != blank %}<img src="{{ image | img_url: "300x300" }}">{% endif %} {% endcomment %}
       </div>
     {% endif %}
   </div>
