@@ -28,10 +28,12 @@
     background-color: {{ bgcolor }};
     color: {{ textcolor }};
     border-radius: 5px;
-    background-image: url({{ image | img_url: "800x" }});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    {% if image != blank %}
+      background-image: url({{ image | img_url: "800x" }});
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    {% endif %}
     min-height: 300px;
     display: flex;
     flex-direction: column;
