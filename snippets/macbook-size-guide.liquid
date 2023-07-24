@@ -27,6 +27,7 @@
 </div>
 {% endif %}
 
+{% if product_title_handle contains 'macbook' %}
 <script>
   let macbookSizeTrigger = document.querySelector('.MacbookLookupTrigger-link');
   let macbookSizePopup = document.querySelector('.macbook-size-guide');
@@ -59,8 +60,8 @@
     image: modelImageArr[i]
   }));
 
-  console.log(modelArr);
-  console.log('{{macbook_models_handle}}');
+//  console.log(modelArr);
+//  console.log('{{macbook_models_handle}}');
 
   macbookSizeInput.addEventListener("input", function (e) {
     modelNumberResults.innerHTML = "";
@@ -99,3 +100,4 @@
   });
 
 </script>
+{% endif %}

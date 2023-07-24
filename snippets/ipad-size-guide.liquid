@@ -27,6 +27,7 @@
 </div>
 {% endif %}
 
+{% if product_title_handle contains 'ipad' %}
 <script>
   let ipadSizeTrigger = document.querySelector('.ipadLookupTrigger-link');
   let ipadSizePopup = document.querySelector('.ipad-size-guide');
@@ -59,8 +60,8 @@
     image: modelImageArr[i]
   }));
 
-  console.log(modelArr);
-  console.log('{{ipad_models_handle}}');
+//  console.log(modelArr);
+//  console.log('{{ipad_models_handle}}');
 
   ipadSizeInput.addEventListener("input", function (e) {
     modelNumberResults.innerHTML = "";
@@ -99,3 +100,4 @@
   });
 
 </script>
+{% endif %}
