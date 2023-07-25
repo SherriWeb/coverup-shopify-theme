@@ -28,12 +28,15 @@
         "0174d4bf-7282-4a96-b389-7bdc524544f2": {
           "type": "cta_block",
           "disabled": true,
+          "source": "{{ collection.metafields.custom.cta_block.value }}",
           "settings": {
             "placement": 6,
             "type": "textarea",
-            "header": "",
-            "richtext": "",
-            "image": "{{ collection.metafields.custom.cta_image_1.value }}"
+            "header": "{{ collection.metafields.custom.cta_block.value.header.value }}",
+            "richtext": "<p>{{ collection.metafields.custom.cta_block.value.content | metafield_tag }}<\/p>",
+            "text_color": "{{ collection.metafields.custom.cta_block.value.text_colour.value }}",
+            "image": "{{ collection.metafields.custom.cta_block.value.image.value }}",
+            "bg_color": "{{ collection.metafields.custom.cta_block.value.background_colour.value }}"
           }
         },
         "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
@@ -43,7 +46,9 @@
             "placement": 10,
             "type": "textarea",
             "header": "",
-            "richtext": "<p>Free Express Shipping<\/p>"
+            "richtext": "<p>Free Express Shipping<\/p>",
+            "text_color": "",
+            "bg_color": ""
           }
         }
       },
