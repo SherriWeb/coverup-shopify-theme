@@ -11973,6 +11973,11 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
   text-align: center;
   font-size: 18px;
 }
+@media screen and (max-width: 767px) {
+  .grid-product__text > .metafield-multi_line_text_field {
+    font-size: 14px;
+  }
+}
 
 .grid-product__gift-card span {
   margin-top: 20px;
@@ -11980,6 +11985,15 @@ background: none repeat scroll 0 0 rgba(241, 241, 241, 0.97);
 @media screen and (min-width: 1024px) {
   .grid-product__gift-card span {
     margin-top: 30px;
+  }
+}
+
+.grid-product__title--variant-part.cta-header {
+  font-size: 24px !important;
+}
+@media screen and (max-width: 767px) {
+  .grid-product__title--variant-part.cta-header {
+    font-size: 18px !important;
   }
 }
 

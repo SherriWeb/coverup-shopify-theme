@@ -34,17 +34,29 @@
       background-size: cover;
       background-position: center;
     {% endif %}
-    min-height: 300px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10% 0;
+  }
+  @media screen and (min-width: 425px) {
+    .grid-product__content--block-{{ blockid }}{
+      min-height: 340px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .grid-product__content--block-{{ blockid }}{
+      min-height: 380px;
+    }
   }
   @media screen and (min-width: 600px) {
     .grid-product__content--block-{{ blockid }}{
       min-height: 400px;
     }
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1300px) {
     .grid-product__content--block-{{ blockid }}{
       min-height: 450px;
     }
@@ -65,7 +77,7 @@
     {% if type == 'textarea' %}
       <div class="grid-product__text">
         {% if header != blank %}
-          <h3 style="font-size: 30px;" class="grid-product__title--variant-part">{{ header }}</h3>
+          <h3 class="grid-product__title--variant-part cta-header">{{ header }}</h3>
         {% endif %}
         {% if richtext != blank %}{{ richtext }}{% endif %}
         {% comment %} {% if image != blank %}<img src="{{ image | img_url: "300x300" }}">{% endif %} {% endcomment %}
