@@ -29,7 +29,7 @@
           "type": "cta_block",
           "source": "{{ collection.metafields.custom.cta_block.value }}",
           "settings": {
-            "placement": 6,
+            "placement": 5,
             "type": "textarea",
             "header": "{{ collection.metafields.custom.cta_block.value.header.value }}",
             "richtext": "<p>{{ collection.metafields.custom.cta_block.value.content | metafield_tag }}<\/p>",
@@ -38,16 +38,18 @@
             "bg_color": "{{ collection.metafields.custom.cta_block.value.background_colour.value }}"
           }
         },
-        "10ab31a1-d712-4924-afb6-ccc97fced9e0": {
+        "7aaf3d12-4f4b-4f39-b84c-e7a9d769c35d": {
           "type": "cta_block",
           "disabled": true,
+          "source": "{{ collection.metafields.custom.cta_block.value }}",
           "settings": {
-            "placement": 10,
+            "placement": 11,
             "type": "textarea",
-            "header": "",
-            "richtext": "<p>Free Express Shipping<\/p>",
-            "text_color": "",
-            "bg_color": ""
+            "header": "{{ collection.metafields.custom.cta_block.value.header.value }}",
+            "richtext": "<p>{{ collection.metafields.custom.cta_block.value.content | metafield_tag }}<\/p>",
+            "text_color": "{{ collection.metafields.custom.cta_block.value.text_colour.value }}",
+            "image": "{{ collection.metafields.custom.cta_block.value.image.value }}",
+            "bg_color": "{{ collection.metafields.custom.cta_block.value.background_colour.value }}"
           }
         }
       },
@@ -55,7 +57,7 @@
         "fce316bc-f0a7-4282-a829-450be5dee234",
         "product_grid",
         "0174d4bf-7282-4a96-b389-7bdc524544f2",
-        "10ab31a1-d712-4924-afb6-ccc97fced9e0"
+        "7aaf3d12-4f4b-4f39-b84c-e7a9d769c35d"
       ],
       "settings": {
         "enable_sidebar": true,
