@@ -76,10 +76,12 @@
 
     {% if type == 'textarea' %}
       <div class="grid-product__text">
-        {% if header != blank %}
-          <h3 class="grid-product__title--variant-part cta-header">{{ header }}</h3>
-        {% endif %}
-        {% if richtext != blank %}{{ richtext }}{% endif %}
+        {% if url != blank %}<a href="{{ url }}">{% endif %}
+          {% if header != blank %}
+            <h3 class="grid-product__title--variant-part cta-header">{{ header }}</h3>
+          {% endif %}
+          {% if richtext != blank %}{{ richtext }}{% endif %}
+        {% if url != blank %}<a>{% endif %}
         {% comment %} {% if image != blank %}<img src="{{ image | img_url: "300x300" }}">{% endif %} {% endcomment %}
       </div>
     {% endif %}
