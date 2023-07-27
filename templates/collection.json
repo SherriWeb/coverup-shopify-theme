@@ -40,6 +40,7 @@
         },
         "7aaf3d12-4f4b-4f39-b84c-e7a9d769c35d": {
           "type": "cta_block",
+          "disabled": true,
           "source": "{{ collection.metafields.custom.cta_block.value }}",
           "settings": {
             "placement": 11,
