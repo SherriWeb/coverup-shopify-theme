@@ -211,8 +211,8 @@
         ],
         "settings": {
           "show_locale_selector": true,
-          "show_currency_selector": false,
-          "show_currency_flags": false,
+          "show_currency_selector": true,
+          "show_currency_flags": true,
           "show_payment_icons": false,
           "show_copyright": true,
           "copyright_text": "<a href=\"\/pages\/privacy-policy\">Privacy<\/a><a href=\"\/pages\/terms-of-use\">T & C <\/a><a href=\"\/pages\/cookie-policy\">Cookies<\/a>"
