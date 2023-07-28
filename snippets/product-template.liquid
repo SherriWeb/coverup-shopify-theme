@@ -140,14 +140,9 @@
                       {%- assign id = block.id | append: product.id -%}
                       {%- render 'product-description', id: id, product: product, is_tab: block.settings.is_tab -%}
                     </div>
-              
                   {%- when 'price' -%}
                     <div class="product-block product-block--price" {{ block.shopify_attributes }}>
-                      <!-- Start of Judge.me code -->
-      <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
-        {{ product.metafields.judgeme.badge }}
-      </div>
-      <!-- End of Judge.me code -->
+                      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
                       {%- assign hide_sale_price = true -%}
                       {%- if product.compare_at_price_max > product.price -%}
                         {%- if current_variant.compare_at_price > current_variant.price -%}
