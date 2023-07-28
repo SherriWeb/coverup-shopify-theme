@@ -99,11 +99,7 @@
                   {%- endunless -%}
                 </h1>
               {%- endif -%}
-<!-- Start of Judge.me code -->
-      <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
-        {{ product.metafields.judgeme.badge }}
-      </div>
-      <!-- End of Judge.me code -->
+
               {%- if sku_enable -%}
                 <p data-sku class="product-single__sku">
                   {%- if current_variant.sku -%}
