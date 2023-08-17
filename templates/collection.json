@@ -29,7 +29,7 @@
           "type": "cta_block",
           "source": "{{ collection.metafields.custom.cta_block.value }}",
           "settings": {
-            "placement": 6,
+            "placement": 3,
             "type": "textarea",
             "header": "{{ collection.metafields.custom.cta_block.value.header.value }}",
             "richtext": "<p>{{ collection.metafields.custom.cta_block.value.content | metafield_tag }}<\/p>",
@@ -41,10 +41,9 @@
         },
         "6462fc1c-de1f-4f84-b13d-30bcb5cb0119": {
           "type": "cta_block",
-          "disabled": true,
           "source": "{{ collection.metafields.custom.cta_block_2.value }}",
           "settings": {
-            "placement": 1,
+            "placement": 5,
             "type": "textarea",
             "header": "{{ collection.metafields.custom.cta_block_2.value.header.value }}",
             "richtext": "<p>{{ collection.metafields.custom.cta_block_2.value.content | metafield_tag }}<\/p>",
