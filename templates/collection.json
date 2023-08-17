@@ -55,10 +55,9 @@
         },
         "898cabdb-3dd6-456b-8f05-fc3e4914ac15": {
           "type": "cta_block",
-          "disabled": true,
           "source": "{{ collection.metafields.custom.cta_block_3.value }}",
           "settings": {
-            "placement": 1,
+            "placement": 9,
             "type": "textarea",
             "header": "{{ collection.metafields.custom.cta_block_3.value.header.value }}",
             "richtext": "<p>{{ collection.metafields.custom.cta_block_3.value.content | metafield_tag }}<\/p>",
