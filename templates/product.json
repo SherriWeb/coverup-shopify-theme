@@ -32,7 +32,7 @@
         "8cb726b6-e558-4de9-9c29-e573ca30b1f8": {
           "type": "custom",
           "settings": {
-            "code": "<p style=\"text-align:center; color:#FF0000;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.<\/p>"
+            "code": "<p style=\"text-align:center; color:#FF0000;margin-top:10px;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.<\/p>"
           }
         },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
