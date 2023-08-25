@@ -29,8 +29,15 @@
             "variant_labels": true
           }
         },
+        "8cb726b6-e558-4de9-9c29-e573ca30b1f8": {
+          "type": "custom",
+          "settings": {
+            "code": "<p style=\"text-align:center; color:#FF0000;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.<\/p>"
+          }
+        },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "inventory_transfers_enable": true
@@ -58,7 +65,8 @@
             "locale_fallback": "",
             "theme": "light",
             "topPadding": "0",
-            "bottomPadding": "0"
+            "bottomPadding": "0",
+            "messagePrefix": ""
           }
         },
         "456d36f0-1381-44d6-b9ab-b0f0eaf5f3d3": {
@@ -125,6 +133,7 @@
         "9b565aab-b129-407e-a7f4-4f3963348bbd",
         "6d8b1c7c-c8b6-44dd-9939-37d261e6764c",
         "ae20fac8-88e0-48c1-8c06-7d5a4eacf020",
+        "8cb726b6-e558-4de9-9c29-e573ca30b1f8",
         "84435453-fcfa-4d09-b89a-6e7feaf61865",
         "019c3489-90d2-4a8f-8a1f-35d620c1f805",
         "buy_buttons",
@@ -152,7 +161,6 @@
     },
     "sub": {
       "type": "product-full-width",
-      "disabled": true,
       "blocks": {
         "b758fab6-286b-49f2-af7a-88bf6affc381": {
           "type": "description",
@@ -173,6 +181,7 @@
         "b758fab6-286b-49f2-af7a-88bf6affc381",
         "25388ced-8ab2-4b82-88b2-8bf3bd5a2540"
       ],
+      "disabled": true,
       "settings": {
         "max_width": false
       }
