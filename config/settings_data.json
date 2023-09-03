@@ -81,6 +81,7 @@
         "blocks": {
           "1524770296206": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "",
               "link_text": "Hello friends! We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.",
@@ -94,7 +95,6 @@
           },
           "992c459b-1a9a-42b9-84df-87f479702063": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "",
               "link_text": "Free Standard Shipping on All U.K. orders over £50.",
@@ -116,7 +116,6 @@
           },
           "92e3fb8f-f149-4f1b-a04a-db16864234c4": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "",
               "link_text": "MacBook Pro 14\" and 16\" M2 (2023) Skins Available Now >>>",
