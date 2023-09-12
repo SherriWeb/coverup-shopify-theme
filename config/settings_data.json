@@ -83,9 +83,9 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "",
-              "link_text": "Hello friends! We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.",
-              "link": "",
+              "text": "NEW: iPhone 15 Cases Available Now >>>",
+              "link_text": "",
+              "link": "shopify:\/\/collections\/iphone-15",
               "alt_announcements": false,
               "link_text_us": "",
               "link_text_eu": "",
