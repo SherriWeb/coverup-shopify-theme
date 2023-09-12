@@ -81,10 +81,9 @@
         "blocks": {
           "1524770296206": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "NEW: iPhone 15 Cases Available Now >>>",
-              "link_text": "",
+              "text": "JUST RELEASED:",
+              "link_text": "iPhone 15 Cases Available Now >>>",
               "link": "shopify:\/\/collections\/iphone-15",
               "alt_announcements": false,
               "link_text_us": "",
