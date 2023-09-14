@@ -2,7 +2,6 @@
   "sections": {
     "164995542281f6ff3c": {
       "type": "collection-shortcuts",
-      "disabled": true,
       "blocks": {
         "2d9be8a4-9644-491b-a07e-7262ce0d7903": {
           "type": "collection",
@@ -61,6 +60,7 @@
         "b48f09fc-050e-4ba8-a156-c44481d2ae2c",
         "66624bae-8179-4061-b732-2690c68a90b6"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -369,22 +369,22 @@
         "color_text": "#212a2f"
       }
     },
+    "16503073265e5f5289": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "What's New",
+        "home_featured_products": "iphone-15",
+        "per_row": 7,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "1650307321dadfee0e": {
       "type": "featured-collection-slider",
       "settings": {
         "title": "Explore Our Bestsellers",
         "home_featured_products": "bestsellers",
         "per_row": 8,
-        "view_all": false,
-        "divider": false
-      }
-    },
-    "16503073265e5f5289": {
-      "type": "featured-collection-slider",
-      "settings": {
-        "title": "What's New",
-        "home_featured_products": "samsung-galaxy-s23",
-        "per_row": 7,
         "view_all": false,
         "divider": false
       }
@@ -668,8 +668,8 @@
     "165001949644c5bce4",
     "16508937574f89e237",
     "165039125633992a2c",
-    "1650307321dadfee0e",
     "16503073265e5f5289",
+    "1650307321dadfee0e",
     "16500191686c0fa327",
     "1650018831c706a490",
     "16500195940989f8c7",
