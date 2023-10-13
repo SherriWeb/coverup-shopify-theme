@@ -90,9 +90,7 @@
         + '&language[enabled]=true'
         + `&language[exclude]=${window.Shopify.language}`
       ).then(r => {
-        console.log(r.detected_values.country.name, "$$$$$$$$$$$$$$")
         let customerCountry = r.detected_values.country.name;
-        console.log(customerCountry, '-====--------------======================')
         if (EU_COUNTRIES.includes(customerCountry)) {
           announcementText.innerHTML = textEU;
         } else if (customerCountry === 'Canada') {
