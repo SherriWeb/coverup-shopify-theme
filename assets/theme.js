@@ -7982,7 +7982,6 @@ lazySizesConfig.expFactor = 4;
       pageDots: true,
       imagesLoaded: true
     });
-    console.log('test')
   }, 3000);
 
   let interval = null
