@@ -4,7 +4,7 @@
       "type": "main-product",
       "blocks": {
         "37d11848-8c4c-4a70-bed6-47f6530c13b9": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -33,7 +33,7 @@
           "type": "custom",
           "disabled": true,
           "settings": {
-            "code": "<p style=\"text-align:center; color:#FF0000;margin-top:10px;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 4th September.<\/p>"
+            "code": "<p style=\"text-align:center; color:#FF0000;margin-top:10px;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 23rd October.<\/p>"
           }
         },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
@@ -433,7 +433,7 @@
       "type": "apps",
       "blocks": {
         "6782e436-1856-456c-9469-36feeb3a1d56": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
