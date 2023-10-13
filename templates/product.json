@@ -31,13 +31,13 @@
         },
         "8cb726b6-e558-4de9-9c29-e573ca30b1f8": {
           "type": "custom",
-          "disabled": true,
           "settings": {
             "code": "<p style=\"text-align:center; color:#FF0000;margin-top:10px;\">We are currently away from the workshop and so any orders placed will be shipped from Monday 23rd October.<\/p>"
           }
         },
         "84435453-fcfa-4d09-b89a-6e7feaf61865": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "inventory_transfers_enable": true
