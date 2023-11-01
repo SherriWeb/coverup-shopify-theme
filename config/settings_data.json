@@ -79,6 +79,19 @@
       "header": {
         "type": "header",
         "blocks": {
+          "92e3fb8f-f149-4f1b-a04a-db16864234c4": {
+            "type": "announcement",
+            "settings": {
+              "text": "JUST LAUNCHED:",
+              "link_text": "MacBook Pro 14\" and 16\" (M3, 2023) Skins >>>",
+              "link": "shopify:\/\/collections\/macbook-pro-16-m3",
+              "alt_announcements": false,
+              "link_text_us": "MacBook Pro 14\" and 16\" M3, 2032 Skins Available Now >>>",
+              "link_text_eu": "MacBook Air M2 Skins Available Now >>>",
+              "link_text_can": "MacBook Air M2 Skins Available Now >>>",
+              "link_text_au": "MacBook Air M2 Skins Available Now >>>"
+            }
+          },
           "1524770296206": {
             "type": "announcement",
             "settings": {
@@ -112,26 +125,13 @@
               "desktop_logo_width": 260,
               "mobile_logo_width": 170
             }
-          },
-          "92e3fb8f-f149-4f1b-a04a-db16864234c4": {
-            "type": "announcement",
-            "settings": {
-              "text": "JUST LAUNCHED:",
-              "link_text": "MacBook Pro 14\" and 16\" (M3, 2023) Skins Available Now >>>",
-              "link": "shopify:\/\/collections\/macbook-pro-16-m3",
-              "alt_announcements": false,
-              "link_text_us": "MacBook Pro 14\" and 16\" M3, 2032 Skins Available Now >>>",
-              "link_text_eu": "MacBook Air M2 Skins Available Now >>>",
-              "link_text_can": "MacBook Air M2 Skins Available Now >>>",
-              "link_text_au": "MacBook Air M2 Skins Available Now >>>"
-            }
           }
         },
         "block_order": [
+          "92e3fb8f-f149-4f1b-a04a-db16864234c4",
           "1524770296206",
           "992c459b-1a9a-42b9-84df-87f479702063",
-          "1524770014057",
-          "92e3fb8f-f149-4f1b-a04a-db16864234c4"
+          "1524770014057"
         ],
         "settings": {
           "main_menu_link_list": "mega-menu",
