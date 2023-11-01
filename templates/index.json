@@ -21,22 +21,22 @@
             "collection": "iphone-15-pro-max"
           }
         },
-        "7d0d45eb-a1d0-44ff-9607-5ea82f5b523a": {
-          "type": "collection",
-          "settings": {
-            "collection": "macbook-air-15-m2-2023"
-          }
-        },
         "1b2f4e16-81ae-40a8-acd6-f4c3a3496ea0": {
           "type": "collection",
           "settings": {
-            "collection": "macbook-pro-14-m1-2021"
+            "collection": "macbook-pro-14-m3"
           }
         },
         "b48f09fc-050e-4ba8-a156-c44481d2ae2c": {
           "type": "collection",
           "settings": {
-            "collection": "macbook-pro-16-m1-2021"
+            "collection": "macbook-pro-16-m3"
+          }
+        },
+        "7d0d45eb-a1d0-44ff-9607-5ea82f5b523a": {
+          "type": "collection",
+          "settings": {
+            "collection": "macbook-air-15-m2-2023"
           }
         },
         "66624bae-8179-4061-b732-2690c68a90b6": {
@@ -51,9 +51,9 @@
         "2d9be8a4-9644-491b-a07e-7262ce0d7903",
         "8a915544-3d51-4eb0-bed1-832ef4f64cbd",
         "881c221d-3a91-4514-bd2b-828c05b15875",
-        "7d0d45eb-a1d0-44ff-9607-5ea82f5b523a",
         "1b2f4e16-81ae-40a8-acd6-f4c3a3496ea0",
         "b48f09fc-050e-4ba8-a156-c44481d2ae2c",
+        "7d0d45eb-a1d0-44ff-9607-5ea82f5b523a",
         "66624bae-8179-4061-b732-2690c68a90b6"
       ],
       "settings": {
@@ -175,10 +175,10 @@
           "type": "advanced",
           "settings": {
             "subheading": "BESTSELLERS",
-            "heading": "iPhone 14 Cases",
-            "textarea": "One-of-a-kind cases for your iPhone 14",
-            "cta_text1": "SHOP IPHONE 14 CASES →",
-            "cta_link1": "shopify:\/\/collections\/iphone-14",
+            "heading": "iPhone 15 Cases",
+            "textarea": "One-of-a-kind cases for your iPhone 15",
+            "cta_text1": "SHOP IPHONE 15 CASES →",
+            "cta_link1": "shopify:\/\/collections\/iphone-15-pro",
             "cta_text2": "",
             "cta_link2": "",
             "image": "shopify:\/\/shop_images\/IMG_2296_2.jpg",
