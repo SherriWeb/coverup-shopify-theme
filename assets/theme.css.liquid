@@ -12940,3 +12940,260 @@ margin-top: 40px !important;
     display: none;
   }
 }
+
+.countdown-wrapper{
+  position:relative;
+}
+
+.countdown__background-image-wrapper{
+  height:100%;
+  position:absolute;
+  width:100%;
+}
+
+.countdown__background-image{
+  height:100%;
+  left:0;
+  -o-object-fit:cover;
+     object-fit:cover;
+  position:absolute;
+  top:0;
+  width:100%;
+}
+
+.countdown__mobile-image-wrapper{
+  height:100%;
+  position:absolute;
+  width:100%;
+}
+
+.countdown__mobile-image{
+  height:100%;
+  -o-object-fit:cover;
+     object-fit:cover;
+  width:100%;
+}
+
+.countdown-layout--banner .countdown__content{
+    padding:2rem;
+  }
+
+@media only screen and (min-width:769px){
+
+.countdown-layout--banner .countdown__content{
+      display:flex;
+      flex-direction:row;
+      flex-wrap:nowrap;
+      gap:1rem;
+      justify-content:space-around;
+      padding:1.6rem 2rem;
+  }
+    }
+
+.countdown-layout--banner.countdown-blocks--2.page-width .countdown__content{
+      justify-content:space-around;
+    }
+
+.countdown-layout--banner.countdown-blocks--2 .countdown__content{
+      justify-content:center;
+    }
+
+@media only screen and (min-width:769px){
+
+.countdown-layout--banner .countdown__block{
+      width:33%;
+  }
+    }
+
+.countdown__content{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  height:auto;
+  justify-content:center;
+  max-height:650px;
+  padding:5rem 2rem;
+  text-align:center;
+  width:100%;
+}
+
+.page-width .countdown__content{
+    position:relative;
+}
+
+@media only screen and (min-width:769px){
+
+.countdown-layout--hero .countdown__content{
+      height:100vh;
+}
+    }
+
+.countdown__block{
+  margin:1rem auto;
+  width:100%;
+  z-index:3;
+}
+
+.countdown__block--content{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.countdown__block--content .countdown__block--button{
+    margin:0;
+    width:100%;
+  }
+
+@media only screen and (min-width:769px){
+
+.countdown-blocks--2.countdown-layout--banner .countdown__block--content,.countdown-blocks--2.countdown-layout--banner .countdown__block--timer{
+      width:50%;
+}
+    }
+
+@media only screen and (min-width:769px){
+
+.countdown-blocks--2.countdown-layout--banner .countdown__block--button.button-block-active{
+      width:50%;
+}
+    }
+
+.countdown__text-wrapper{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+@media only screen and (min-width:769px){
+
+.countdown-layout--hero .countdown__text-wrapper{
+      width:50%;
+}
+    }
+
+.countdown__text-wrapper--content-alignment-left{
+  text-align:left;
+}
+
+.countdown__text-wrapper--content-alignment-right{
+  text-align:right;
+}
+
+.countdown__display{
+  display:flex;
+  justify-content:center;
+}
+
+.countdown__display--visible+.countdown__timer-message--visible{
+  margin-top:1.5rem;
+}
+
+.countdown__display--hidden{
+  height:0;
+  margin:0;
+  opacity:0;
+  transition:opacity 3s ease-out;
+  visibility:hidden;
+  width:0;
+}
+
+.countdown__display-block{
+  align-content:center;
+  border-right:1px solid;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  padding:0 1rem;
+}
+
+.countdown__display-block h2{
+    margin-bottom:16px;
+  }
+
+@media only screen and (min-width:769px){
+
+.countdown__display-block h2{
+      margin-bottom:4px;
+  }
+    }
+
+.countdown__display-block span{
+    font-size:0.6rem;
+    letter-spacing:1.7px;
+  }
+
+@media only screen and (min-width:769px){
+
+.countdown__display-block span{
+      font-size:0.75rem;
+  }
+    }
+
+.countdown__display-block:last-child{
+    border-right:none;
+  }
+
+[dir=rtl] .countdown__display-block:last-child{
+      border-right:1px solid;
+    }
+
+[dir=rtl] .countdown__display-block:first-child{
+      border-right:none;
+    }
+
+.countdown__timer-message{
+  height:0;
+  margin:0;
+  opacity:0;
+  visibility:hidden;
+}
+
+.countdown__timer-message--visible{
+  height:auto;
+  opacity:1;
+  transition:opacity 1s ease-in;
+  visibility:visible;
+}
+
+.countdown__block--hidden{
+  width:0 !important;
+}
+
+.countdown__block--hidden{
+  margin:0;
+  opacity:0;
+  transition:opacity 1s ease-out;
+  visibility:hidden;
+}
+
+.countdown__overlay:after{
+    background-color:var(--countdown-overlay-rgba);
+    bottom:0;
+    content:"";
+    height:100%;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    z-index:2;
+  }
+
+  .countdown__background-image-wrapper image-element,.fading-images__item-wrapper image-element,.grid__image-ratio image-element,.image-wrap image-element,.social-section__image-wrapper image-element,.svg-mask image-element{
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+  }
+
+  .countdown__content{
+    background-color:var(--countdown-background-color);
+    color:var(--countdown-text-color);
+  }
+  
+  .countdown__block--button .btn.btn--secondary{
+      color:var(--accent-color);
+    }
