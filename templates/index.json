@@ -654,54 +654,6 @@
         "color_background": "#f8f7f5",
         "color_text": "#212a2f"
       }
-    },
-    "d2895ff5-145b-4d9a-b498-14913cad20c0": {
-      "type": "countdown",
-      "blocks": {
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-content-1": {
-          "type": "content",
-          "settings": {
-            "heading": "Black Friday Sale",
-            "heading_size": "h2",
-            "text": "<p>Use this timer to create urgency and boost sales.<\/p>",
-            "content_alignment": "center"
-          }
-        },
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-timer-1": {
-          "type": "timer",
-          "settings": {
-            "year": "2025",
-            "month": "01",
-            "day": "1",
-            "hour": "03",
-            "minute": "00",
-            "hide_timer": false,
-            "text": ""
-          }
-        },
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-button-1": {
-          "type": "button",
-          "settings": {
-            "button_link": "",
-            "button": "Shop Collection",
-            "button_style": "solid"
-          }
-        }
-      },
-      "block_order": [
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-content-1",
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-timer-1",
-        "template--15675912782074__d2895ff5-145b-4d9a-b498-14913cad20c0-button-1"
-      ],
-      "settings": {
-        "layout": "hero",
-        "full_width": false,
-        "text_color": "#000",
-        "background_color": "#FFF",
-        "overlay_color": "#000",
-        "overlay_opacity": 0,
-        "lazyload_images": true
-      }
     }
   },
   "order": [
@@ -719,7 +671,6 @@
     "1650019400adc95739",
     "blog-posts",
     "16516079625b17dbc0",
-    "1650016262d5ad7cd2",
-    "d2895ff5-145b-4d9a-b498-14913cad20c0"
+    "1650016262d5ad7cd2"
   ]
 }
