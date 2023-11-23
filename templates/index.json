@@ -694,13 +694,12 @@
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-timer-1",
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-button-1"
       ],
-      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": false,
-        "text_color": "#000",
-        "background_color": "#FFF",
-        "overlay_color": "#000",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "overlay_color": "#000000",
         "overlay_opacity": 0,
         "lazyload_images": true
       }
