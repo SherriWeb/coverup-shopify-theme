@@ -661,9 +661,9 @@
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-content-1": {
           "type": "content",
           "settings": {
-            "heading": "Countdown",
+            "heading": "Black Friday Sale",
             "heading_size": "h2",
-            "text": "<p>Use this timer to create urgency and boost sales.<\/p>",
+            "text": "",
             "content_alignment": "left"
           }
         },
@@ -675,7 +675,7 @@
             "day": "27",
             "hour": "03",
             "minute": "00",
-            "hide_timer": false,
+            "hide_timer": true,
             "text": ""
           }
         },
