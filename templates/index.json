@@ -663,7 +663,7 @@
           "settings": {
             "heading": "Black Friday Sale",
             "heading_size": "h2",
-            "text": "",
+            "text": "<p>Sale Ends November 29th<\/p>",
             "content_alignment": "left"
           }
         },
@@ -681,6 +681,7 @@
         },
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-button-1": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_link": "",
             "button": "Shop Collection",
@@ -693,6 +694,7 @@
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-timer-1",
         "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-button-1"
       ],
+      "disabled": true,
       "settings": {
         "layout": "banner",
         "full_width": false,
