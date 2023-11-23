@@ -654,6 +654,54 @@
         "color_background": "#f8f7f5",
         "color_text": "#212a2f"
       }
+    },
+    "bab8f873-e72b-45d6-9e96-bf235b927828": {
+      "type": "countdown",
+      "blocks": {
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-content-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Countdown",
+            "heading_size": "h2",
+            "text": "<p>Use this timer to create urgency and boost sales.<\/p>",
+            "content_alignment": "left"
+          }
+        },
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-timer-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2023",
+            "month": "11",
+            "day": "27",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
+            "text": ""
+          }
+        },
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-button-1": {
+          "type": "button",
+          "settings": {
+            "button_link": "",
+            "button": "Shop Collection",
+            "button_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-content-1",
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-timer-1",
+        "template--15675912782074__bab8f873-e72b-45d6-9e96-bf235b927828-button-1"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": false,
+        "text_color": "#000",
+        "background_color": "#FFF",
+        "overlay_color": "#000",
+        "overlay_opacity": 0,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
@@ -671,6 +719,7 @@
     "1650019400adc95739",
     "blog-posts",
     "16516079625b17dbc0",
-    "1650016262d5ad7cd2"
+    "1650016262d5ad7cd2",
+    "bab8f873-e72b-45d6-9e96-bf235b927828"
   ]
 }
