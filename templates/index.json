@@ -75,6 +75,8 @@
             "link_text_2": "Shop Accesories",
             "color_accent": "#0f0f0f",
             "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/download_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/download_2.jpg",
             "overlay_opacity": 10,
             "focal_point": "top center"
           }
