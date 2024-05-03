@@ -42,8 +42,7 @@
         "66624bae-8179-4061-b732-2690c68a90b6": {
           "type": "collection",
           "settings": {
-            "collection": "desk-pads",
-            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg"
+            "collection": "desk-pads"
           }
         }
       },
@@ -75,8 +74,6 @@
             "link_text_2": "Shop MacBook Pro 16\" (M3, 2023) Skins →",
             "color_accent": "#0f0f0f",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/walnut-burl-macbook-skin-homepage.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/walnut-burl-macbook-skin-homepage-mobile.jpg",
             "overlay_opacity": 10,
             "focal_point": "top center"
           }
@@ -95,7 +92,6 @@
             "link_text_2": "Shop all",
             "color_accent": "#000000",
             "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify:\/\/shop_images\/slideshow-4.jpg",
             "overlay_opacity": 0,
             "focal_point": "20% 0"
           }
@@ -181,7 +177,6 @@
             "cta_link1": "shopify:\/\/collections\/iphone-15-pro",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/IMG_2296_2.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -203,7 +198,6 @@
             "cta_link1": "shopify:\/\/collections\/desk-pads",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/medium-leather-tan-desk-mat-angle-two.jpg",
             "video_url": "",
             "width": "50",
             "height": 500,
@@ -240,7 +234,6 @@
             "cta_link1": "shopify:\/\/collections\/macbook-pro-16-m1-2021",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/macbook-pro-16-m1-promotion-grid_8fb2b7bb-ea05-4a05-afa0-b82d3dd71e97.jpg",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -262,7 +255,6 @@
             "cta_link1": "shopify:\/\/products\/iphone-13-infinite-ffelt-sleeve",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/wool-felt-iphone-sleeve-promotion-grid.jpg",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -284,7 +276,6 @@
             "cta_link1": "shopify:\/\/collections\/wireless-power-banks",
             "cta_text2": "",
             "cta_link2": "",
-            "image": "shopify:\/\/shop_images\/wireless-power-banks-cta.png",
             "video_url": "",
             "width": "33",
             "height": 500,
@@ -315,37 +306,31 @@
         "1650391256f173c8b3-0": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes-featured_c250f943-8dc8-4303-813f-dcf142e88a36.png"
           }
         },
         "1650391256f173c8b3-1": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/esquire-featured_484a2cbf-3309-409b-89ff-eac68a86ed00.png"
           }
         },
         "1650391256f173c8b3-2": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hypebeast-featured.png"
           }
         },
         "1650391256f173c8b3-3": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/macworld-featured_2eff073c-6d13-4059-bcb0-46676543365c.png"
           }
         },
         "1650391256f173c8b3-4": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cnet-featured.png"
           }
         },
         "75b6ed68-5136-45b7-8925-71563eb8f1de": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/highsnobiety-featured.png"
           }
         }
       },
@@ -391,7 +376,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/discover-wood_b83d4905-d004-42c5-9ecc-54f070a70163.jpg",
             "image_width": 650,
             "title": "Wood",
             "text": "<p>Our most popular material. Wood is at the heart of everything we do – so it has to be right. Each piece is a natural work of art and sourced from FSC certified suppliers.<\/p>",
@@ -403,7 +387,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/discover-stone.jpg",
             "image_width": 650,
             "title": "Stone",
             "text": "<p>From ancient to modern. Each piece of slate is finely split to form an ultra-thin, lightweight layer with an enticing texture you’ll never get bored of touching.<\/p>",
@@ -415,7 +398,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/discover-leather_98f57806-2e5b-4c5f-9450-3f0023574ac0.jpg",
             "image_width": 430,
             "title": "Leather",
             "text": "<p>The real deal. Italian, full grain and vegetable tanned. Our leather is buttery soft, durable and has a natural look and feel. The more you use it, the better it gets.<\/p>",
@@ -427,7 +409,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/discover-shell.jpg",
             "image_width": 650,
             "title": "Seashell",
             "text": "<p>A one-kind-beauty straight from the ocean. Layers of real shell form a kaleidoscope of colours and iridescent patterns that capture the luster of the original sea shells.<\/p>",
@@ -523,8 +504,7 @@
     "16500195940989f8c7": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/made-in-wales-1.jpg",
-        "image2": "shopify:\/\/shop_images\/made-in-wales-2.jpg",
+        "image": "shopify:\/\/shop_images\/download.jpg",
         "image_width": 700,
         "subtitle": "",
         "title": "Made in Wales",
@@ -543,7 +523,6 @@
         "1650019400c4aec4fd-0": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Inspired_By_Nature_notext.png",
             "text": "Inspired by<br> Nature",
             "link": ""
           }
@@ -551,7 +530,6 @@
         "1650019400c4aec4fd-1": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/One_of_a_Kind_notext.png",
             "text": "One-of-a-kind",
             "link": ""
           }
@@ -559,7 +537,6 @@
         "1650019400c4aec4fd-2": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Happiness_Guaranteed_notext.png",
             "text": "Happiness<br> Guarantee",
             "link": ""
           }
@@ -567,7 +544,6 @@
         "1650019400c4aec4fd-3": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Fast_Shipping_notext.png",
             "text": "Worldwide Shipping",
             "link": ""
           }
@@ -575,7 +551,6 @@
         "21e4459c-a435-4a25-b6d5-8b755099cbfc": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Made_in_Wales.png",
             "text": "Made in Wales",
             "link": ""
           }
