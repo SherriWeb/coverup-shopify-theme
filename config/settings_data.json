@@ -121,7 +121,6 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/cover-up-logo-black-transparent-350x75.png",
               "desktop_logo_width": 260,
               "mobile_logo_width": 170
             }
@@ -134,7 +133,7 @@
           "1524770014057"
         ],
         "settings": {
-          "main_menu_link_list": "mega-menu",
+          "main_menu_link_list": "main-menu",
           "mega_menu_images": false,
           "main_menu_alignment": "left-center",
           "header_style": "sticky",
@@ -143,7 +142,7 @@
           "announcement_compact": true,
           "announcement_above_header": true,
           "toolbar_menu": "",
-          "help_menu": "help-dropdown",
+          "help_menu": "",
           "toolbar_social": false,
           "show_locale_selector": true,
           "show_currency_selector": true,
@@ -157,7 +156,7 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "help",
+              "menu": "",
               "container_width": 20
             }
           },
@@ -165,7 +164,7 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "footer-two",
+              "menu": "",
               "container_width": 20
             }
           },
@@ -173,7 +172,7 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "footer-three",
+              "menu": "",
               "container_width": 20
             }
           },
@@ -195,7 +194,6 @@
           "1494301487048": {
             "type": "logo_social",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/cover-up-avatar-f4f2ee.png",
               "desktop_logo_height": 50,
               "container_width": 100
             }
@@ -251,36 +249,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "12120936241911852800": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": true,
-        "settings": {
-          "position": "right"
-        }
-      },
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "8962992520437913685": {
-        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
-        "disabled": false,
-        "settings": {
-          "inject_modules_loader": true,
-          "inject_sdk_loader": true
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Modern": {

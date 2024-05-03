@@ -6,7 +6,8 @@
         "2d9be8a4-9644-491b-a07e-7262ce0d7903": {
           "type": "collection",
           "settings": {
-            "collection": "iphone-15"
+            "collection": "iphone-15",
+            "image": "shopify:\/\/shop_images\/sbf-zikr1-18c.jpg"
           }
         },
         "8a915544-3d51-4eb0-bed1-832ef4f64cbd": {
@@ -306,21 +307,25 @@
         "1650391256f173c8b3-0": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/sbf-zikr1-18c.jpg"
           }
         },
         "1650391256f173c8b3-1": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/iQIBLA-zikr-ring-flexpro-Spacegray-f_be8d1829-500d-4c55-8be0-9d39761de5d4.webp"
           }
         },
         "1650391256f173c8b3-2": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Muslim-Zikr-Ring-World-s-First-Smart-Tasbih-Ring-Iqibla-Smart-Tasbeeh-Counter.webp"
           }
         },
         "1650391256f173c8b3-3": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/512WYh07fZL._AC_UF894_1000_QL80.jpg"
           }
         },
         "1650391256f173c8b3-4": {
@@ -331,6 +336,7 @@
         "75b6ed68-5136-45b7-8925-71563eb8f1de": {
           "type": "logo",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Specialized-Exporter-Iqibla-Zikr-Smart-Ring-Muslim-Tasbih-Counter.webp"
           }
         }
       },
