@@ -1,7 +1,7 @@
 {% capture macbook_models %}{% for link in linklists.macbook-model-numbers.links %}{{ link.title }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
 {% capture macbook_models_title %}{% for link in linklists.macbook-model-numbers.links %}{{ link.object.title }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
 {% capture macbook_models_url %}{% for link in linklists.macbook-model-numbers.links %}{{ link.object.url }}{% unless forloop.last == true %}={% endunless %}{% endfor %}{% endcapture %}
-{% capture macbook_models_image %}{% for link in linklists.macbook-model-numbers.links %}{% paginate collection 1 %}{% for product in collections[link.object.handle].products %}{{ product.images[0] | img_url: '300x300' }}{% unless forloop.last == true %}endimg{% endunless %}{% endfor %}{% endpaginate %}{% endfor %}{% endcapture %}
+{% capture macbook_models_image %}{% for link in linklists.macbook-model-numbers.links %}{% paginate collection by nil %}{% for product in collections[link.object.handle].products %}{{ product.images[0] | img_url: '300x300' }}{% unless forloop.last == true %}endimg{% endunless %}{% endfor %}{% endpaginate %}{% endfor %}{% endcapture %}
 
 {% assign product_title_handle = product.title | handle %}
 {% if product_title_handle contains 'macbook' %}
@@ -100,4 +100,13 @@
   });
 
 </script>
-{% endif %}
+{% endif %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% paginate collection 1 %}"
+  to: "{% paginate collection by nil %}"
+  position: 642..674
+{%- endcomment -%}
